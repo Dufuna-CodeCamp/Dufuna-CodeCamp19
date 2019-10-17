@@ -39,8 +39,7 @@ As more content is added to this repository and more people contribute, your for
 
 # Task so far
 
-I created a folder with my full name in the submissions folder
-I Created a subfolder named uxDesign in it I added my Dufuna uxDesign task which are
+I created a folder with my full name in the submissions folder, I created a subfolder named uxDesign in it and I added my Dufuna uxDesign tasks which are
 - User Story
 - Process flow
 - uxDesign
