@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>myoja-Login Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+    </head>
+    <body>
+        <img src="img/diamond1.jpg" alt="logo" width="50" id="logo">
+        <p id="logoname" style="margin-top: 0px;">myoja</p>
+        
+        <h3>Welcome to myoja.com, where your market is in your hands. We deal in everything office gadgets,
+           household equipments, computerized educational materials, books. You can also pitch your tent with us
+           and have access to our vast array of customers. Meaning myoja.com, is a gateway to many possibilities</h3>
+
+        <form method="POST" action="login.php">
+            <fieldset>
+                <legend>Welcome</legend>
+                   <label for="username">Username</label><br>
+                   <input type="text" name="username" id="username" placeholder="Please, enter your username" required><br><br>
+                   <label for="email">Email</label><br>
+                   <input type="text" name="Email" id="email" placeholder="Please, enter your email" required><br><br>
+                   <label for="password">Password</label><br>
+                   <input type="password" name="password" id="password" placeholder="*********" min="8" required><br><br>
+                   <input type="checkbox" name="keepme" value="">
+                   <label for="loginmode">Remember me</label>
+                   <span><a href="#Emailcode">Forget Password?</a></span><br><br><!--This requires some javascript-->
+                   <input type="Submit" name="login" value="Login">
+                   <hr>
+                   <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" width="12" alt="facebook" id="facebook-logo">login with facebook</a>
+                   <a href="#signupform"><span>Sign up</span></a>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
