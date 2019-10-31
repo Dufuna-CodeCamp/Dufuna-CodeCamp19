@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
+        <style>
+                body {background-color: whitesmoke;}
+                h1   {color: tomato;}
+                h2   {color: teal;}
+                p    {color: red;}
+                h1 {
+  text-align: center;
+}
+h2 {
+    text-align: center;
+}
+img {
+  display: block;
+  margin-left: align-self auto;
+  margin-right: align-self auto;
+}
+input[type=text], select {
+  width: 30%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 30%;  
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-display: align-self;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 15%;  
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-display: align-self;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+input[type=button], select {
+  width: 30%;  
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-display: align-self;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+form {text-align: center;}
+
+                </style>
     <title>Frere Wears Online Store</title>
 </head>
 <body>
     <h1>Welcome to Frere Wears Online Store</h1>
-    <h2>On this website, you can place your orders for Classic, Stylish and Bespoke <em>Articles of Clothing</em> for <em><b>All men</b></em> of <em>All Ages, Classes</em> and for <em>All Seasons</em>. Enjoy Shopping!</h2>
-    <img src="https://www.pexels.com/photo/man-in-blue-dress-shirt-and-black-formal-suit-1043473/.jpg" alt= "Frere Wears">
+    <h2>Here, you can place your orders for Classic, Stylish and Bespoke <em>Articles of Clothing</em> for <em><b>All men</b></em> of <em>All Ages, Classes</em> and for <em>All Seasons</em>. Enjoy Shopping!</h2>
+    <img src="https://www.pexels.com/photo/man-in-blue-dress-shirt-and-black-formal-suit-1043473/.jpg" alt= "Frere Wears" class="centre">
     <h1>Registration Form</h1>
-    <form class="pure-form">
-        <fieldset>
-        <label for="Full Name">Full Name:</label>
-        <input type="text" name="Full name" id="Full Name" required/> 
+        <form class="pure-form">
+            <fieldset>
+        <label for="First Name">Full Name:</label>
+        <input type="text" name="First name" id="Your First Name" required/> 
+        
+        <br/>
+        <label for="Last name">Last name:</label>
+        <input type="text" name="Last name" id="Your Last Name" required/>
         
         <br/>
         <label for="Email address">Email Address:</label>
@@ -27,7 +94,6 @@
         <input type="password" placeholder="Confirm Password" id="Confirm passowrd" required/>
         <br><br>
         <input type="button" value="Submit"/>
-
         </fieldset>
     </form>
 </body>
