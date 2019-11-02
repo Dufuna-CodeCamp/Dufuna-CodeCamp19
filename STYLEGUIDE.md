@@ -7,6 +7,10 @@ This guide particularly focuses on the formatting and indentation of code blocks
 ## General
 - File names should have no spaces in between. Multi-word file names should be separated with hyphen e.g `my-new-file.txt`, or camel case `myNewFile.txt`
 
+## In this doc
+1. [HTML](#html)
+2. [CSS](#css)
+
 ## HTML 
 - Use correct document type declaration: Always declare the document type as the first line in your document: For example your HTML document should start with `<!doctype html>` or `<!DOCTYPE html>`
 
