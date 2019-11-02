@@ -87,8 +87,7 @@ This is an example of a well-indented table
 </table>
 ```
 
-- Your text editor should make it easy to indent your code ↩
-You could press tab or the space bar every single time you want to indent your code, but you shouldn't have to do that. Fortunately, good text editors help you out when it comes to indenting.
+- Your text editor should make it easy to indent your code. You could press tab or the space bar to indent your code. Fortunately, good text editors help you out when it comes to indenting.
 
 - Use lowercase attribute names
 ### Bad
