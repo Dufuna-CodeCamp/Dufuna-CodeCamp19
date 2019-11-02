@@ -1,0 +1,23 @@
+.title {
+    color: brown;
+}
+
+p {
+    background-color: cyan;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+form{
+    background-color: #ffffff;
+    align-content: center;
+}
+fieldset{
+    text-align: center;
+    margin: auto;
+    border-radius: 55px;
+    width: 250px;
+    border-color: purple;
+}
