@@ -1,5 +1,5 @@
 # Dufuna Coding Styleguide 📜
-
+[TOC]
 This Styleguide explains the guidelines to follow when writing code and submitting pull requests to this repository.
 
 This guide particularly focuses on the formatting and indentation of code blocks. Good indentation makes your code readable and makes it easy to spot errors in the code.
@@ -17,19 +17,19 @@ This guide particularly focuses on the formatting and indentation of code blocks
 - Use lowercase element names
 HTML5 allows mixing uppercase and lowercase letters in element names, but lowercase tags look cleaner
     ### Bad
-    ```
+    ```html
     <SECTION>
         <p>This is a paragraph.</p>
     </SECTION>
     ```
-    ```
+    ```html
     <Section>
         <p>This is a paragraph.</p>
     </SECTION>
     ```
 
     ### Good
-    ```
+    ```html
     <section>
         <p>This is a paragraph.</p>
     </section>
@@ -37,13 +37,13 @@ HTML5 allows mixing uppercase and lowercase letters in element names, but lowerc
 
 - Code within tags should be well indented.
     ### Bad
-    ```
+    ```html
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     ```
     ### Good
-    ```
+    ```html
     <p> 
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -52,7 +52,7 @@ HTML5 allows mixing uppercase and lowercase letters in element names, but lowerc
     ```
 - Tags on the same level should align properly.
     ### Bad
-    ```
+    ```html
     <ul> 
     <li>Lorem</li> 
     <li>Ipsum</li> 
@@ -61,7 +61,7 @@ HTML5 allows mixing uppercase and lowercase letters in element names, but lowerc
     ```
 
     ### Good
-    ```
+    ```html
     <ul> 
         <li>Lorem</li> 
         <li>Ipsum</li> 
@@ -70,7 +70,7 @@ HTML5 allows mixing uppercase and lowercase letters in element names, but lowerc
     ```
 
 - This is an example of a well-indented table
-    ```
+    ```html
     <table> 
         <tr> 
             <td> 
@@ -95,12 +95,12 @@ HTML5 allows mixing uppercase and lowercase letters in element names, but lowerc
 
 - Use lowercase attribute names
     ### Bad
-    ```
+    ```html
     <div CLASS="menu">
     ```
 
     ### Good
-    ```
+    ```html
     <div class="menu">
     ```
 
@@ -108,11 +108,11 @@ HTML5 allows mixing uppercase and lowercase letters in element names, but lowerc
 ## CSS
 - Use lowercase file names
 - Use simple syntax for linking to style sheets
-    ```
+    ```html
     <link rel="stylesheet" href="styles.css">
     ```
 - Long rules should be written over multiple lines:
-    ```
+    ```css
     body {
         background-color: lightgrey;
         font-family: "Arial Black", Helvetica, sans-serif;
