@@ -127,7 +127,7 @@ HTML5 allows mixing uppercase and lowercase letters in element names, but lowerc
 - Only use quotes around values if the value contains spaces
 - Place the closing bracket on a new line, without leading spaces
 - Avoid lines over 80 characters
-
+- Avoid spaces in rule names
 
 Adapted from [this blog](https://www.granneman.com/webdev/coding/formatting-and-indenting-your-html)
 and [W3Schools](https://www.w3schools.com/HTML/html5_syntax.asp)
