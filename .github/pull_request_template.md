@@ -4,6 +4,4 @@
 <!-- Add as many lines as needed to describe what you worked on -->
 I <clear and concise explanation>
 I <clear and concise explanation>
-
-
 <!-- This is a template / guide, please make sure you remove the placeholders (text between and including <> if not needed) -->
