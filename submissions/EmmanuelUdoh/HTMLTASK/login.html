@@ -3,56 +3,85 @@
     <head>
         <meta charset="utf-8">
         <title>Kimaj: for Electronics, Phones, Computers, Fashion </title>
-        <link href="C:\Users\Emmanuel pc\Desktop\Dufuna-CodeCamp19\submissions\EmmanuelUdoh\HTMLTASK\style.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
        <h1>Kimaj</h1>
     
-       <b> <p> Kimaj is a market place which specializes in the sales of electronic gadgets phones, computers. Fashion for both men and women. kids are not left out of this market place.
+       <b><p> Kimaj is a market place that is into the sales of electronic gadgets phones, computers, clothings for both men and women. kids are not left out here.
                 We offer the best to our customers round the clock.<br></p>
-            <p> Kimaj! "we do business right". </p>
-            <p> Do well to sign up.</p><b>
+          <p> Kimaj! "we do business right". </p>
+          <p> Do well to sign up.</p>
+
         <h2>Create An Account</h2>
         <hr>
         <form method="POST" action="login.php">
             <fieldset>
-            <b>First Name:</b><br>
-            <input type="text" placeholder="Enter firstname" name="" />
-            <br>
-            <br>
-            
-            <b>Last Name:</b><br>
-            <input type="text" placeholder="Enter lastname" name="" />
-            <br>
-            <br>
+                <div class="container">
+                    <div>
+                        <label for="firstname">
+                            <b>First Name</b></label><br>
+                        <input type="text" size="65" placeholder="  Enter First Name" name="" />
+                        <br><br>
+                    </div>
+                   
 
-            <b> Email:</b><br>
-            <input type="text" placeholder="Enter email" name=""/>
-            <br>
-            <br>
-            
-            <b>Phone Number:</b><br>
-            <input type="text" placeholder="Enter phone" name=""/>
-            <br>
-            <br>
-            
-            <b>Password:</b> &emsp;
-            <input type="checkbox" name="password" id="show" value="show">
-            <label for="show">show</label> <br>
-            <input type="password" placeholder="Enter password" name="pwd">
-            <br>
-            <br>
-            <p><input type="checkbox" name="Agree to terms and conditions" id="show" value="show">
-                By accepting to create an account,<br> you agree to our terms and conditions</p>
-            
-            <input type="Submit" value="Create an account" name=""> <br>
-        
+                    <div>
+                        <label for="lastname">
+                            <b>Last Name</b></label><br>
+                        <input type="text" size="65" placeholder="  Enter Last Name" name="" />
+                        <br><br>
+                     </div>
+                    
+                   
+                    <div>
+                        <label for="email">
+                            <b> Email</b></label><br>
+                        <input type="text" size="65" placeholder="  Enter Email" name="" />
+                        <br><br>
+                    </div>
+                    
+                   
+                    <div>
+                        <label for="phone number">
+                           <b>Phone</b></label><br>
+                        <input type="text" size="65" placeholder="  Enter phone number" name="" />
+                        <br><br>
+                    </div>
 
-            <h4> Or </h4>
-            <input type="submit"  value="Create account with Facebook" name=""> <br>
-            <br>
-            <input type="submit" value="Create account with Google" name=""> <br>
-            <p>Already have an account? &nbsp; <input type="submit" value=" Sign in" name=""></p><br>
+
+                    <div>
+                        <label for="password">
+                            <b>Password</b></label>  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; <input type="checkbox" onclick="myFunction()">Show Password
+                        <input type="password" size="65" placeholder="  Enter password" name="pwd">
+                        
+
+                    </div>
+
+                    <div>
+                        <p><input type="checkbox" name="Agree to terms and conditions" id="show" value="show">
+                            By accepting to create an account,<br> you agree to our <a href="#" style="color:dodgerblue">terms and conditions</a></p>
+                    </div>
+
+                    <div>
+                        <input class="green-btn" type="Submit" size="65" value="Create an account" name=""> <br>
+                    </div>
+                    
+                    <h3> OR </h3>
+
+                    <div>
+                        <button class="social facebook">Register with Facebook</button> <br>
+                        <br>
+                    </div> 
+                    
+                    <div>
+                        <button class="social google">Register with Google</button> <br>
+                    </div> 
+                    
+                    <p>Already have an account? &nbsp; <a href="#" style="color:forestgreen">sign in</a></p>
+
+                </div>
+            
             </fieldset>
     
         </form>
