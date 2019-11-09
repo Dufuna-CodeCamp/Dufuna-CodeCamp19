@@ -4,7 +4,7 @@ body{
 fieldset{
     width: 50%;
     padding: 10px;
-    border: 1px solid #f5f3f3
+    border: 1px solid #f5f3f3;
     margin-top: 5px;
     margin-bottom: 15px;
     background-color:pink;
@@ -32,4 +32,3 @@ input[type="checkbox"]{
     margin-bottom: 8px;
 
 }
-label
