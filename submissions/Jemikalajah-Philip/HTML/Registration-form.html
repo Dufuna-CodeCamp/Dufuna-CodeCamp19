@@ -2,111 +2,102 @@
 <html lang="en">
 <head>
     <title>Registration Form</title>
-<link rel="stylesheet" href="Registration.css">
+    <link rel="stylesheet" href="Registration.css">
 </head>
 <body>
-    
-    <h1 align="left">
-        <img src="Logo.png" alt="Logo" class="logo" width="100px" height="150px"/>
-        <button type="button" class="btnhome" ><a href="#">Home</a>
-        <button type="button" class="btncart" ><a href="#">Cart</a>
-        <button type="button" class="btnlogin" ><a href="#">Login</a>
-        <button type="button" class="btnhelp" ><a href="#">Help</a>
-        <button type="button" class="btncont" >Contact Us</button><a href="#"></a>
-        <div class="section2">
-            <input type="text" placeholder="search" class="txtsrch"/><button type="button" class="btnsrch">Search</button>
-        </div>
+    <div class="main">
+            <div class="topbar">
         
-    </h1>
-    <h2>
-        <center>
-        CREATE ACCOUNT
-        </center>
-     
-    </h2>
-<center>
-    <form>
-        <center>
-        <table>
-       <tr>
-           <td>
-              First Name :
-           </td>
-           <td>
-               <input type="text" placeholder="First Name" name="">
-           </td>
-       </tr> 
-       <tr>
-            <td>
-               Last Name :
-            </td>
-            <td>
-                <input type="text" placeholder="Last Name" name="">
-            </td>
-        </tr> 
-       <tr>
-           <td>
-               Password :
-           </td>
-           <td>
-               <input type="Password" placeholder="Password" name="">
-           </td>
-       </tr>
-       <tr>
-           <td>
-               Gender :
-           </td>
-           <td>
-               <input type="radio" name="Gender">Male
-               <input type="radio" name="Gender">Female
-           </td>
-       </tr>
-       <tr>
-           <td>
-               Email :
-           </td>
-           <td>
-               <input type="mail" placeholder="Email" name="">
-           </td>
-       </tr>
-       <tr>
-           <td>
-               Phone no. :
-           </td>
-            <td>
-                <select>
-                    <option>+234</option>
-                    <option>+974</option>
-                    <option>+977</option>
-                    <option>+225</option>
-                    <option>+232</option>
-                </select>
-                <input type="phone" placeholder="0803*******" name="">
-            </td>
-       </tr>
-       <tr>
-            <td align="right">
-                <input type="checkbox" name="">I want to receive up4naija newsletters
-            </td>
-        </tr>
-        <tr>
-             <td>
-                <input type="checkbox" name="">I agree to the terms and condition
-             </td>
-        </tr>
-       <tr>
-           <td>
-               <input type="submit" value="CREATE ACCOUNT" name="">
-           </td>
-            <td>
-                <button type="button" class="btnface" ><a href = "https://facebook.com" target="_blank">Connect with Facebook </a>
-            </td>
-        </tr>
-    </table>
-    </center>
-</form>
-</center>
-<h3>
+            </div>
+            <div class="social_icon">
+                <div class="container">
+                    <div class="icon">
+                        <a href="https://facebook.com"><img src="icon/facebook.png" width="30px" height="30px"></a>
+                        <a href="https://twitter.com"><img src="icon/twitter.png" width="30px" height="30px"></a>
+                        <a href="https://gmail.com"><img src="icon/gmail.jpg" width="30px" height="30px"></a>
+                        <a href="https://instagram.com"><img src="icon/instagram.jpg" width="30px" height="30px"></a> 
+                    </div>
+                    <div class="header_right">
+                    <div class="login_register_btn">
+                        <a href="#">Login /</a>
+                        <a href="#">Register</a>
+                    </div>
+                    <div class="cart_btn">
+                        <img src="icon/cart.png" width="40px" height="40px">
+                        <span>cart (0)</span>
+                    </div>
+                    </div>
+                    <div class="header">
+                        <div class="container">
+                            <div class="logo">
+                                <img src="icon/logo.png" width="80px" height="80px">
+                            </div>
+                            <div class="navbar">
+                                <a href="#">Home</a>
+                                <a href="#">Help</a>
+                                <a href="#">Contact</a>
+                                <a href="#">Men</a>
+                                <a href="#">Women</a>
+                               <a href="#">Baby & Kids</a>
+                            </div>
+                        <div class="container">
+                            <input type="text" placeholder="Search For Products" class="txtsrch"/><button type="button" class="btnsrch">Search</button>
+                        </div>
+                        <h2 class = "hero">
+        
+                                CREATE AN ACCOUNT  
+                             
+                            </h2>
+                            <form>
+                                    <input class="Fname" type="text" placeholder="First Name" name="">
+                                    <input class="Fname" type="text" placeholder="Last Name" name="">
+                                    <input class="Fname" type="Password" placeholder="Password" name="">
+                                    <input class="Fname" type="mail" placeholder="Email" name="">
+                                <div class="gend">
+                                    <label>
+                                        Gender:
+                                    </label>
+                                    <input type="radio" name="Gender">Male
+                                    <input type="radio" name="Gender">Female
+                                </div>
+                                 <div class="phn">
+                                     <label>
+                                         Phone No. :
+                                     </label>
+                                    <select>
+                                        <option>+234</option>
+                                    </select>
+                                     <input  type="phone" placeholder="0803*******" name="">
+                                 </div>
+                            <div class="container1">
+                                <div>
+                                    <input class="check1" type="checkbox" value="test">I want to receive up4naija newsletters
+                                </div>
+                                <div>
+                                    <input  class="check1" type="checkbox" value="test">I agree to the terms and conditions
+                                </div>
+                            </div> 
+                            <div >
+                                    <button type="button"  class="btnsub">Submit</button><a href="#"></a>
+                                    <button type="button" class="btnsub" ><a href = "https://facebook.com" target="_blank">Connect with Facebook </a>
+                            </div>
+                            <div class="login">
+                                already have an account?<a href="#">Login</a>
+
+                            </div>
+                        </form>
+                           
+                    </div>    
+                </div>
+                
+           
+            </div>
+            
+        
+        
+        </div>
+
+<h3 class="foot">
         Up4Naija is a new e-commerce platform, with efficient and simple access to buy the best products around  Nigeria. 
 </h3>
 

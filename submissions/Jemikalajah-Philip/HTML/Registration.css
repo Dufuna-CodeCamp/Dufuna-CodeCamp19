@@ -1,116 +1,155 @@
 *
-{
-    margin: 0px;
+{   margin: 0px;
     padding: 0px;
-}
-body
-{
-    background-color: rgb(255, 0, 55);
-    font-family: sans-serif;
-}
-img
-{
-    margin: 5px 5px;
-    object-fit: scale-down;
-    padding-left: 1%;
 
 }
-form
-{
-    margin-top: 2%;
-    background-color white;
-    font-family: sans-serif;
-    text-align: center;
-    width: 600px;
-    height: 500px;
-    font-size: large;
-    line-height: 220%;
-
+.main{width: 100%;
+    height: auto;
+    background-color:rgba(0, 255, 234, 0.404);;
+    min-height: 1000px;
+    margin: 0 auto;
 }
-h2
-{
-    margin-top: 5%;
-    font-size: x-large;
-    font-style: inherit;
+.container{width: 1000px;
+    height: auto;
+    min-height: 150px;
+    margin: 0 auto;
 }
-.txtsrch
-{
-    margin-left: 20%;
+.topbar{width: 100%;
+    height: 4px;
+    background-color: #fcc508;
+}
+.social_icon{width: 100%;
+    height: 33px;
+    background-color: #2a2b2c;
+    float: left;
+}
+.icon{width: 150px;
+    height: 33px;
+    padding-top: 3px;
+    float: left;
+}
+.login_register_btn{ width: 150px;
+    height: 33px;
+    float: left;
+}
+.header_right{ width: 300px;
+    height: auto;
+    float: right;
+}
+.login_register_btn a{ display: block;
+    float: left;
+    color: white;
+    text-decoration: none;
+    line-height: 33px;
+    width: 50px;
+}
+.cart_btn{width: 100px;
+    height: 50px;
+    background-color: #fcc508;
+    float: right;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.cart_btn img{padding: 6px 4px;
+    float: left;
+}
+.cart_btn span{line-height: 50px;
+    height: 50px;
+    color: #cc3333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.header{width: 100%;
+    height: 120px;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo{width:200px;
+    height: 0px;
+    float: left;
+}
+.navbar{width: 1000px;
+    float: left;
+    text-align: right;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.navbar a{display: inline-block;
+    color: black;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.txtsrch{margin-left: 20%;
     margin-top: 2%;
-    width: 50vw;
+    width: 700px;
     height: 5vh;
     border: 1px ridge #d5d5e6;
+    display: inline-block;
 }
-
 .txtsrch[placeholder]
-{
-    padding-left: 1%;
+{   padding-left: 1%;
 }
-.btnsrch
-{
-    width: 5vw;
+.btnsrch{ width: 5vw;
     height: 5vh;
     margin-top: 2%;
     background-color: #19e5e5;
     border:0px;
+    padding: 0 10px;
+    font-weight: bold;
 }
-.btnhome
-{
-    width: 5vw;
-    height: 4vh;
-    margin-top: 1%;
+form{ margin-left: 200px;
+    border: 0.05px solid ;
+    background-color: transparent;
+     font-family: sans-serif;
+    text-align: center;
+    width: 600px;
+    height: 550px;
+    font-size: large;
+    line-height: 280%;
+
+}
+.foot{ font-size: medium;
+    margin-top: 85%;
+    text-align: center;
+}
+
+.hero {text-align:center;
+}
+.btnsub{border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
     background-color: #19e5e5;
-    border:0px;
-    position: absolute;
-    top: 50px;
-    right: 300px;
+    display: block;
+    margin-left: 15%;
+    line-height: 100%;
+    margin-top: 7%;
+    width: 400px;
 }
-.btncart
-{
-    width: 5vw;
-    height: 4vh;
-    margin-top: 1%;
-    background-color: #19e5e5;
-    border:0px;
-    position: absolute;
-    top: 50px;
-    right: 200px;
+.container1{width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    
 }
-.btnlogin
-{
-    width: 5vw;
-    height: 4vh;
-    margin-top: 1%;
-    background-color: #19e5e5;
-    border:0px;
-    position: absolute;
-    top: 50px;
-    right: 100px;
+.check1{height: 40px;
+    margin-right;: 50%;
+    background-color: transparent;
+    border: 1px thin #ffffff;
 }
-.btnhelp
+[type="checkbox"]
 {
-    width: 5vw;
-    height: 3vh;
-    margin-top: 1%;
-    background-color: #19e5e5;
-    border:0px;
-    position: absolute;
-    top: 5px;
-    right: 300px;
+    vertical-align: middle;
 }
-.btncont
-{
-    width: 6vw;
-    height: 3vh;
-    margin-top: 1%;
-    background-color: #19e5e5;
-    border:0px;
-    position: absolute;
-    top: 5px;
-    right: 200px;
+.gend{ text-align: center;
+   
 }
-h3
-{
-    font-size: medium;
-    margin-bottom: 2%;
+.Fname{background-color: transparent;
+    border-style: none;
+   border-bottom: 1px solid rgb(0, 5, 0);
+    width: 450px;
+    height: 30px;
+}
+.phn{ width: 450px;
+    margin-left: 15%;
 }
