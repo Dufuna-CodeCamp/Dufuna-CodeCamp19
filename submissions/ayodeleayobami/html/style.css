@@ -1,0 +1,20 @@
+
+body{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #fff;
+	background-color:green;
+	padding: 45px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
