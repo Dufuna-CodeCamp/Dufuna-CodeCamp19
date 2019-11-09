@@ -1,0 +1,112 @@
+.signupbox {
+    text-align: center;
+    text-size-adjust: 100px;
+    border: 1px solid red;
+    margin-left: 500px;    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(235, 236, 226);
+    box-sizing: border-box;
+    display: inline-block;
+    width: 400px; 
+}        
+.head {
+    background-color: rgba(252, 160, 23, 0.8);
+    display: inline-table;
+    margin: auto;
+    padding: 5px;    
+    width: 100%;    
+    box-sizing: border-box;
+    color: white;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.dropbtn {    
+    background-color: rgb(17, 17, 2);
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-ctn {
+    display: none;
+    position: absolute;
+    background-color: rgb(192, 193, 201);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-ctn a {
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-ctn a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-ctn {
+    display: block;
+} 
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.create {
+    background-color: rgb(255, 255, 255);;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);    
+}
+input[type=text], input[type=password] {
+width: 80%;
+padding: 10px 15px;
+margin: 10px 0;
+border: 1px ridge red;
+border-radius: 5px;
+}
+input[type=submit]{
+    background-color: rgb(0, 175, 0);
+    padding: 10px;
+    border: 1px ridge red;
+    border-radius: 5px;
+    margin-bottom: 10px ;
+    width: 70%;
+    color: honeydew;
+}
+.img1 {
+    width: 260px;
+    height: 150px;   
+}
+/*body {
+    background: rgb(219, 220, 231);
+}*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 295px;
+    background-color: rgb(229, 226, 226);
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flex-item {
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 130px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-align: center;
+    border-right: 1px ridge rgba(43, 42, 46, 0.5);
+}
