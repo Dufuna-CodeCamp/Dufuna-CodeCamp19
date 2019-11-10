@@ -2,8 +2,9 @@
     color: brown;
 }
 
-p {
+.details {
     background-color: cyan;
+    text-align: center;
 }
 
 h1{
@@ -17,7 +18,7 @@ form{
 fieldset{
     text-align: center;
     margin: auto;
-    border-radius: 55px;
+    border-radius: 25px;
     width: 250px;
     border-color: purple;
 }
