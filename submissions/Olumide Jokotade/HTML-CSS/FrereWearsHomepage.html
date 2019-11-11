@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {background-color: whitesmoke; margin: 0pc; font-family: Arial, Helvetica, sans-serif;}
+                h1   {color: tomato;}
+                h2   {color: teal;}
+                p    { text-align: center; color: red;}
+                p:hover {background-color: whitesmoke;}
+                h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-style: normal; 
+  font-stretch: unset; 
+  font-weight: bold;
+}
+h2 {
+    text-align: center;
+}
+h4 {color: tomato;background-color: wheat;}
+* {box-sizing: boder-box}
+.topnav {overflow: hidden;
+  background-color:gray}
+  .topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;}
+  .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 9px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 19px 15px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background:grey;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.topnav .search-container button:hover {
+  background: black;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+h3 {color: hotpink; text-align: center; 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: lighter;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+::-webkit-scrollbar {width: 15px;}
+::-webkit-scrollbar-track {inset: 5px; color:grey; border-radius: 10px;}
+::-webkit-scrollbar-thumb {background: hotpink; border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover {background: indianred;}
+div {align-items: center;}
+.row {
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.container {
+  position: relative;
+  width: 50%
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: honeydew;}
+  address{text-align: right;color: black;}
+  address:hover {background: lightcoral;}
+
+ </style>
+        <title>Frere Wears</title>
+    </head>
+    <body>
+        <h1>Welcome to Frere Wears</h1>
+        <h3><i>The home of Classic, Stylish and Bespoke Articles of Clothing for All men of All Ages, Classes and for All Seasons. Gentlemen, shall we?</i></h3>
+        <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About us</a>
+                <a href="#contact">Contact us</a>
+                <a href="New Arrivals.html">New Arrivals</a> 
+                <a href="Registration.html">Create Account</a>
+                <a href="Login.html">Login</a>
+                <div class="search-container">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div> 
+              <hr>
+              <ul>
+                    <li> <h4><a href="#Categories">Categories</a></h4></li>
+                    <li><a href="#Shirts">Shirts</a></li>
+                    <li><a href="#Turtlenecks">Turtlenecks</a></li>
+                    <li><a href="Pants">Pants and Shorts</a></li>
+                    <li><a href="Ties">Bespoke Ties</a></li>
+                    <li><a href="Tees">Tees</a></li>
+                    <li><a href="Footwears">Footwears</a></li>
+                    <li><a href="Ankara Designs">Ankara Designs</a></li>
+                    <li><a href="Underwears">Underwears</a></li>
+                    <li><a href="Jeans">Jeans</a></li>
+                  </ul>
+                  <hr>
+                  <div class="row">
+                        <div class="column" class="container">
+                          <img 
+src="C:\Users\Jokotade\Desktop\Dufuna-CodeCamp19\submissions\Olumide Jokotade\HTML-CSS/Image10.jpg" 
+alt="Footwears" style="width:50%">
+<button class="btn"><a href="Turtlenecks.html">Turtlenecks</a></button>
+ </div>
+ <div class="column">
+  <img src="C:\Users\Jokotade\Desktop\Dufuna-CodeCamp19\submissions\Olumide Jokotade\HTML-CSS/Image1.jpg" 
+  style="width:50%">
+  <button class="btn"><a href="Blazers.html">Blazers and Suits</a></button>
+</div>
+<div class="column">
+ <img src="C:\Users\Jokotade\Desktop\Dufuna-CodeCamp19\submissions\Olumide Jokotade\HTML-CSS/Image2.jpg"
+  style="width:70%">
+  <button class="btn"><a href="Shorts.html">Shorts and Tees</a></button>
+ </div>
+                  </div>
+                  <div class="row">
+ <div class="column">
+        <img src="C:\Users\Jokotade\Desktop\Dufuna-CodeCamp19\submissions\Olumide Jokotade\HTML-CSS/Image11.jpg"
+         style="width:70%">
+         <button class="btn"><a href="Ties.html">Bespoke Ties</a></button>
+         </div>
+         <div class="column">
+                <img src="C:\Users\Jokotade\Desktop\Dufuna-CodeCamp19\submissions\Olumide Jokotade\HTML-CSS/Image5.jpg"
+                 style="width:50%">
+                 <button class="btn"><a href="Underwears.html">Underwears</a></button>
+                 </div>
+                 <div class="column">
+                        <img src="C:\Users\Jokotade\Desktop\Dufuna-CodeCamp19\submissions\Olumide Jokotade\HTML-CSS/Image9.jpg"
+                         style="width:70%">
+                         <button class="btn"><a href="jeans.html">Jeans</a></button>
+                         </div>
+         </div>
+         <hr>
+         <a href="newsletter.html" class="Button">Sign Up for Newsletter</a> <br><br>
+         <a href="Terms.html" class="Button">Terms and Condition</a> <br><br>
+         <address>
+Contact Us: <a href="mailto:Feedback@frerewears.com.ng">Feedback@frerewears.com.ng</a> <br>
+Frere Wears Store <br>
+41, Federal Shopping Mall <br>
+Abeokuta, Ogun State, <br>
+Nigeria.
+         </address> <br><br>
+         <p>  Copyright &copy; <a href="www.Frerewears.com.ng">www.Frerewears.com.ng</a></p>
+
+        
+        
+
+    </body>
