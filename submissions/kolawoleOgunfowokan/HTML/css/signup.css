@@ -1,16 +1,18 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: #e7edf3;
 }
+
 .logo {
     display: block;
     margin: auto;
     width: 120px;
 }
 
-.signup-form{
+.signup-form {
     display: block;
     margin: auto;
     width: 420px;
@@ -27,12 +29,13 @@ body {
     background:  white;
     border: 1px solid #cccccc;
 }
+
 .signup-form-label {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.button{
+.button {
     width: 80%;
     padding: 10px;
     margin: 20px;
@@ -42,8 +45,7 @@ body {
     cursor: pointer;
 }
 
-
-.button:hover{
+.button:hover {
     background-color: #398d39;
 }
 
@@ -57,13 +59,16 @@ body {
     color: #c74343;
     font-size: 20px;
 }
+
 .login:hover {
     background-color: magenta;
     
 }
-.login:active{
+
+.login:active {
     background-color: #398d39; 
 }
+
 .login-link {
     text-decoration: none;
     color: #d62da3;
@@ -74,15 +79,17 @@ body {
     color: #fff;
 }
 
-.text{
+.text {
     text-align: center;
     margin-top: 10px;
 }
-.message{
+
+.message {
     font-weight: bold;
     font-size: 30px;
     margin-top: 20px;
 }
+
 .terms {
     font-size: 15px;
     text-align: center;
