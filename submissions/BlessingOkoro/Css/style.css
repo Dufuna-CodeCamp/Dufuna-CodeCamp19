@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: whitesmoke;
+    color:#3e64ff;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    
+}
+
+.divide{
+    margin: 1% 3% 0 3%;
+    padding: 0 3% 0;
+  /*  border: 1px solid; */
+}
+
+.inner-divide {
+    display:flex;
+    align-content: stretch;
+    padding-top: 5px;
+    margin-top: 2px;
+}
+
+.divide1{
+    padding: 22px;
+}
+
+
+
+/*---------HEADER  AND HEADINGS---------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Images/combo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.firstH1{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size:500%;
+    word-spacing: 3px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #b2fcff;
+}
+.text-box {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 350px 20px 200px 20px;
+    font-weight: 300;
+    text-align: center
+}
+
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 50px;
+    color: #5edfff;
+    
+
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #5edfff;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+h3 {
+    font-size: 100%;
+    margin-bottom: 20%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5edfff;
+    
+}
+
+/* ------  NAV-------*/
+
+.main-nav2{
+    float: left;
+    list-style: none;
+    
+}
+.main-nav2 ul{
+    color: aliceblue;
+}
+
+.main-nav2 li {
+    display: inline-block;
+    margin: 155px;
+    margin-top: 45px;
+    
+}
+.main-nav2 li a {
+    margin-left:30px;
+    padding-top: 30px;
+   
+}
+
+/* ------PARAGRPHS-------*/
+.first-paragraph {
+    line-height: 145% ;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+.second-paragraph {
+    display: inline-block;
+    line-height: 145%;
+    text-align: justify;
+    padding: 2px 0 2px 0
+}
+
+/*------SIGN UP on registeration page---------*/
+
+
+.body{
+    background-image: url(images/combo.jpg);
+}
+
+.register{
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+    padding-top: 100%;
+    /*border: 1px solid black;*/
+    color:#3e64ff;
+    background-color: aliceblue;
+}
+
+.contact-form {
+    width: 50%;
+   /*border: 1px solid black;*/
+    margin: 10% 0 5% 25%;
+    padding: 1% 0 1% 10%;
+    background-color: rgba(240, 248, 255, 0.9);
+    
+    
+}
+
+.contact-form input {
+    width: 70%;
+    /* border: 1px solid black;*/
+    padding: 1.5% 5% 1.5% 3%;
+    margin: 1% 1% 1% 1%;
+    border-radius: 3px;
+    font: large bolder;
+    border: 2px solid #3e64ff;
+
+}
+
+.contact-form input:hover:invalid {
+    border: 2px solid turquoise;
+    box-shadow: 2px 2px 5px rebeccapurple;
+}
+
+
+textarea {
+    width: 70%;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    margin: 1% 1% 1% 1%;
+    font: large bolder;
+    border: 2px solid #3e64ff;
+}
+
+textarea:focus:invalid{
+    border: 2px solid turquoise;
+    box-shadow: 2px 2px 5px rebeccapurple;
+}
+
+.radio {
+    width: 50%;
+    float: left;
+    margin-left: 1%;
+    padding-left: 1%;
+    padding-right: 3%;
+    border: 2px solid #3e64ff;
+    
+}
+
+.button {
+    padding: 2%;
+    margin-left: 25%;
+}
+
+.contact-form div button{
+    padding: 1.5% 0.5% 1.5% 0.5% ;
+    width: 30%;
+    background-color: #5edfff ;
+    color: blue ;
+    border-radius: 25%;
+    border: 2px solid white;
+    font: bolder large;
+    box-shadow: 2px 2px 5px turquoise;
+    
+}
+
+.contact-form div button:hover {
+    box-shadow: 2px 2px 5px rebeccapurple;
+    background-color: #3e64ff;
+}
+
+.button1 button {
+    padding: 1% 1%;
+    margin: 0 2% 0 86%;
+    background-color: #5edfff ;
+    color: blue ;
+    border-radius: 25%;
+    border: 2px solid white;
+    font: large;
+    box-shadow: 2px 2px 5px turquoise;
+
+}
+.button1 button:hover {
+    box-shadow: inset 2px 2px 5px rebeccapurple;
+    background-color: #3e64ff;
+    color: #5edfff ;
+    
+}
+
+.account{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 2%;
+    line-height: 35px;
+     /*border: 1px solid black;*/
+     background-color: rgba(240, 248, 255, 0.9);
+}
+
