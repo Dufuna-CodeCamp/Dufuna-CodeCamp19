@@ -9,7 +9,8 @@
     box-sizing: border-box;
     display: inline-block;
     width: 400px; 
-}        
+}   
+
 .head {
     background-color: rgba(252, 160, 23, 0.8);
    display: inline-table;
@@ -40,11 +41,12 @@
     cursor: pointer;
     
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
-    
 }
+
 .dropdown-ctn {
     display: none;
     position: absolute;
@@ -52,12 +54,14 @@
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+
 .dropdown-ctn a {
     color: black;
     padding: 12px 15px;
     text-decoration: none;
     display: block;
 }
+
 .dropdown-ctn a:hover {background-color: #f1f1f1;}
 .dropdown:hover .dropdown-ctn {
     display: block;
@@ -65,19 +69,22 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
 .create {
     background-color: rgb(255, 255, 255);;
     text-align: center;
     padding: 10px;
     color: rgb(0, 0, 0);    
 }
+
 input[type=text], input[type=password] {
-width: 80%;
-padding: 10px 15px;
-margin: 10px 0;
-border: 1px ridge red;
-border-radius: 5px;
+    width: 80%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px ridge red;
+    border-radius: 5px;
 }
+
 input[type=submit]{
     background-color: rgb(0, 175, 0);
     padding: 10px;
@@ -87,10 +94,12 @@ input[type=submit]{
     width: 70%;
     color: honeydew;
 }
+
 .img1 {
     width: 100%;
     height: 250px;   
 }
+
 .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -103,7 +112,6 @@ input[type=submit]{
    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     align-content: center;
-    
 }
 
 .flex-item {
@@ -117,6 +125,7 @@ input[type=submit]{
     text-align: center;
     border-right: 1px ridge rgba(43, 42, 46, 0.5);
 }
+
 .dealday {
     text-align: center; 
     font-family:cursive; 
