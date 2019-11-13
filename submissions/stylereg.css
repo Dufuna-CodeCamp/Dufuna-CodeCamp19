@@ -1,0 +1,26 @@
+	
+h2{
+	color: red;
+	text-align:center;
+	}
+h4{
+	color: black;
+	text-align:center;
+	}
+*{
+	box-sizing: border-box;
+}
+form{
+	
+	color: blue;
+	text-align: center;
+	margin-left:10px;
+	width: 200;
+		}
+fieldset{
+	border-color:white;
+	border-radius:55px;
+	margin:auto;
+	width:250px;
+	
+	}
