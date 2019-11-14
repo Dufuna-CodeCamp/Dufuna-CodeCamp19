@@ -26,9 +26,19 @@ body {
     position: relative;
 }
 
+.nav-bar {
+    width: 100%;
+    display: flex;
+   align-items: center;
+
+}
+
 .nav-head {
     width: 100%;
-    background-color: /*#bd255f;*/ #6ee4d0;
+    background-color: #6ee4d0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
  .nav-head-list {
@@ -51,6 +61,10 @@ body {
 
 .search {
     margin-right: 20px;
+    width: 600px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .fa-fa-cart {
@@ -279,7 +293,7 @@ body {
     font-size: 16px;
 }
 
-.login-link-fom {
+.login-link-form {
     text-decoration: none;
 }
 
@@ -336,21 +350,14 @@ body {
     color: blue;
 }
 
-.signup-link {
-    text-decoration: none;
-    color: #dd288c;
-}
-
-.signup-link:hover {
-    text-decoration: none;
-    color: #ffff;
+.signup {
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 .signup {
-    font-family: Arial, Helvetica, sans-serif; 
     background-color: #fff;
     border: 1px solid red;
-    color: #e64444;
+    color: #c74343;
     font-size: 20px;
     padding: 10px;
 }
@@ -362,6 +369,11 @@ body {
 
 .signup:active{
     background-color: #398d39; 
+}
+
+.signup-link {
+    text-decoration: none;
+    color: #d62da3;
 }
 
  .question {
