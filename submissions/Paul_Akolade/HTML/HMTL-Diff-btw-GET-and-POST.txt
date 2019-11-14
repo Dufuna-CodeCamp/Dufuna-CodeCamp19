@@ -1,0 +1,18 @@
+QUESTION 1
+- MAIN - It indicates the start of the content area.
+- ARTICLE - Used to display of long paragraph contents.
+- CODE - Used to indicate codes "Computing Langauges".
+- SECTION - Used to mark the start of a new area in the content. 
+	Group common codes in an area together.
+- ASIDE - Used for side bar contents.
+- SVG - Used to put scalable vector graphics into the codes.
+- FOOTER - Used to indicate the footer area of the web page.
+- HEADER - Used to indicate the header area of webpages e.g navigations and menu
+- VIDEO - Used to insert videos into web pages
+- AUDIO - Used to insert audio contents.
+
+2. Get- This is used in form data submission or collections. However whenever it is used
+	data submitted is made visible on the page address filed.
+3. POST - This is used in form data submission or collections. However whenever it is used
+	data entries are not stored in page addresses, bookmarks.
+	
