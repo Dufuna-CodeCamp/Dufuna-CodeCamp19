@@ -93,6 +93,11 @@ body {
     display: inline-block;
 }
 
+.main-menu-sub-list {
+    display: flex;
+    align-items: stretch;
+}
+
 .main-menu-list:hover, .main-menu-sub-list:hover {
     background-color: #969ba5;
 }
@@ -111,7 +116,7 @@ body {
 .main-menu-sub {
     position: absolute;
     background-color: darkgray;
-    width: 50%;
+    width: 20%;
     display: none;
 }
 
