@@ -19,7 +19,6 @@
     width: 100%;    
     box-sizing: border-box;
     color: white;   
-    
 }
 
 .foot {
@@ -39,7 +38,6 @@
     font-size: 15px;
     border: 1px solid white;
     cursor: pointer;
-    
 }
 
 .dropdown {
@@ -62,10 +60,14 @@
     display: block;
 }
 
-.dropdown-ctn a:hover {background-color: #f1f1f1;}
+.dropdown-ctn a:hover {
+    background-color: #f1f1f1;
+}
+
 .dropdown:hover .dropdown-ctn {
     display: block;
 } 
+
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
