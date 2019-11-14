@@ -1,0 +1,280 @@
+/*
+Project - CSS Styles for a lookalike of Konga 
+registration page.
+Author - Paul Akolade
+Date - 3rd November, 2019.
+Inspiration - Femi Olaoye
+Project Instigator - Nifemi
+*/
+
+/* CSS for all elements */ 
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CSS for body */  
+body{
+    background: #f2f2f2;
+}
+
+/* Logo CSS */ 
+img{
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 70%;
+}
+
+/* Registration form header CSS */ 
+.box1{
+    display: block;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    background: #fff;
+    width: 30%;
+    height: auto;
+    margin: 1px auto;
+}
+
+/* Header Tags CSS */ 
+h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+h5{
+    text-align: center;
+}
+
+h6{
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+}
+
+/* registration Box CSS */ 
+.box2{
+    display: block;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    background: #fff;
+    width: 30%;
+    height: auto;
+    margin: 1px auto 20px;
+    padding: 20px;
+}
+
+/* Form CSS*/ 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: #ff0066;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+input[type=button]:hover {
+    background-color: #ff6600;
+}
+
+
+/* Facebook and Google Login */ 
+.login_fb {
+    width: 100%;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.login_fb:hover {
+    background-color: #0066cc;
+}
+
+.login_gl {
+    width: 100%;
+    background-color: #e60000;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 0 0 40px 0 ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.login_gl:hover {
+    background-color: #e60000;
+}
+
+
+/* Chat Box CSS */ 
+.box3{
+    display: block;
+    float: right;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+}
+
+/* Paragraph CSS */ 
+p{
+    display: block;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+}
+
+/* Icon CSS */ 
+.chat_icon{
+    font-size: 70px;
+    color: #ff6600;
+}
+
+/* Media Queries Mobile Responsive CSS */ 
+@media screen and (max-width: 768px) {
+    .box1{
+        width: 70%;
+        height: auto;
+    }
+
+    .box2{
+        width: 70%;
+        height: auto;
+    }
+
+    .box3{
+        display: block;
+        float: right;
+        position: fixed;
+        bottom: 50px;
+        right: 25px;
+    }
+
+    .chat_icon{
+        font-size: 50px;
+        color: #ff6600;
+    }
+
+    p{
+        display: block;
+        float: right;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+    }
+
+    .login_gl{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .login_fb{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    h6{
+        text-align: center;
+        padding: 0px;
+        margin: 5px;
+    }
+    
+}
+
+@media screen and (width: 1024px) {
+    .box1{
+        width: 60%;
+        height: auto;
+    }
+
+    .box2{
+        width: 60%;
+        height: auto;
+    }
+
+    .box3{
+        display: block;
+        float: right;
+        position: fixed;
+        bottom: 50px;
+        right: 25px;
+    }
+
+    .chat_icon{
+        font-size: 50px;
+        color: #ff6600;
+    }
+
+    p{
+        display: block;
+        float: right;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+    }
+
+    .login_gl{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .login_fb{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    h6{
+        text-align: center;
+        padding: 0px;
+        margin: 5px;
+    }
+    
+}
