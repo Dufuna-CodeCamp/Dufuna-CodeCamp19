@@ -302,7 +302,7 @@ body {
 
 .login-form-label {
     font-family:  Arial, Helvetica, sans-serif;
-    font-size:20px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -339,7 +339,11 @@ body {
     align-self: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-} 
+}
+
+.login-history:hover {
+    color: #ff0000;
+}
 
 .google {
     float: right;
@@ -350,7 +354,7 @@ body {
     margin:auto;
     font-size: 20px;
     width: 100%;
-    background-color: #7eb37e;
+    background-color: #0fe7ca;
     color: #ffe;
     border: 1px solid;
     border-radius: 5px;
@@ -358,7 +362,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #43c7cc;
+    background-color: #ee1199;
 }
 
 .login-button:active {
@@ -367,7 +371,14 @@ body {
 
 .forget-password {
     float: right;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.forget-password:hover {
+   color: #ff0000;
+   text-decoration: underline;
 }
 
 .fa-facebook-square {
@@ -399,6 +410,10 @@ body {
 .signup-link {
     text-decoration: none;
     color: #d62da3;
+}
+
+.signup-link:hover {
+    color: #fff;
 }
 
  .question {
@@ -448,14 +463,15 @@ body {
     width: 80%;
     padding: 10px;
     margin: 20px;
-    background-color: #7eb37e;
+    background-color: #0fe7ca;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .signup-button:hover {
-    background-color: #398d39;
+    background-color: #ee1199;
 }
 
 .signup-button:active {
@@ -491,6 +507,7 @@ body {
 .text {
     text-align: center;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .message {
@@ -508,6 +525,7 @@ body {
     background-color: #cad3db;
     width: 100%;
     padding: 10px;
+    font-weight: bold;
 }
 
 
