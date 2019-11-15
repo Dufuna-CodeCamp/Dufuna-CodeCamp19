@@ -1,12 +1,14 @@
-body{
+body {
     background: rgb(250, 244, 244);
-    }
-.he {
+}
+
+.header {
     background-color: white;
     width: 100%;
     height: 100px
 }
-main{
+
+main {
     position: absolute;
     width: 40%;
     height: 120%;
@@ -16,7 +18,8 @@ main{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     border-radius: 6px;
-    }
+}
+
 h1  {
     text-align: center;  
     font-family: Roboto;
@@ -28,12 +31,10 @@ h1  {
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-  
-    }
+}
+
 h2  {
     text-align: center;
-    padding-top: 0px;
-    margin-top: 0px;
     font-style: italic;
     font-weight: normal;
     font-size: 9px;
@@ -42,8 +43,8 @@ h2  {
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
 
-    }
 h3  {
     text-align: center;   
     font-family: Roboto;
@@ -56,10 +57,9 @@ h3  {
     margin-top: 15px;
     margin-bottom: 0px;
     display: block;
+}
 
-    }
-
-.a  {
+.reg  {
     text-align: center;
     color: #B97A7A;
     font-family: Roboto;
@@ -74,8 +74,9 @@ h3  {
     padding-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    }
-.b  {
+}
+
+.fill  {
     text-align: start;
     display: block;
     margin: 25px 0px 10px 45px;
@@ -83,9 +84,9 @@ h3  {
     padding: 0px 0px 0px 10px ;
     width: 80%;
     height: 30px;
-    }
+}
 
-.d  {
+.address  {
     text-align: start;
     display: block;
     margin: 25px 0px 20px 45px;
@@ -93,8 +94,9 @@ h3  {
     border-radius: 3px;
     width: 80%;
     height: 30px;
-    }
-.e {
+}
+
+.note {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -104,28 +106,18 @@ h3  {
     margin-top: 0px;
     margin-bottom:5px ;
     color: #000000;
-    }
-.f {
+}
+
+.submit {
     border: 8px;
     text-align: center;
-    }
-    .g  {
-        text-align: center;  
-        font-family: Roboto;
-        font-style: bold;
-        font-size: 30px;
-        text-align: center;
-        color: rgb(66, 65, 65);
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        }
-        .button{
-            background-color: #E1D6D6;
-            color:black;
-            text-decoration: solid;
-            text-align: center;
-            border-radius: 4px;
-            border-color: #11101070;
-        }
+}
+
+.button {
+    background-color: #E1D6D6;
+    color:black;
+    text-decoration: solid;
+    text-align: center;
+    border-radius: 4px;
+    border-color: #11101070;
+}

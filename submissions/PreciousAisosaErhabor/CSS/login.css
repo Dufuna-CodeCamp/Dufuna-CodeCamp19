@@ -1,10 +1,11 @@
-body{
+body {
     background: rgb(250, 244, 244);
 }
-main{
+
+main {
     position: absolute;
     width: 30%;
-    height: 90%;
+    height: 80%;
     margin-left: 460px;
     margin-top: 27px;
     background: #FCFBFB;
@@ -12,6 +13,7 @@ main{
     box-sizing: border-box;
     border-radius: 6px;
 }
+
 h1  {
     text-align: center;  
     font-family: Roboto;
@@ -24,10 +26,9 @@ h1  {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 h2  {
     text-align: center;
-    padding-top: 0px;
-    margin-top: 0px;
     font-style: italic;
     font-weight: normal;
     font-size: 9px;
@@ -37,6 +38,7 @@ h2  {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
 h3  {
     text-align: center;   
     font-family: Roboto;
@@ -49,32 +51,30 @@ h3  {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.a  {
+
+.email  {
     text-align: start;
-    margin-left: 23px;
-    margin-bottom:20px;
-    margin-top: 100px;
-    
+    margin: 100px 0px 20px 23px;   
     border-radius: 3px;
-    
-    padding: 0px ;
+    padding: 0px 0px 0px 10px;
     width: 310px;
     height: 27px;
 }
-.b  {
+
+.password  {
     text-align: start;
-    margin-left: 23px;
-    margin-bottom: 30px;
-    margin-top: 0px;
+    margin: 0px 0px 30px 23px;
     border-radius: 3px;
-    padding: 0px ;
+    padding: 0px 0px 0px 10px;
     width: 310px;
     height: 27px;
 }
-.c  {
+
+.submit  {
     text-align: center;
-    }
-.d  {
+}
+
+.fpass  {
     text-align: center;
     text-decoration: underline;
     color: black;
@@ -83,27 +83,31 @@ h3  {
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 0;
-}    
-.e  {
+}
+
+.acc  {
     text-align: center;
     color: black;
     font-size: 17px;
     padding-top: 10px;
    
 }
-.f  {
+
+
+.siup  {
     font-size: 15px;
     color: rgb(255, 0, 0);
     text-decoration: underline;
     margin-left: 10px;
-}  
-    .button{
-        background-color: #E1D6D6;
-        color:black;
-        text-decoration: solid;
-        text-align: center;
-        width: 200px;
-        height: 22px;
-        border-radius: 4px;
-        border-color: #11101070;
+}
+
+.button {
+    background-color: #E1D6D6;
+    color:black;
+    text-decoration: solid;
+    text-align: center;
+    width: 200px;
+    height: 22px;
+    border-radius: 4px;
+    border-color: #11101070;
 }
