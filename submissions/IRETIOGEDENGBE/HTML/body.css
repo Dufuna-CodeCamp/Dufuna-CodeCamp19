@@ -1,0 +1,78 @@
+body{
+    background:olivedrab;
+}
+
+header{
+    text-align:center;
+    color:white;
+    padding:16px;
+    font-family:'Rubik';
+    font-weight:500;
+    font-size:28px;
+}
+main{
+    background:rgb(219, 212, 212);
+    height:650px;
+    padding:32px 16px 0;
+    text-align:center;
+}
+h1{
+    margin-top:0;
+    text-align:center;
+    color:black;
+}
+form{
+    font: size 20px;
+    border:2px;
+    width:50px
+    background-color:RGBA
+}
+blockquote{
+    font-size: 25px;
+    color:olivedrab
+}
+input[type=text] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=email] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.signupbox{
+    text-align:center;
+    text-size-adjust:200px;
+    border:1px solid olivedrab;
+    background-color:whitesmoke;
+    box-sizing: border-box;
+    display:inline-block;
+    width:400px;
+}
+button[type=submit1]{
+    background:blue;
+    color:white;
+}
+button[type=submit]{
+    background:rgb(241, 4, 4);
+    color:white;
+}
+h1{
+text-align:center;
+}
