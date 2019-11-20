@@ -26,7 +26,7 @@ header{
     display: inline-block;
 }
 .nav-area li a{
-    color:#fff;
+    color:green;
     text-decoration: none;
     padding: 5px 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
@@ -45,7 +45,7 @@ header{
 }
 .welcome-text h1{
     text-align: center;
-    color: #fff;
+    color: green;
     text-transform: uppercase;
     font-size: 60px;
 }
@@ -57,7 +57,7 @@ header{
     font-size: 14px;
     margin-top: 20px;
     display: inline-block;
-    color: #fff;
+    color: green;
 }
 .welcome-text a:hover{
    background: #fff;
