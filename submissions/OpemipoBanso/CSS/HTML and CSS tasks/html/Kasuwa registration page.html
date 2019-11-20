@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Kasuwa new user</title>
+        <link href="C:\Users\USER\Documents\Kasuwa_files\css\registration-new.css" rel = "stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+    
+
+        <div class="big-header">
+
+            <h1>
+                Welcome to your digital food basket!
+            </h1>
+
+        </div>
+
+        <div class="form-wrapper">
+            <form action="POST">
+                <div class="form-container">
+                        <h2>
+                            Create an account
+                        </h2>
+                        <p>
+                            Your memorable shopping experience is one click away
+                        </p>
+                        <label for="firstname">
+                            Firstname :
+                        </label> <br>
+                        <input type="text" name="firstname" id="firstname" placeholder="Enter your Firstname">
+                        <br>
+
+                        <label for="lastname">
+                            Lastname :
+                        </label> <br>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter your Lastname or Family name">
+
+                        <br/>
+
+                        <label for="email-address">
+                            Email address :
+                        </label><br>
+                        <input type="email" name="email-address" id="email-address" placeholder="Enter your Email address" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+                        <br>
+
+                        <label for="Phone-number">
+                            Phone :
+                        </label><br>
+                        
+                        <input type="text" name="Phone-number" placeholder="Please enter in the format +234 810 0011 2233 "maxlength="10">
+
+                        <br/>
+
+                        <label for="password">
+                            Password :
+                        </label><br>
+                        <input type="password" name="password" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+    
+                        <br/>
+     
+                        <label for="password">
+                            Confirm Password :
+                        </label><br>
+                        <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Input password again">     
+                        
+                        <p>
+                            By creating an account you agree to our 
+                            <a class="white-link" href="#">Terms & Privacy</a>.
+                        </p>
+                        <button type="submit" class="btn registerbtn">
+                            Register
+                        </button>
+                        
+                        <div class="fb-btn btn">
+                            <a class="fb-btn"href="https://www.facebook.com">Signup with facebook</a>
+                        </div> 
+                        <div class="btn gg-btn">
+                            <a class="gg-btn" href="https://www.google.com"></a>Signup with google</a>
+                        </div>
+                        <p>
+                            Already have an account?
+                        </p>
+                        <div class="signin-btn btn">
+                        <a class="signin-btn" href="#">Login</a>
+                        </div>                
+                </div>      
+            </form>       
+        </div>
+        </main>
+
+        
+    </body>
+
+
+
+
+
+
+
+
+</html>
