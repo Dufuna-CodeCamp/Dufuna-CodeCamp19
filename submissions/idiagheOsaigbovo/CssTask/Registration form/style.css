@@ -41,7 +41,55 @@ h1
     text-align: center;
     
 }
-#name
+#firstname
+{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+}
+#lastname
+{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+}
+#mail
+{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+}
+#text
+{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+}
+#pass
 {
     width: 90%;
     padding: 10px;
@@ -65,7 +113,7 @@ h1
     color: #fff;
     background: none;
 }
-#pass
+#
 {
     width: 90%;
     padding: 10px;
