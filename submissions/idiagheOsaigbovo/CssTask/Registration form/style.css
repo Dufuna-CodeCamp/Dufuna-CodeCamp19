@@ -1,0 +1,138 @@
+body
+{  
+    margin: 0;
+    padding: 0;
+    background: url(../../desktop/bt.jpg.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+h1
+{
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0, 5);
+    padding: 20px;
+}
+.clip-upload h2
+{
+    text-align: center;
+    color:burlywood;
+    background: rgba(0, 0, 0, 0, 5);
+    padding: 20px;
+}
+.registration
+{
+    margin: 150px auto;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50,-50);
+    width: 400px;
+    padding: 50px;
+    padding-top: 50px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.8);
+    border-radius: 15px;
+}
+#h2 
+{ 
+    margin: 10px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    
+}
+#name
+{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+}
+#Address
+{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+}
+#pass
+{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+    color: #fff;
+    background: none;  
+}
+#number
+{
+    width: 70%;
+    padding: 8px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: 0;
+    font-family: serif;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+}
+#num
+{
+    padding: 7px 0px;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: 0px;
+    background: none;
+    color: #fff;
+}
+.clip-upload > input
+{
+    display: inline;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+#ma
+{
+    font-family: serif;
+    font-size: 18px;
+    background: none;
+    color: #fff;
+}
+#check
+{
+    font-family: serif;
+    font-size: 18px;
+    background: none;
+    color: #fff;
+}
+#sub
+{
+    width: fit-content;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
