@@ -1,14 +1,11 @@
-html {
+*, *:before, *:after {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 body {
-	font-family: "Cabin", Arial, Geneva, sans-serif; 
+  font-family: "Cabin", Arial, Geneva, sans-serif; 
   background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(63, 63, 149, 0.7)), url(../img/fam_cart.jpg);
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Niconne', cursive;
@@ -151,7 +148,6 @@ footer a {
 .row.col-1-4 {
   margin-top: 3em;
 }
-/* global alignment options */
 .reverse {
   flex-direction: row-reverse;
 }
@@ -161,8 +157,11 @@ footer a {
   display: block;
   margin: 0 auto;
 }
+.mySlides {
+  width:100%;
+}
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 550px) { 
+@media (min-width: 550px) {
   .wrapper {
       width: 97%;
       max-width: 767px;
