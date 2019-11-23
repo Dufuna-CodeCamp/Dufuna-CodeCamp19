@@ -102,7 +102,7 @@ ul.gallery {
   border-radius: 0px 0px 10px 10px;
   width: 100%;
   max-width: 250px;
-  display: block; /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
+  display: block; 
 } 
 .sidebar-secondary {
   border-color: #c80060;
@@ -126,7 +126,6 @@ footer a {
   color: white;
   text-decoration: none;
 }
-/* grid system */
 .row {
   display: flex;
   flex-flow: row wrap;
