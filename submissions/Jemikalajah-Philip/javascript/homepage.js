@@ -12,7 +12,7 @@ var productArray = [
      ["icon/img9.jpeg", "White Polo", "$800"],
      ["icon/img8.jpeg", "chinko Polo", "$460"],
 ];
-function changeImage(){
+function displayMenProduct(){
     for (i = 0; i < productArray.length; i++){
         prodTitle[i].innerHTML = productArray[i][1];
         prodPrice[i].innerHTML = productArray[i][2];
