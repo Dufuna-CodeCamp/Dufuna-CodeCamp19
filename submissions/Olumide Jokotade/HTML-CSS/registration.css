@@ -1,0 +1,54 @@
+   
+                h1 {
+                    text-align: center;
+                  }
+                h2 {
+                      text-align: center;
+                  }
+                h5 { text-align: center;}
+                p  { text-align: center }
+                input[type=text], select {
+                    width: 15%;
+                    padding: 10px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                  }
+                  
+                input[type=number], select {
+                    width: 15%;  
+                    padding: 10px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    font-display: align-self;
+                    border: 1px solid;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                  }
+                  
+                input[type=password], select {
+                    width: 15%;  
+                    padding: 10px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    font-display: align-self;
+                    border: 1px solid;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                  }
+                input[type=button], select {
+                    width: 10%;  
+                    padding: 10px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    font-display: align-self;
+                    border: 1px solid;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                  }
+                form {text-align: center;}

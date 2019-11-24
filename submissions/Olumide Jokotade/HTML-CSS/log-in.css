@@ -1,0 +1,60 @@
+    body {background-color: whitesmoke; font-family: Arial, Helvetica, sans-serif;}
+                    h1   {color: tomato;}
+                    h2   {color: teal;}
+                    p    {color: black;}
+                    .button {
+                        background-color: teal;
+                   border: none;
+                   color: beige;
+                   padding: 10px 20px;
+                   text-align: center;
+                   text-decoration: none;
+                   display: inline-block;
+                   font-size: 16px;
+                   margin: 4px 2px;
+                   border-radius: 50px;
+                   -webkit-transition-duration: 0.4s;
+                   transition-duration: 0.4s;
+                   cursor: pointer;
+                    }
+                    .button:hover {background-color: tomato;}
+                    
+    h1     {text-align: center;}
+    h2     {text-align: center;}
+    h5     { text-align: center;}
+    p      { text-align: center }
+    input  [type=text], select {
+            width: 20%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            
+    
+    input  [type=password], select {
+            width: 20%;  
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            font-display: align-self;
+            border: 1px solid;
+            border-radius: 4px;
+            cursor: pointer;
+            box-sizing: border-box;
+            }
+    input   [type=button], select {
+            width: 10%;  
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            font-display: align-self;
+            border: 1px solid;
+            border-radius: 4px;
+            cursor: pointer;
+            box-sizing: border-box;
+            }
+    form    {text-align: center;}
+    
