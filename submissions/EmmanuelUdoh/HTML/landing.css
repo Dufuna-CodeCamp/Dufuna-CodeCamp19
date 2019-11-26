@@ -1,28 +1,27 @@
-body{
+body {
     box-sizing: border-box;
 }
-#wrapper{font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
-.container{width: 90%;
-margin: 0% auto;
+#wrapper {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-#subheader{
+.container {
+    width: 90%;
+    margin: 0% auto;
+}
+#subheader {
     width: 100%;
     height: 32px;
     background: rgb(196, 45, 196);
     color: yellow;
     font-family: cursive;
     margin-top: -14px;
-}
-  
-#subheader p{
+} 
+#subheader p {
     float: left;
     margin-top: 7px;
 
 }
-
-#subheader a{
+#subheader a {
     float:right;
     line-height: 30px ;
     color: whitesmoke;
@@ -31,22 +30,20 @@ margin: 0% auto;
 }
 
 /*logo styling*/
-#main-header{
+#main-header {
     width: 100%;
     height: 100px;
     background: rgb(150, 4, 150);
     float: left;
     margin-top: -15px;   
 }
-
-#logo{
+#logo {
     width: 300px;
     margin-top: 10px;
     float: left;
     margin-left: 200px
 }
-
-#ist{
+#ist {
     color: rgb(228, 228, 4);
     font-size: 40px;
     font-weight: bolder;
@@ -55,14 +52,13 @@ margin: 0% auto;
 }
 
 /* style for search*/
-#search{
+#search {
     width: 650px;
     float: left;
     padding: 20px;
     margin-left: 50px;
 }
-
-.search-area{
+.search-area {
     width: 500px;
     height: 40px;
     background: white;
@@ -71,8 +67,7 @@ margin: 0% auto;
     float: left;
     padding-left: 15px;
 }
-
-.search-btn{
+.search-btn {
     height: 42px;
     border-radius: 2px;
     border: none;
@@ -82,14 +77,14 @@ margin: 0% auto;
 }
 
 /* this is for user menu */
-#user-menu{
+#user-menu {
     width: 342px;
     float: right;
     margin-top: 20px;
 }
 
 /* this is for user menu styling*/
-#user-menu li{
+#user-menu li {
     float: left;
     width: 95px;
     text-align: center;
@@ -98,111 +93,89 @@ margin: 0% auto;
     border-left: 20px;
     margin-top: 14px;
 }
-
-#user-menu li:hover{
+#user-menu li:hover {
     font-size: 13px;
     transition: all .5s ease;
 }
-
-#user-menu li a{
+#user-menu li a {
      color: white;
      text-decoration: none;
 }   
-#user-menu li:hover a{
+#user-menu li:hover a {
     color: orange;
 }
 
 /*this style for navigation bar*/
- #navigation{
+#navigation {
      width: 100%;
      height: 35px;
      background: rgb(85, 12, 85);
      float: left;
      box-shadow: 10px 14px 50px 2px grey;  
  }
-
- nav{
+nav {
      padding: 8px;
      width: 1280px;
      margin: 0 auto; 
  }
-
- nav a{
+nav a {
      margin-left: 80px;
      color: white;
      text-decoration: none;
      margin-top: 20px;
  }
-
- nav a:hover{
+nav a:hover {
      color: rgb(226, 66, 66);
      transition: all .7s ease;
  }
-
- #banner{
-     float: left;
-     list-style: none;
-     text-decoration: none;
-     width: auto;
-     text-align: center;
-     margin-left: 175px;
-     list-style: none;
- }
-
- .banner ul li{
-     list-style: none;
- }
-  
- #footer{
+#banner img {
+    width: 100%;
+}
+#footer {
      width: 100%;
      height: auto; 
      background: grey;
      float: left;
      box-shadow: 10px 14px 50px 2px grey;
  }
- .footer_sub{
+.footer_sub {
      width: 25%;
      float: left;
  }
-
- .footer_sub_2{
+.footer_sub_2 {
      width: 20%;
      float: left;
  }
-
- .footer_sub_2 ul li{
+.footer_sub_2 ul li {
      list-style: none;
  }
-
- .footer_sub_2 ul li a{
+.footer_sub_2 ul li a {
      text-decoration: none;
      color: black;
  }
-  .footer_sub_2 ul li a:hover{
-      color: purple;
-      text-decoration: underline;
+.footer_sub_2 ul li a:hover {
+     color: purple;
+     text-decoration: underline;
   }
-
-  .footer_sub_3{
-      width: 35%;
-      float: left; 
+.footer_sub_3 {
+     width: 35%;
+     float: left; 
   }
- .subs{
+.subs {
      width: 250px;
      border: none;
      height: 10px;
      padding: 15px;
      border-radius: 2px;
  }
- .sub_btn{
+.sub_btn {
      height: 40px;
      border: none; background: orangered;
      border-radius: 2px;
  }
- 
- .sub_p{
-     color: black;
+.sub_p {
+       color: black;
      font-style: italic;
      font-size: 17px;
 
- }
+}
