@@ -1,6 +1,7 @@
 let imgDiv = document.getElementsByClassName("product");
 let prodTitle = document.getElementsByClassName("title");
 let prodPrice = document.getElementsByClassName("price");
+document.getElementById("prod").addEventListener("click", displayMenProduct);
 var productArray = [
      ["icon/img19.jpg", "Round Neck Polo", "$400"], 
      ["icon/img21.jpg", "V-neck Polo","$300"],
