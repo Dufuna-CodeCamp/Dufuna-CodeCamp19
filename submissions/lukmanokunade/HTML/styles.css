@@ -168,3 +168,28 @@ box-shadow: 1;
         font-size: 15px;
         padding-bottom: 10px;
     }
+
+     .footer{
+         margin-top: 200px;
+         background: black;
+         color: white;
+     }
+     .footer h1{
+         font-size: 20px;
+         margin: 25px 0;
+         display: inline-block;
+     }
+     .footer p{
+         font-size: 12px;
+     }
+     .copyright{
+         margin-bottom: -80px;
+         text-align: center;
+         font-size: 15px;
+         padding-bottom: 20px;
+         color: white;
+     }
+     .footer hr{
+         margin-top: 10px;
+         background-color: #ccc;
+     }
