@@ -6,28 +6,30 @@
 	box-sizing: border-box;
 	font-family: Lato;
 }
-.container{
+.container
+{
 	width: 100%;
 	height: auto;
 	background-color: #fff;
 }
-.main{
+.main
+{
 	max-width:1200px;
 	height: auto;
 	margin: 0 auto;
 }
-nav{
+nav
+{
 	width: 100%;
 	height: 100px;
 	background-color: green;
-
-
 }
-nav ul{
+nav ul
+{
 	float: right;
 }		
-
-nav ul li{
+nav ul li
+{
 	display: inline-block;
 	list-style-type: none;
 	margin-left: 50px;
@@ -42,39 +44,41 @@ nav ul li a
 	font-size: 13px;
 	font-family:Gugi;
 }
-.logo img{
+.logo img
+{
 	float: left;
 	height:90px;
 	padding-left: 30px;
-	
 	margin-top: 10px;
-	
 	border-bottom: 30px blue;
-	
 }
 /*-------Slider-------*/
 
-.slider{
+.slider
+{
 	width: 100%;
 	height: 630px;
 	display: flex;
 	background-position:center; 
 }
 /*------------About--------*/
-#About{
-
+#About
+{
 	padding-top:50px;
 	padding-bottom: 50px;
 	color: #555;
 }
-#about .btn{
+#about .btn
+{
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
-.about-content{
+.about-content
+{
 	padding-top: 10px;
 }
-footer{
+footer
+{
 	padding: 10px;
 	font-size: 17px;
 	font-weight: bold;
