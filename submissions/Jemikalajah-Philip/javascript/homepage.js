@@ -1,22 +1,22 @@
-let imgDiv = document.getElementsByClassName("product");
-let prodTitle = document.getElementsByClassName("title");
-let prodPrice = document.getElementsByClassName("price");
+let imgDiv = document.getElementsByClassName("product--image");
+let prodTitle = document.getElementsByClassName("product--title");
+let prodPrice = document.getElementsByClassName("product--price");
 document.getElementById("prod").addEventListener("click", displayMenProduct);
 var productArray = [
-     ["icon/img19.jpg", "Round Neck Polo", "$400"], 
-     ["icon/img21.jpg", "V-neck Polo","$300"],
-     ["icon/img20.jpg", "turtle neck Polo", "$200"],
-     ["icon/img22.jpg", "Socac Polo", "$1200"],
-     ["icon/img23.jpg", "Dura Polo", "$6000"],
-     ["icon/img24.jpg", "Thor Polo", "$7200"],
-     ["icon/img18.jpg", "pear Polo", "$700"],
-     ["icon/img9.jpeg", "White Polo", "$800"],
-     ["icon/img8.jpeg", "chinko Polo", "$460"],
+     {image: "../html/product-images/img19.jpg", title: "Round Neck Polo", price: "$400"}, 
+     {image: "../html/product-images/img21.jpg",  title: "V-neck Polo", price: "$300"},
+     {image: "../html/product-images/img20.jpg", title: "turtle neck Polo", price: "$200"},
+     {image: "../html/product-images/img22.jpg", title: "Socac Polo", price: "$1200"},
+     {image: "../html/product-images/img23.jpg", title: "Dura Polo", price: "$6000"},
+     {image: "../html/product-images/img24.jpg", title: "Thor Polo", price: "$7200"},
+     {image: "../html/product-images/img18.jpg", title: "pear Polo", price: "$700"},
+     {image: "../html/product-images/img9.jpeg", title: "White Polo", price: "$800"},
+     {image: "../html/product-images/img8.jpeg", title: "chinko Polo", price: "$460"}
 ];
 function displayMenProduct(){
     for (i = 0; i < productArray.length; i++){
-        prodTitle[i].innerHTML = productArray[i][1];
-        prodPrice[i].innerHTML = productArray[i][2];
-        imgDiv[i].setAttribute("src", productArray[i][0]);
-    }
+    imgDiv[i].setAttribute("src", productArray[i].image);
+    prodTitle[i].innerHTML = productArray[i].title;
+    prodPrice[i].innerHTML = productArray[i].price; 
+    }    
 }
