@@ -1,4 +1,7 @@
 *{
+    box-sizing: border-box
+}
+*{
     margin: 0;
     padding: 0;
 }
@@ -110,7 +113,7 @@ box-shadow: 1;
     .side-menu ul li{
         list-style-type: none;
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 16px;
         cursor: pointer;
     }
     .side-menu ul li:hover{
@@ -135,36 +138,72 @@ box-shadow: 1;
      .slider1{
          box-shadow: 1px 1px 1px 1px rgba(0,0,1,0.5);
      }
+     .featured-category{
+         margin: 50px 0;
+     }
+     .featured-category{
+         display: table-footer-group;
+         padding: 20px 0;
+         cursor: pointer;
+         vertical-align: middle;
+     }
+     .rowd{
+         display: flex;
+         width: 185px;
+         height: 185px;
+         padding: 20px 20px;
+         box-shadow: 1px;
+     }
      .recommend{
          margin: 50px 0;
      }
      .title-box{
          background-color: blue;
          color: #fff;
-         width: 300px;
-         padding: 5px;
+         width: 180px;
+         padding: 4px 10px;
          height: 30px;
          margin-bottom: 60px;
          display: flex;
-         bottom: -80px;
+         bottom: -280px;
          position: absolute;
-         border: 3px solid grey;
+         border: 1px solid white;
+         text-align: center;
+     }
+     .title-box h4{
+         font-size: 14px;
          text-align: center;
      }
      .product-top img{
-          width: 50%;
-          border: 1px solid blue;
+          width: 185px;
+          height: 185px;
+          border: none;
           z-index: -1;
-     }
-     .product-bottom .fa{
-         color: blue;
-         font-size: 10px;
+          padding: 5px;
+          bottom: -100px;
+          display: flex;
+          flex-wrap: wrap;
      }
      .product-bottom h3{
          font-size: 20px;
          font-weight: bold;
+         color: black;
+         text-align: center;
      }
     .product-bottom h5{
         font-size: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
+        color: black;
+        text-align: center;
+    }
+    .product-top2 img{
+        width: 185px;
+        height: 185px;
+        display: inline-flex;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    .row1{
+        display: flex;
+        flex-wrap: wrap;
     }
