@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+:root {
+    --primaryColor : rgb(50, 205, 50,1);
+}
+html { 
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(241, 241, 241);
+    padding: 25px 50px;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.navbar {
+    display: block;
+    position: sticky;
+    padding: 20px 0;
+    background: #fff;
+}
+.navbar-logo {
+    float: left;
+    position: relative;
+}
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.navbar-logo h2 {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 13px;
+}
+.navbar-wrap {
+    max-width: 992px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    align-content: center;
+}
+.navbar-content {
+    float: right;
+    margin: 0px auto;
+}
+.search-bar {
+    float: left;
+    margin-right: 30px;
+}
+.navbar-links {
+    float: left;
+    font-size: 18px;
+    padding-top: 9px;
+}
+.navbar-links a.link {
+    border-right: rgba(50, 205, 50,1);
+    font-weight: bold;
+}
+.link {
+    text-decoration: none;
+    padding: 5px;
+}
+.link:hover {
+    color: rgba(50, 205, 50,1);
+}
+/* Declared Style applicable everywhere */
+input {
+    margin: 0;
+    border-radius: 5px;
+    border:solid 2px rgba(50, 205, 50,1);
+    background-color: rgb(255, 255, 255);
+    height: 2.5em;
+}
+button {
+    margin: 0;
+    border-radius: 5px;
+    border:solid 2px rgba(50, 205, 50,1);
+    background-color: rgb(255, 255, 255);
+    height: 2.5em;
+    font: inherit;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 5px;
+    box-shadow: #000
+}
+button:hover {
+    background-color: rgba(50, 205, 50,1);
+    color: white;
+}
+/* p {
+    text-align: center;
+} */
+
+/* End of Declared Styles */
+.shop-cart {
+    float: right;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.shopping-cart{
+    box-sizing: border-box;
+    width: 2em;
+}
+@media (max-width: 768px) {
+    .shop-cart {
+        float: left;
+        margin:0;
+    }
+    .product-cat-cont {
+        margin:0;
+    }
+    .newsletter-left, .newsletter-right {
+        float: none;
+    }
+    .footer-wrap {
+        display: inherit;
+    }
+}
+.clearfix {
+    clear: both;
+}
+.header-text {
+    text-align: center;
+    margin:20px auto;
+}
+.slider {
+    max-width: 100%;
+    height: 400px;
+    margin: 5px auto;
+}
+.slider img{
+    width: 100%;
+    height: 100%
+}
+/* Products categories */
+.product-header{
+    text-align: center;
+    margin: 10px auto;
+}
+.product-cat {
+    list-style: none;
+    text-align: center;
+}
+.products-wrap {
+    align-content: center;
+}
+li {
+    list-style: none;
+}
+.product-cat-name {
+    display: block;
+    background-color: rgba(50, 205, 50,0.7);
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0; 
+}
+.product-cat-pic img {
+    display: block;
+}    
+.product-cat-cont {
+    float: left;
+    border: 2px solid rgba(50, 205, 50,1);
+    border-radius: 5px;
+    margin: 10px 60px 20px 60px;
+}
+.homepage-products-cat {
+    width: 100%;
+    margin: 20px auto;  
+    padding: 20px;
+    align-content: center;
+}
+/* Newsletter */
+.newsletter-cat {
+    display: block;
+    border: 2px solid var(--primaryColor);
+    border-radius: 5px;
+    background-color: rgba(50, 205, 50,0.3);
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.newsletter-wrap {
+    padding: 20px 150px; 
+}
+.newsletter-left {
+    float: left;
+}
+.newsletter-right {
+    float: right;
+    padding: 20px auto;
+}
+.newsletter-right input {
+    margin-right: 70px;
+}
+/* Blog Styling */
+.blog-header {
+    text-align: center;
+    margin: 20px auto;
+}
+.blog-wrap {
+    padding: 40px;
+}
+.blog-content-cont {
+    box-sizing: border-box;
+    width: 277px;
+    align-content: center;
+    float: left;
+    margin: auto 50px;
+}
+.blog-cont-header {
+    text-align: center;
+}
+.blog-content {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.blog-image {
+    border: 2px solid var(--primaryColor);
+    border-radius: 5px;
+    margin: 0px auto;
+}
+
+/* Company profile before footer */
+.company-profile {
+    background-color: rgba(50, 205, 50,0.3);
+    border-radius: 5px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+}
+.company-profile .company-logo {
+    width :100px;
+    align-self: center;
+}
+.company-about-us {
+    text-align: center;
+    padding: 20px;
+    line-height: 1.4em;
+    margin: 5px;
+}
+.footer-main {
+    margin: 10px;
+}
+.footer-wrap {
+    display:flex;
+    justify-content: space-around;
+}
+.footer-address {
+    width: 400px;
+    box-sizing: border-box;
+    position: relative;
+}
+.footer-address-text {
+    margin-left: 10px;
+    display: inline;
+    position: absolute;
+    bottom: 70px;
+}
+.footer-discover h4 {
+    padding: 10px;
+}
+.footer-discover-link li {
+    margin: 10px;
+}
+.footer-social {
+    margin: 20px;
+}
+.footer-social li {
+    margin: 20px;
+}
+.footer-copyright {
+    text-align: center;
+    margin:20px;
+}
