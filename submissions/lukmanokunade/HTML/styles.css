@@ -174,7 +174,6 @@ box-shadow: 1;
      }
      .product-top img{
           border: none;
-          z-index: -1;
           padding: 5px;
           bottom: -150px;
           display: flex;
