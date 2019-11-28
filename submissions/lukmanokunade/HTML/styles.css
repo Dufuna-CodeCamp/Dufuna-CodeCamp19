@@ -149,8 +149,7 @@ box-shadow: 1;
      }
      .rowd{
          display: flex;
-         width: 185px;
-         height: 185px;
+         width: 33.33px;
          padding: 20px 20px;
          box-shadow: 1px;
      }
@@ -165,7 +164,7 @@ box-shadow: 1;
          height: 30px;
          margin-bottom: 60px;
          display: flex;
-         bottom: -280px;
+         bottom: -20px;
          position: absolute;
          border: 1px solid white;
          text-align: center;
@@ -175,35 +174,56 @@ box-shadow: 1;
          text-align: center;
      }
      .product-top img{
-          width: 185px;
-          height: 185px;
           border: none;
           z-index: -1;
           padding: 5px;
-          bottom: -100px;
+          bottom: -150px;
           display: flex;
           flex-wrap: wrap;
      }
      .product-bottom h3{
-         font-size: 20px;
+         font-size: 10px;
          font-weight: bold;
          color: black;
-         text-align: center;
      }
     .product-bottom h5{
-        font-size: 15px;
-        padding-bottom: 5px;
+        font-size: 5px;
         color: black;
-        text-align: center;
     }
-    .product-top2 img{
-        width: 185px;
-        height: 185px;
-        display: inline-flex;
-        margin-right: 5px;
+    .col-md-5 img{
+        float: left;
+        width: 25%;
         padding: 5px;
     }
-    .row1{
-        display: flex;
-        flex-wrap: wrap;
+    .col-md-5::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .footer{
+          margin-top: 50px;
+          background-color: black;
+          color: white;
+      }
+      .footer h1{
+          font-size: 24px;
+      }  
+      .footer p{
+          font-size: 14px;
+          font-family: sans-serif;
+      }
+      .col-md-6{
+        float: left;
+        width: 25%;
+        padding: 3px;
     }
+    .col-md-6::after {
+        content: "";
+        clear: both;
+      }
+      .copyright{
+          margin-bottom: -80px;
+          text-align: center;
+          font-size: 15px;
+          padding-bottom: 20px;
+      }
