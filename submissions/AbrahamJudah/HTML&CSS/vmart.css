@@ -234,20 +234,14 @@ aside {
     margin-bottom: 4px;
     border-radius: 5px;
  }
- .deal p,
- .deal1 p,
- .deal2 p,
- .deal3 p {
+ .price {
     display: inline-block;
     padding: 5px;
     font-weight: 700;
     font-style: italic;
     margin-left: 35px;
  }
- .deal a,
- .deal1 a,
- .deal2 a,
- .deal3 a {
+ .category {
     border: 2px solid rgba(8, 191, 247, 0.774);
     position: relative;
     float: left;
@@ -342,13 +336,3 @@ h5 {
     text-decoration: none;
     color: rgba(8, 191, 247, 0.774);
 }
-
-
-
-
-
-
-
-
-
-
