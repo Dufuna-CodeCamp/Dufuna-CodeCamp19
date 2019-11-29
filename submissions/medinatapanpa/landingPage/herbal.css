@@ -1,74 +1,84 @@
+.topnav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;  
+}
 
-  .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    color: black;
+.bigbox {
+  background-color:white;
+  display:block;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 20px;
 
-  }
-  .bigbox {
-    background-color: rgba(63, 60, 60, 0.301);
-    /*display:block;*/
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 20px;
+}
+.logo {
+  width: 50px;
+  float: left;
 
-  }
- .logo {
-    width: 50px;
-  }
+}
+.login {
+  margin: auto;
+}
 
-  #product {
-    text-align: center;
-    border-bottom: 3px solid black;
-    background-color:white;
-  }
+#product {
+  text-align: center;
+  border-bottom: 3px solid black;
+  background-color:white;
+}
 
-  h2 {
-    background-color: chartreuse;
-    text-align: left;
-  }
+h2 {
+  background-color: chartreuse;
+  text-align: left;
+}
 
-  .procat{
-    display: inline-block;
-    padding: 0px 0px;
-    margin: 5px;
-  }
+.procat{
+  display: inline-block;
+  padding: 0px 0px;
+  margin: 5px;
+}
 
-  img {
-    padding: 0px 3px 0px 1px;
-    width: 100%;
-  }
+img {
+ padding: 0px 3px 0px 1px;
+ width: 100%;
+}
 
-  .address {
-    display: block;
-    box-sizing: content-box;
-  }
+.address {
+  display: block;
+  box-sizing: content-box;
+}
 
-  .slideimg {
-    width: 100%;
-    position: center;
-    margin: auto;
-    display: block;
-  }
+.slideimg {
+  width: 100%;
+  position: center;
+  margin: auto;
+  display: inline-block;
+  height: 300px;
+}
 
- .dot {
+.dot {
   cursor: pointer;
-  height: 15px;
+  height: 10px;
   width: 15px;
   margin: 0 2px;
   background-color: black;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  }
+}
 
 .dots {
   text-align:center; 
-  }
+}
 
 .card {
   max-width: 300px;
@@ -76,13 +86,13 @@
   text-align: center;
   font-family: arial;
   display: inline-block;
-  }
+}
 
 .price {
   color: grey;
   font-size: 22px;
   font-style: normal;
-  }
+}
   
 .card button {
   border: none;
