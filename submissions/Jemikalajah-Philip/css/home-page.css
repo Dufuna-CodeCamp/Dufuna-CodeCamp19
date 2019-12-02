@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-#prod{
+#men-category, #women-category{
     text-align: center;
     font-family: sans-serif;
     padding:  10px 20px;
@@ -12,20 +12,25 @@
     line-height: 5px;
     border-radius: 10px;
 }
-body{
-    width: 1350px;
+#men-category:hover, #women-category:hover{
+    opacity: 0.5;
+}
+html,body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
 }
 .main{
     width: 100%;
     height: auto;
     background-color:rgba(0, 255, 234, 0.404);
-    min-height: 500px;
+    min-height: 60%;
     margin: 0 auto;
 }
 .container{ 
-    width: 1000px;
+    width: 100%;
     height: auto;
-    min-height: 500px;
+    min-height: 60%;
     margin: 0 auto;
 }
 .topbar{
@@ -95,7 +100,7 @@ body{
     float: left;
 }
 .navbar{
-    width: 1000px;
+    width: 100%;
     float: left;
     text-align: right;
     padding-top: 25px;
@@ -110,7 +115,7 @@ body{
 }
 .txtsrch{   
     margin-left: 20%;
-    margin-top: 2%;
+    margin-top: 0.25%;
     width: 700px;
     height: 5vh;
     border: 1px ridge #d5d5e6;
@@ -122,7 +127,7 @@ body{
 .btnsrch{
     width: 5vw;
     height: 5vh;
-    margin-top: 2%;
+    margin-top: 0.25%;
     background-color: #19e5e5;
     border:0px;
     padding: 0 10px;
@@ -131,7 +136,7 @@ body{
 .box1{ 
     width: 80%;
     height: 450px;
-    margin-left: 140px;
+    margin-left: 130px;
     margin-top: 35px;
     margin-bottom: 20px;
     text-align: left;
@@ -141,10 +146,11 @@ body{
     background-color:  rgba(0, 174, 255, 0.082);
     border: none;
 }
-label{ 
-    padding-left: 15px;
+.deals{ 
+    padding-left: 10px;
     font-family: sans-serif;
-    font-size: xx-large;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 .product-grid{ 
     
@@ -190,7 +196,7 @@ label{
     position: absolute;
     top: 12px;
     left: 12px;
-    z-index 3;
+    z-index: 3;
 }
 .product-image .product-discount-label{ 
     background-color: var(--main-color);
@@ -218,12 +224,18 @@ label{
 }
 .product--title{
     text-align: center;
-    font-size: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 10px;
     padding: 15px;
+    color: white;
+    background-color: orange;
+    position: absolute;
 
 }
 .product--price{
-    content: "";
+   
     color: white;
     background-color: orange;
     font-size: 12px;
@@ -237,31 +249,186 @@ label{
     right: 12px;
     z-index: 3;
 }
-.foot{ 
-    font-size: medium;
-    text-align: center;
-}
 ::placeholder {
     color: darkblue;
     opacity: 0.8;
 }
-.row1{
+.foot-container{
     width: 100%;
-    height: 400px;
-    padding-top: 30px;
+    height: 280px;
+    font-size: 13px;
+    padding-top: 15px;
     padding-bottom: 30px;
-    background-color: rgba(0, 255, 234, 0.404);
+    background-color: rgba(0, 174, 255, 0.082);
+    color: black;
+    position: relative;
 }
-.copyright{
+.foot-container a{
+    color: black;
+}
+.foot-container .cards{
+    font-size: 35px;
+    padding: 10px;
+}
+.foot-container .fa-lock{
+    font-size: 25px;
+    padding: 10px;
+}
+.foot-container .copy-right{
+    background:  #fcc508;
+    color: #686868;
+    height: 30px;
     width: 100%;
-    height: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: rgba(0, 255, 234, 0.404);
     text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 5px;
 }
-.cards{
+.widget-title{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
 }
-.footer-widget{
-    
+.cart-header {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 100px;
+}
+.cart-row {
+    display: flex;
+}
+.cart-item {
+    width: 45%;
+}
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-quantity {
+    width: 35%;
+}
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column {
+    border: none;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+.signin{
+    background: rgba(0, 255, 234, 0.404);
+    padding: 40px;
+    margin: 60px 350px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    border-radius: 15px;
+}
+.head{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-family: 'play', sans-serif;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #ffffff;
+}
+.log{
+    border: none;
+    width: 190px;
+    background: #ffffff;
+    color: black;
+    line-height: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.log:hover{
+    color: #ffffff;
+    background-color: black;
+}
+h2{
+    color: white;
+}
+.contain a{
+    color: darkblue;
+    text-decoration: blink;
+    font-size: 16px;
+    font-weight: 200px;
+
+}
+.contain a:hover{
+    color: skyblue;
+
+}
+.contain{
+    display: inline-block;
+    position: relative;
+    width: 100%;
 }

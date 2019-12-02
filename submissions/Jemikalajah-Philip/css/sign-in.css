@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 .container{ 
-    width: 1000px;
+    width: 100%;
     height: auto;
     min-height: 200px;
     margin: 0 auto;
@@ -174,4 +174,42 @@ h2{
 ::placeholder {
     color: darkblue;
     opacity: 0.8;
+}
+.foot-container{
+    width: 100%;
+    height: 280px;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 174, 255, 0.082);
+    color: black;
+    position: relative;
+}
+.foot-container a{
+    color: black;
+}
+.foot-container .cards{
+    font-size: 35px;
+    padding: 10px;
+}
+.foot-container .fa-lock{
+    font-size: 25px;
+    padding: 10px;
+}
+.foot-container .copy-right{
+    background:  #fcc508;
+    color: #686868;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 5px;
+}
+.widget-title{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
 }
