@@ -6,7 +6,7 @@ display.addEventListener("click", displayProduct);
 
 
 
-var productArray = [
+let productArray = [
      {image: "../images/HP250.jpg",
       title: "HP Laptop",
       price: "N130000"
@@ -50,11 +50,9 @@ var productArray = [
 ];
 
 function displayProduct(){
-
     for (i = 0; i < productArray.length; i++){
     productImage[i].setAttribute("src", productArray[i].image);
     prodTitle[i].innerHTML = productArray[i].title;
     prodPrice[i].innerHTML = productArray[i].price;
     }
-
 }
