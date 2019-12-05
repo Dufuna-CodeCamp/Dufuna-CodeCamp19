@@ -14,7 +14,6 @@
 
 
 html {
-    /* overflow-x: hidden; */
     overflow-y: scroll;
     font-family:'Poppins', sans-serif;
     color: #333;
@@ -149,7 +148,6 @@ nav {
 }
 
 .product-title2 button {
-    /* transform: translate(-50%); */
     width: 300px;
     letter-spacing: 2px;
     box-shadow: #999 3px 5px 3px;

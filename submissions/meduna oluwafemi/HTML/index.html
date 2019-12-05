@@ -11,38 +11,45 @@
 </head>
 <body>
     <div class="main-container">
-    <div class="hero">sneaker<span>.hub</span> </div>
-   
-   <form action="post" class="login-form" method="POST">
-       <h1>Create an account</h1>
-       <div>
-           <p class="intro">Sign up here to buy authentic apparrel</p>
-       </div>
-      
+        <h1 class="brand">SNEAKER<span>.HUB</span> </h1>
+        <div class="wrapper">
+            <div class="company-info">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>44 something street</li>
+                    <li>+234 8838 8888</li>
+                    <li>sneaker.hub@gmail.com</li>
+                </ul> 
+            </div>
+            <div class="contact">
+                
+                <form>
+                    <p>
+                        <label>Name</label>
+                    <input type="text" name="lastname">
+                </p>
+                  <p>
+                        <label>password</label>
+                    <input type="password" name="password">
+                </p>
+                    <p>
+                        <label>Confirm password</label>
+                    <input type="password" name="password">
+                </p>
+                    <p>
+                        <label>Email</label>
+                    <input type="email" name="email">
+                </p>
+                 
+                <p>
+                    <button>sign up</button>
+                </p>
 
-       <div class="text-box">
-            <input type="text" id="name" placeholder="Username"><span data-place-holder="Username" required></span>
+                <p class="login-text">Already have an account <span>login <a href="#">here</a></span></p>
+                </form>
+            </div>
         </div>
-
-       <div class="text-box">
-            <input type="text" id="mail" placeholder="Email"><span data-place-holder="Email" required></span>
-        </div>
-
-        <div class="text-box">
-                <input type="password" id="password" placeholder="Password"><span data-place-holder="Password" required></span>
-        </div>
-
-        
-        <div class="text-box">
-            <input type="password" id="password" placeholder="Confirm password"><span data-place-holder="Password" required></span>
     </div>
-
-        <input type="submit" class="logbtn" value="Sign up">
-        
-        <div class="bottom-text">
-            Already have an account? <a href="#">Login here</a>
-        </div>
-
    </form>
 </div>
 </body>
