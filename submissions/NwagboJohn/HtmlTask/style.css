@@ -1,24 +1,28 @@
-        #field {
-    	    background-color:blue;
-    	    border-radius:80px;
-    	    color:white;
-    	  }	
-	legend {
-    	    background-color:blue;
-	    color:white;
-    	    border-radius:80px;
-	  }
-	body {
-    	   background-color:black;
-	  }
-	input {
-    	   border-radius:90px;
-    	   padding:10px;
-	  }
-	button {
-    	   background-color:green;
-    	   color:white;
-    	   border-color:green;
-	   width:20%;
-	   height:40px;
-          }		
+#field {
+	background-color: blue;
+	border-radius: 80px;
+	color: white;
+}
+
+legend {
+	background-color: blue;
+	color: white;
+	border-radius: 80px;
+}
+
+body {
+	background-color: black;
+}
+
+input {
+	border-radius: 90px;
+	padding: 10px;
+}
+
+button {
+	background-color: green;
+	color: white;
+	border-color: green;
+	width: 20%;
+	height: 40px;
+}
