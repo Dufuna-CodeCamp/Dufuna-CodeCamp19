@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;  
+}
+.subhead {
+    border-bottom:  2px solid rgba(8, 191, 247, 0.973);
+    height: 40px;
+}
+.header, 
+.header1 {
+    min-width: 50%;
+    height: 35px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.header1 {
+    position: relative;
+    margin-top: 23px;
+    left: 50%;
+    bottom: 60px;
+}
+.header1 ul {   
+    margin-top: -2px;
+}
+.header1 ul li {
+    list-style-type: none;
+}
+.header a,
+.header1 a {
+    font-size: 1.1rem;
+    position: relative;
+    padding: 3px 10px 0px 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3px;
+}
+.header a {
+    display: inline-block;
+    width: 100px;
+    bottom: 10px;  
+}
+ .header1 a {
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    float: left;
+    border-left: 2px solid black;
+}
+.header p {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+span {
+    position: relative;
+    bottom: 11px;
+}
+header {
+    border-bottom:  2px solid rgba(8, 191, 247, 0.973);
+}
+.searchbox {
+    border:  2px solid rgba(8, 191, 247, 0.973);
+    display: inline-block;
+    position: absolute;
+    right: 40%;
+    height: 40px;
+    margin-top: 12px;
+}
+.searchbox input[type=text] {
+    padding: 6px;
+    font-size: 18px;
+    min-width: 400px;
+}
+.searchbox button[type=submit] {
+    position: absolute;
+    height: 40px; 
+    top: -2px;
+    border:  2px solid rgba(8, 191, 247, 0.973);
+}
+.signin {
+    display: inline-flex;
+    float: right;
+    width: 26%;
+}
+.signin li {
+    display: inline-flex;
+    margin-right: 20px;
+}
+.link1,
+.link2 {
+    margin: 8px 3px;
+}
+.header a,
+.header1 a,
+.signin a {
+   color: rgba(8, 191, 247, 0.973);
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.nav {
+    border: 2px solid rgba(8, 191, 247, 0.973);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: absolute;
+    width: 220px;
+    margin-left: 4px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 4px 12px;
+}
+.list {
+    border: 2px solid rgba(8, 191, 247, 0.973);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    top: 33px;
+    width: 220px;
+    height: 292px;
+    margin-left: 4px;
+}
+.list li {
+    position: relative;
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    right: 35px;
+}
+.sale {
+    position: relative;
+    top: 8px;
+}
+.list a {
+    color: rgba(8, 191, 247, 0.973);
+}
+.pic {
+    border: 2px solid rgba(8, 191, 247, 0.973);
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 4px;
+    width: 300px;
+    height: 325px;
+}
+.ads,
+.ads1,
+.ads2 {
+    border: 2px solid rgba(8, 191, 247, 0.973);
+    border-radius: 8px;
+}
+.ads {
+    background-color: rgba(173, 173, 173, 0.712);
+}
+.ads1 {
+    background-color: rgba(8, 191, 247, 0.774);
+}
+.ads2 {
+    background-color: rgba(124, 9, 9, 0.178);
+}
+.ads p,
+.ads1 p,
+.ads2 p {
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline;
+    padding: 3px;
+    margin: 1px;
+}
+.ads2 p {
+  display: inline-block;
+  margin-left: 65px;
+}
+.ads a,
+.ads1 a {
+    font-weight: 700;
+    padding: 10px;
+    color: rgb(104, 3, 3)
+}
+.ads img,
+.ads1 img {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+.ads2 img {
+    position: relative;
+    top: 4px;
+    left: 50px;
+}
+.sale,
+.info {
+  border: 2px solid rgba(8, 191, 247, 0.774);
+  margin: 5px auto; 
+  width: 99.5%;  
+  border-radius: 10px;
+}
+.head {
+    display: flex;
+    height: 50px;
+}
+.head img {
+    margin: 3px 15px;
+}
+.head p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.product {
+    display: flex;
+    justify-content: space-around;
+ }
+ .deal,
+ .deal1,
+ .deal2,
+ .deal3 {
+    border: 2px solid rgba(8, 191, 247, 0.774);
+    width: 224px;
+    height: 255px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+ }
+ .price {
+    display: inline-block;
+    padding: 5px;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 35px;
+ }
+ .category {
+    border: 2px solid rgba(8, 191, 247, 0.774);
+    position: relative;
+    float: left;
+    padding: 5px;
+    left: 35px;
+    border-radius: 5px;
+    background-color: rgba(8, 191, 247, 0.774);
+    color: black;
+    font-weight: 700;
+    text-decoration: none;  
+ }
+ .off {
+    float: right;
+ }
+ .about,
+ .subscribe {
+    width: 600px;
+}  
+ .info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+ }
+ h3 {
+    padding: 4px 8px;
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+.about p,
+.subscribe p {
+    position: relative;
+    padding: 8px;
+    margin-top: -10px;   
+}
+h3, 
+.about p,
+.subscribe p,
+.mail {
+    color: rgba(8, 191, 247, 0.774);
+}   
+.mail {
+    width: 50%;
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 5px;
+    border-color: rgba(8, 191, 247, 0.774);
+    padding: 5px;
+    margin-left: 10px;
+}
+.button {
+    font-size: 22px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    background:  rgba(8, 191, 247, 0.774);
+}
+.about a {
+    color: rgb(236, 5, 5);
+}   
+.footer {
+    display: flex;
+    height: 230px;
+    justify-content: space-around;
+    margin-top: -5px;
+    border-top: none;
+    border-bottom: none;
+}
+.logo{
+    width: 31%;
+}
+.link4 {
+    width: 32%;
+}
+.link5 {
+    width: 32%;
+}
+h5 {
+    color: rgba(8, 191, 247, 0.774);
+    background-color: black;
+    margin: 5px auto; 
+    width: 99.5%;  
+}
+.link4 a,
+.link5 a {
+    display: block;
+    padding: 2px 8px 10px 15px;
+    text-decoration: none;
+    color: rgba(8, 191, 247, 0.774);
+}
