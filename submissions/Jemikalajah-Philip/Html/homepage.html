@@ -1,94 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head> 
-    <title>Home</title> 
+
+<head>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="../css/home-page.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<div class="main">
-    <div class="topbar">
+    <div class="main">
+        <div class="topbar">
 
-    </div>
-    <div class="social_icon">
-        <div class="container">
-            <div class="icon">
-                <a href="https://facebook.com"><img src="icon/facebook.png" width="30px" height="30px"></a>
-                <a href="https://twitter.com"><img src="icon/twitter.png" width="30px" height="30px"></a>
-                <a href="https://gmail.com"><img src="icon/gmail.jpg" width="30px" height="30px"></a>
-                <a href="https://instagram.com"><img src="icon/instagram.jpg" width="30px" height="30px"></a> 
-            </div>
-            <div class="header_right">
-            <div class="login_register_btn">
-                <a href="sign-in.html">Login /</a>
-                <a href="registration-form.html">Register</a>
-            </div>
-            <div class="cart_btn">
-                <a href="cart.html"><img src="icon/cart.png" width="40px" height="40px"></a>
-                <span>cart (0)</span>
-            </div>
-            </div>
-            <div class="header">
-                <div class="container">
-                    <div class="logo">
-                        <img src="icon/logo.png" width="80px" height="80px">
-                    </div>
-                    <div class="navbar">
-                        <a href="homepage.html">Home</a>
-                        <a href="#" >Help</a>
-                        <a href="#">Contact</a>
-                        <a href="#" id="men-category">Men</a>
-                        <a href="#" id="women-category">Women</a>
-                       <a href="#">Baby & Kids</a>
-                    </div>
-                <div class="container">
-                    <input type="text" placeholder="Search For Products" class="txtsrch"/><button type="button" class="btnsrch">Search</button>
+        </div>
+        <div class="social_icon">
+            <div class="container">
+                <div class="icon">
+                    <a href="https://facebook.com"><img src="icon/facebook.png" width="30px" height="30px"></a>
+                    <a href="https://twitter.com"><img src="icon/twitter.png" width="30px" height="30px"></a>
+                    <a href="https://gmail.com"><img src="icon/gmail.jpg" width="30px" height="30px"></a>
+                    <a href="https://instagram.com"><img src="icon/instagram.jpg" width="30px" height="30px"></a>
                 </div>
+                <div class="header_right">
+                    <div class="login_register_btn">
+                        <a href="sign-in.html">Login /</a>
+                        <a href="registration-form.html">Register</a>
+                    </div>
+                    <div class="cart_btn">
+                        <a href="cart.html"><img src="icon/cart.png" width="40px" height="40px"></a>
+                        <span>cart (0)</span>
+                    </div>
                 </div>
-                   
-            </div>  
-            <div class="box1">
-                <div class="container">
-                    <label class="deals">
-                        Slash Deals
-                    </label>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="product-grid">
-                                <div class="product-image">
-                                    <a href="#"><img class="product--image" src="product-images/img7.jpeg" width="400px" height="300px"></a>
-                                    <span class="product-trend-label">TRENDING</span>
-                                    <ul class="social">
-                                        <li>
-                                            <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <h3 class="product--title"><a href="">Womens's Dress</a></h3>
-                                    <div class="product--price">$1000</div>
-                                </div>
-                            </div>
-
+                <div class="header">
+                    <div class="container">
+                        <div class="logo">
+                            <img src="icon/logo.png" width="80px" height="80px">
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="navbar">
+                            <a href="homepage.html">Home</a>
+                            <a href="#">Help</a>
+                            <a href="#">Contact</a>
+                            <a href="#" id="men-category">Men</a>
+                            <a href="#" id="women-category">Women</a>
+                            <a href="#">Baby & Kids</a>
+                        </div>
+                        <div class="container">
+                            <input type="text" placeholder="Search For Products" class="txtsrch" /><button type="button"
+                                class="btnsrch">Search</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="js-product-list">
+                </div>
+
+                <div class="box1">
+                    <div class="container">
+                        <label class="deals">
+                            Slash Deals
+                        </label>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div id="js-product-list">
+                                </div>
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img6.jpeg" width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img7.jpeg"
+                                                width="400px" height="300px"></a>
                                         <span class="product-trend-label">TRENDING</span>
                                         <ul class="social">
                                             <li>
-                                                <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product--title"><a href="">Womens's Dress</a></h3>
+                                        <div class="product--price">$1000</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#"><img class="product--image" src="product-images/img6.jpeg"
+                                                width="400px" height="300px"></a>
+                                        <span class="product-trend-label">TRENDING</span>
+                                        <ul class="social">
+                                            <li>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
                                             </li>
                                             <li>
                                                 <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
@@ -106,53 +118,57 @@
                                         <div class="product--price">$500</div>
                                     </div>
                                 </div>
-    
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                    <div class="product-grid">
-                                        <div class="product-image">
-                                            <a href="#"><img class="product--image" src="product-images/img9.jpeg" width="400px" height="300px"></a>
-                                            <span class="product-trend-label">TRENDING</span>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-content">
-                                            <h3 class="product--title"><a href="">White Polo</a></h3>
-                                            <div class="product--price">$300</div>
-                                        </div>
-                                    </div>
-        
-                                </div>                      
-                    </div>
 
-                </div>
-            </div> 
-            <div class="box1">
-                <div class="container">
-                    <label class="deals">
-                        Top Deals
-                    </label>
-                    <div class="row">
+                            </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img15.jpeg" width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img9.jpeg"
+                                                width="400px" height="300px"></a>
                                         <span class="product-trend-label">TRENDING</span>
                                         <ul class="social">
                                             <li>
-                                                <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product--title"><a href="">White Polo</a></h3>
+                                        <div class="product--price">$300</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="container">
+                        <label class="deals">
+                            Top Deals
+                        </label>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#"><img class="product--image" src="product-images/img15.jpeg"
+                                                width="400px" height="300px"></a>
+                                        <span class="product-trend-label">TRENDING</span>
+                                        <ul class="social">
+                                            <li>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
                                             </li>
                                             <li>
                                                 <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
@@ -170,80 +186,86 @@
                                         <div class="product--price">$1000</div>
                                     </div>
                                 </div>
-    
+
                             </div>
-                            <div class="col-md-3 col-sm-6">
-                                    <div class="product-grid">
-                                        <div class="product-image">
-                                            <a href="#"><img class="product--image" src="product-images/img4.jpeg" width="400px" height="300px"></a>
-                                            <span class="product-trend-label">TRENDING</span>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-content">
-                                            <h3 class="product--title"><a href="">IphoneX</a></h3>
-                                            <div class="product--price">$500</div>
-                                        </div>
-                                    </div>
-        
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                        <div class="product-grid">
-                                            <div class="product-image">
-                                                <a href="#"><img class="product--image" src="product-images/img5.jpeg" width="400px" height="300px"></a>
-                                                <span class="product-trend-label">TRENDING</span>
-                                                <ul class="social">
-                                                    <li>
-                                                        <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-content">
-                                                <h3 class="product--title"><a href="">Samsung</a></h3>
-                                                <div class="product--price">$600</div>
-                                            </div>
-                                        </div>
-            
-                                    </div>                      
-                        </div>
-    
-                </div>
-            </div> 
-            <div class="box1">
-                <div class="container">
-                    <label class="deals">
-                        what you like
-                    </label>
-                    <div class="row">
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img11.jpeg" width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img4.jpeg"
+                                                width="400px" height="300px"></a>
+                                        <span class="product-trend-label">TRENDING</span>
+                                        <ul class="social">
+                                            <li>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product--title"><a href="">IphoneX</a></h3>
+                                        <div class="product--price">$500</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#"><img class="product--image" src="product-images/img5.jpeg"
+                                                width="400px" height="300px"></a>
+                                        <span class="product-trend-label">TRENDING</span>
+                                        <ul class="social">
+                                            <li>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product--title"><a href="">Samsung</a></h3>
+                                        <div class="product--price">$600</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="container">
+                        <label class="deals">
+                            what you like
+                        </label>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#"><img class="product--image" src="product-images/img11.jpeg"
+                                                width="400px" height="300px"></a>
                                         <span class="product-trend-label">NEW</span>
                                         <ul class="social">
                                             <li>
-                                                <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
                                             </li>
                                             <li>
                                                 <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
@@ -263,123 +285,129 @@
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                                    <div class="product-grid">
-                                        <div class="product-image">
-                                            <a href="#"><img class="product--image" src="product-images/img13.jpeg" width="400px" height="300px"></a>
-                                            <span class="product-trend-label">NEW</span>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-content">
-                                            <h3 class="product--title"><a href="">House Cleaner</a></h3>
-                                            <div class="product--price">$1000</div>
-                                        </div>
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#"><img class="product--image" src="product-images/img13.jpeg"
+                                                width="400px" height="300px"></a>
+                                        <span class="product-trend-label">NEW</span>
+                                        <ul class="social">
+                                            <li>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product--title"><a href="">House Cleaner</a></h3>
+                                        <div class="product--price">$1000</div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-6">
-                                        <div class="product-grid">
-                                            <div class="product-image">
-                                                <a href="#"><img class="product--image" src="product-images/img10.jpeg" width="400px" height="300px"></a>
-                                                <span class="product-trend-label">NEW</span>
-                                                <ul class="social">
-                                                    <li>
-                                                        <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-content">
-                                                <h3 class="product--title"><a href="">Washing Machine</a></h3>
-                                                <div class="product--price">$400</div>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#"><img class="product--image" src="product-images/img10.jpeg"
+                                                width="400px" height="300px"></a>
+                                        <span class="product-trend-label">NEW</span>
+                                        <ul class="social">
+                                            <li>
+                                                <a href="" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                    </div>  
-        </div>
-    </div>
-</div>
-<footer>
-    <div class="foot-container">
-        <div class="row1">
-            <div class="col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                        <h2 class="widget-title">About</h2>
-                        <p>Up4Naija is the World next largest online mall. We will be launched in March 2020 and our mission is to become the engine of commerce and trade in Africa. </p>
-                        <div class="cards">
-                            <i class="fa fa-cc-mastercard"></i>
-                            <i class="fa fa-cc-paypal"></i>
-                            <i class="fa fa-cc-amex"></i>
-                            <i class="fa fa-cc-visa"></i>
-                            <i class="fa fa-cc-discover"></i>
+                                    <div class="product-content">
+                                        <h3 class="product--title"><a href="">Washing Machine</a></h3>
+                                        <div class="product--price">$400</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p><span><i class="fa fa-lock"></i></span>Secure Online Payment</p>
                     </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="footer-widget">
-                <h2 class="widget-title">Categories</h2>
-                <ul>
-                    <li><a href="#">Clothing</a></li>
-                    <li><a href="#">Hand bags</a></li>
-                    <li><a href="#">Footwear</a></li>
-                    <li><a href="#">Laptops</a></li>
-                    <li><a href="#">Jewellery</a></li>
-                </ul>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                    <h2 class="widget-title">Information</h2>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Term & Condition</a></li>
-                        <li><a href="#">Return & Exchange</a></li>
-                        <li><a href="#">Shipping and Delivery</a></li>
-                        <li><a href="#">Private Policy</a></li>
-                    </ul>
+            <footer>
+                <div class="foot-container">
+                    <div class="row1">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h2 class="widget-title">About</h2>
+                                <p>Up4Naija is the World next largest online mall. We will be launched in March 2020 and
+                                    our mission is to become the engine of commerce and trade in Africa. </p>
+                                <div class="cards">
+                                    <i class="fa fa-cc-mastercard"></i>
+                                    <i class="fa fa-cc-paypal"></i>
+                                    <i class="fa fa-cc-amex"></i>
+                                    <i class="fa fa-cc-visa"></i>
+                                    <i class="fa fa-cc-discover"></i>
+                                </div>
+                                <p><span><i class="fa fa-lock"></i></span>Secure Online Payment</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h2 class="widget-title">Categories</h2>
+                                <ul>
+                                    <li><a href="#">Clothing</a></li>
+                                    <li><a href="#">Hand bags</a></li>
+                                    <li><a href="#">Footwear</a></li>
+                                    <li><a href="#">Laptops</a></li>
+                                    <li><a href="#">Jewellery</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h2 class="widget-title">Information</h2>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Term & Condition</a></li>
+                                    <li><a href="#">Return & Exchange</a></li>
+                                    <li><a href="#">Shipping and Delivery</a></li>
+                                    <li><a href="#">Private Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h2 class="widget-title">Contact</h2>
+                                <div class="contact-address">
+                                    <i class="fa fa-map"></i>Adress: 22, Alhaji Ajisope street Agunpopo, Oyo, Oyo State
+                                </div>
+                                <div class="Contact-number">
+                                    <i class="fa fa-phone"></i> Phone: +2348146818593
+                                </div>
+                                <div class="Contact-email">
+                                    <i class="fa fa-envelope"></i> Email: up4naija@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copy-right">
+                            <p>Copyright 2019 All rights reserved</p>
+                        </div>
                     </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                    <h2 class="widget-title">Contact</h2>
-                    <div class="contact-address">
-                        <i class= "fa fa-map"></i>Adress: 22, Alhaji Ajisope street Agunpopo, Oyo, Oyo State
-                    </div>
-                    <div class="Contact-number">
-                        <i class= "fa fa-phone"></i> Phone: +2348146818593
-                    </div>
-                    <div class="Contact-email">
-                        <i class= "fa fa-envelope"></i> Email: up4naija@gmail.com
-                    </div>
-            </div>
-            </div>
-            <div class="copy-right">
-                <p>Copyright 2019 All rights reserved</p>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="../javascript/homepage.js"></script>
+                </div>
+            </footer>
+            <script src="../javascript/homepage.js"></script>
 </body>
+
 </html>
