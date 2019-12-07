@@ -1,12 +1,5 @@
-let productImage = document.getElementsByClassName("images");
-let prodTitle = document.getElementsByClassName("product-title");
-let prodPrice = document.getElementsByClassName("product-price");
-let display = document.getElementById("product-box");
-display.addEventListener("mouseover", displayProduct);
 
-
-
-let productArray = 
+  let productArray = 
 [
      {
        image: "../images/HP250.jpg",
@@ -57,12 +50,30 @@ let productArray =
      },
 ];
 
-function displayProduct()
-{
-    for (i = 0; i < productArray.length; i++)
+document.addEventListener("DOMContentLoaded", function(){
+    let productImage = document.getElementsByClassName("images");
+    let prodTitle = document.getElementsByClassName("product-title");
+    let prodPrice = document.getElementsByClassName("product-price");
+    let displayContent = document.getElementById("product-box");
+  
+    displayContent.onmouseenter = function ()
     {
-     productImage[i].setAttribute("src", productArray[i].image);
-     prodTitle[i].innerHTML = productArray[i].title;
-     prodPrice[i].innerHTML = productArray[i].price;
-   }
-}
+        for (i = 0; i < productArray.length; i++)
+        {
+         productImage[i].setAttribute("src", productArray[i].image);
+         prodTitle[i].innerHTML = productArray[i].title;
+         prodPrice[i].innerHTML = productArray[i].price;
+       }
+    }
+
+    displayContent.onmouseleave = function() 
+    {
+        for (i = 0; i < productArray.length; i++)
+        {
+         productImage[i].setAttribute("src", productArray[i].image);
+         prodTitle[i].innerHTML = "";
+         prodPrice[i].innerHTML = "";
+       }
+    }
+
+  });
