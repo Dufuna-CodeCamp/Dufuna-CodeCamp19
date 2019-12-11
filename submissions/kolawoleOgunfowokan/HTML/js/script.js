@@ -1,12 +1,6 @@
 
   let productArray = 
 [
-     {
-       image: "../images/HP250.jpg",
-       title: "HP Laptop",
-       price: "N130000"
-     },
-
      { 
        image: "../images/eutetic-freezer.jpg",
        title: "Freezer",
@@ -50,30 +44,31 @@
      },
 ];
 
-document.addEventListener("DOMContentLoaded", function(){
-    let productImage = document.getElementsByClassName("images");
-    let prodTitle = document.getElementsByClassName("product-title");
-    let prodPrice = document.getElementsByClassName("product-price");
-    let displayContent = document.getElementById("product-box");
+let displayContent = document.getElementById("product-box");
   
-    displayContent.onmouseenter = function ()
-    {
-        for (i = 0; i < productArray.length; i++)
-        {
-         productImage[i].setAttribute("src", productArray[i].image);
-         prodTitle[i].innerHTML = productArray[i].title;
-         prodPrice[i].innerHTML = productArray[i].price;
-       }
-    }
+displayContent.addEventListener("click", function() {
+  displayProducts();
+});
 
-    displayContent.onmouseleave = function() 
-    {
-        for (i = 0; i < productArray.length; i++)
-        {
-         productImage[i].setAttribute("src", productArray[i].image);
-         prodTitle[i].innerHTML = "";
-         prodPrice[i].innerHTML = "";
-       }
-    }
-
+function displayProducts() {
+  productArray.forEach(element => {
+      let productArray = `
+      <div class="product-box">
+      <div class="product-content">
+          <div class="product-image">
+              <img src="${element.image}"  class="images" id="image"/>
+          </div>
+         <div>
+             <h3 class="product-title">
+               ${element.title}
+             </h3>
+         </div> 
+         <div class="product-price">
+              ${element.price}
+         </div>
+      </div>
+  </div>
+      `;
+      displayContent.innerHTML += productArray;
   });
+}
