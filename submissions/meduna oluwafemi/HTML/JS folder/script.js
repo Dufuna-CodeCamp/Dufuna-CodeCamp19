@@ -10,22 +10,17 @@ const productArr = [
         name:"Nike-React-270(summer)" ,
         imageUrl: "./img/image 1.webp",
         price:"$125"
-
     },
     {
         name:"Kyrie 6(BHM)" ,
         imageUrl: "./img/image 2.webp",
         price:"$400"
-
     },
     {
         name:"Nike-urban" ,
         imageUrl: "./img/image 3.webp",
         price:"$135"
-
     }
-    
-
 ];
 
 
@@ -36,3 +31,5 @@ function displayProduct() {
        productPrice[i].innerHTML = productArr[i].price;
    }
 }
+
+

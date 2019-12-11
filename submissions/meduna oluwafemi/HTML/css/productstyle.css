@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Poppins&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0%;
     font-family:'Poppins', sans-serif; 
     box-sizing: border-box;
     text-decoration: none;
-
 }
-
-
-
 html {
     overflow-y: scroll;
     font-family:'Poppins', sans-serif;
     color: #333;
-
 }
-
 .header {
     width: 100%;
     position: fixed;  
@@ -27,9 +19,7 @@ html {
     color: #fff;    
     padding-bottom: 10px;
     z-index: 1000;
-
 }
-
 /* styling for the logo/navigation */
 .logo {
     color: #333;
@@ -40,24 +30,18 @@ html {
     border-bottom: 0.25px solid #999;
     margin-left: 4.2%;
     cursor: pointer;
-
 }
-
 .logo span {
     color: #f70606;
     font-family: cursive;
-    
 }
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
     background-color: #fff;
-    
 }
-
 .nav-middle {
     display: flex;
     justify-content: space-between;
@@ -65,9 +49,7 @@ nav {
     margin-left: auto;
     width: 35%;
     padding-bottom: 3px;
-    
 }
-
 .nav-middle a {
     color: #333;
     text-decoration: none;
@@ -76,12 +58,9 @@ nav {
     font-size: 12px;
     text-transform: uppercase;
 }
-
 .nav-middle a:hover {
     border-bottom: 1px solid #333;
-
 }
-
 .search {
     display: flex;
     cursor: text;
@@ -93,8 +72,6 @@ nav {
     width: 150px;
     border-radius: 5px;
 }
-
-
 .search i {
     text-shadow: 1px 1px 1px #ccc;
     font-size: 0.75rem;
@@ -104,7 +81,6 @@ nav {
     margin-left: auto;
     text-align: right;
 }
-
 
 /* login button */
 #login-button {
@@ -130,7 +106,6 @@ nav {
     width: 10%;
     cursor: pointer;
     color: #333;
-    
 }
 
 /* login icons */
@@ -138,15 +113,12 @@ nav {
     text-shadow: 1px 1px 1px #ccc;
     font-size: .75rem;
     color: #333; 
-
 }
-
 .login i:hover {
     transform: scale(1.2);
     transition: ease-in 0.3s;
     color: black;
 }
-
 .product-title2 button {
     width: 300px;
     letter-spacing: 2px;
@@ -163,9 +135,7 @@ nav {
     margin: 2% 0;
     margin-left: 4.2%;
     border-radius: 5px;
-
 }
-
 .products-container {
     display: flex;
     align-items: center;
@@ -179,22 +149,18 @@ nav {
     margin-bottom: 10%;
     height: auto;
 }
-
 .products {
     height: auto;
     width: 33%;
     margin-left: 70px;
     box-shadow: #fff 3px 3px;
 }
-
 .products img {
     width: 100%;
     height: auto;
     box-shadow:#999 5px 5px 5px;
     border-radius: 4px;
-
 }
-
 .products p {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -203,7 +169,6 @@ nav {
     color: #333;
     text-align: left;
 }
-
 .products h4 {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -214,7 +179,6 @@ nav {
     color: #333;
     text-align: left;
 }
-
 .button {
     text-transform: uppercase;
     border-radius: 30px;
@@ -226,68 +190,8 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-
 .button:hover {
     background-color: #999;
     color: white;
     transition: 0.3s ease-in-out;
-}
-
- 
-/* styling for the footer  */
-footer  {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgba(0, 0, 0, 0);
-    margin-top: 10rem;
-    font-size: 10px;
-    font-family: 'Poppins', sans-serif; 
-    border-top: 1px solid #333;
-    padding: 20px 0px;
-    
-}
-
-footer ul li {
-    list-style: none;
-}
-
-.footer-grid {
-    text-align: center;
-    letter-spacing: 2px;
-    line-height: 30px;
-}
-
-.footer-grid > p {
-    padding:0  20px 20px 0;
-    font-family:  'Poppins', sans-serif; 
-    font-size: 20px;
-    color: #333;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.footer-grid > p i {
-    font-size: 1rem;
-}
-
-.pop-info li:hover {
-    transform: scale(1.1);
-    transition: ease-in-out 0.5s;
-}
-.social-icons {
-    background:transparent;
-    height: 70px;
-     display: flex;
-     margin-left: 200px;
-     justify-content: space-between;
-     width: 15%;
-     font-size: 1rem;
-}
-
-.social-icons span a {
-    color: black;
-    list-style: none;
-    text-decoration: none;
-
 }

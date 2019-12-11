@@ -1,36 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Poppins&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0%;
     font-family:'Poppins', sans-serif; 
     box-sizing: border-box;
     text-decoration: none;
-
 }
-
-
-
 html {
     overflow-x: hidden;
     font-family:'Poppins', sans-serif;
     color: #999;
-
 }
-
-.header {
+#header {
     width: 100%;
     position: fixed;  
-    top: 0%;  
-    color: #fff;    
-    padding-bottom: 10px;
-    z-index: 1000;
-
+    top: 0;  
+    transition: top 0.3s;
+    color: #fff; 
+    z-index: 1000;   
 }
-
 /* styling for the logo/navigation */
 .logo {
     color: #333;
@@ -41,24 +31,18 @@ html {
     border-bottom: 0.25px solid #999;
     margin-left: 4.2%;
     cursor: pointer;
-
 }
-
 .logo span {
     color: #f70606;
     font-family: cursive;
-    
 }
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
     background-color: #fff;
-    
 }
-
 .nav-middle {
     display: flex;
     justify-content: space-between;
@@ -66,9 +50,7 @@ nav {
     margin-left: auto;
     width: 35%;
     padding-bottom: 3px;
-    
 }
-
 .nav-middle a {
     color: #333;
     text-decoration: none;
@@ -77,53 +59,49 @@ nav {
     font-size: 12px;
     text-transform: uppercase;
 }
-
 .nav-middle a:hover {
     border-bottom: 1px solid #333;
-
 }
-
-.search {
-    display: flex;
+.search input {
     cursor: text;
-    justify-content: space-around;
-    justify-items:flex-end;
-    margin-left: auto;
+    margin-left: 150px;
+    text-align: right;
     height: auto;
-    border: #333  1px solid;
-    width: 150px;
-    border-radius: 5px;
+    position: relative;
+    border: #333 1px solid;
+    width: 300px;
+    padding: 1px 5px 1px 1px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 1px;
 }
-
-
 .search i {
     text-shadow: 1px 1px 1px #ccc;
     font-size: 0.75rem;
-    padding: 5px;
+    padding: 8px 7px 6px 7px;
+    border-radius: 1px;
+    border: 0.5px solid #333;
     color: #333;
+    background-color: #999;
     font-size: 10px;
-    margin-left: auto;
+    margin-left: 0;
     text-align: right;
 }
-
-
 /* login button */
 #login-button {
     width: auto;
     padding: 3px 5px;
-    border-radius: 5px;
+    border-radius: 1px;
     letter-spacing: 1px;
     font-size: 12px;
+    background: transparent;
     border: none;
-    background-color: transparent;
 }
-
 #login-button:hover {
     background-color: #999;
     color: white;
     transition: 0.3s ease-in-out;
 }
-
 .login  {
     justify-content: space-around;
     justify-items:flex-start;
@@ -131,24 +109,18 @@ nav {
     width: 10%;
     cursor: pointer;
     color: #333;
-    
 }
-
 /* login icons */
 .login i {
     text-shadow: 1px 1px 1px #ccc;
     font-size: .75rem;
     color: #333; 
-
 }
-
 .login i:hover {
     transform: scale(1.2);
     transition: ease-in 0.3s;
     color: black;
 }
-
-
 /* styling for the main banner  */
 .banner {
     margin: 0 auto;
@@ -157,10 +129,7 @@ nav {
     background-image:linear-gradient(90deg,rgba(19, 18, 18, 0),rgb(10, 10, 10)), url('../img/banner1.jpg');
     background-position: center;
     background-size: cover;
-    
 }
-
-
 .banner h2 {
     position: absolute;
     left: 5%;
@@ -168,27 +137,24 @@ nav {
     top: 60%;
     text-transform: uppercase;
     font-size: 4.5rem;
-    font-weight: 800;
+    font-weight: bolder;
     color: #f70606;
 }
-
-
 .banner p {
     position: absolute;
     left: 5%;
     top:72%;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #fff;
     margin: 30px 0;
     letter-spacing: 1px;
-
 }
-
 .explore {
     width: 250px;
     border: #333 solid 1px;
-    border-radius: 20px;
+    border-radius: 2px;
     font-family:'Poppins', sans-serif ;
     font-size: 30px;
     letter-spacing: 2px;
@@ -199,14 +165,12 @@ nav {
     background-color: #fff;
     cursor: pointer;
 }
-
 .explore:hover {
     transition: ease-in-out 1s;
     background-color: #999;
 }
 
 /* styling for the product title  */
-
 #product-info {
     width: auto;
     text-align:center;
@@ -231,14 +195,12 @@ nav {
     border: 1px solid #333;
     height: 50px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 2px;
 }
-
 #discover:hover {
     background-color: #999;
     transition: ease-in-out .5s;
 }
-
 .product-title,
 .product-title2 {
     text-align: left;
@@ -252,12 +214,11 @@ nav {
     margin-top: 10%; 
     margin-bottom: 30px;
 }
-
 .product-title2 {
     margin-top: 6%;
 }
 
-/* styling for banner-2  */
+/* styling for banner-2 and banner-3  */
 .banner-2 {
     display: inline-block;
     height: 80vh;
@@ -268,11 +229,9 @@ nav {
     width: 55%;
     box-shadow: 3px 3px 3px #333;
     padding: 50px 0;
-    border-radius: 4px;
+    border-radius: 2px;
     margin-left: 5%;
 }
-
-
 .banner-2 h2,
 .banner-3 h2 {
     position: relative;
@@ -284,13 +243,12 @@ nav {
     font-weight: 800;
     color: #fff;
 }
-
 .banner-2 p,
 .banner-3 p {
     position: relative;
     background-color:white;
     width: 100px;
-    border-radius: 20px;
+    border-radius: 1px;
     padding: 5px 0;
     text-align: center;
     left: 10%;
@@ -300,12 +258,10 @@ nav {
     color: black;
     font-weight: 700;
 }
-
 .banner-2 p:hover, .banner-3 p:hover {
     background-color: #999;
     transition: ease-in-out .5s;
 }
-
 .banner-2 a,
 .banner-3 a  {
     text-decoration: none;
@@ -313,6 +269,9 @@ nav {
 }
 
 /* styling for banner-3  */
+.banner-3 h2 {
+    font-size: 2.5rem;
+}
 .banner-3 {
     display: inline-block;
     height: 75vh;
@@ -323,7 +282,7 @@ nav {
     width: 35%;
     padding: 20px 0;
     box-shadow: 10px 10px 5px #999;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-left: 0;
     margin-right: 4%;
 }
@@ -343,10 +302,6 @@ nav {
     }
 }
 
-.banner-3 h2 {
-    font-size: 2.5rem;
-}
-
 /* styling for the products  */
 .products-container {
     display: flex;
@@ -361,29 +316,24 @@ nav {
     margin-bottom: 10%;
     height: auto;
 }
-
 .products {
     height: auto;
     width: 33%;
     margin-left: 70px;
     box-shadow: #fff 3px 3px;
 }
-
 .products img {
     width: 100%;
     height: auto;
     box-shadow:#999 5px 5px 5px;
-    border-radius: 4px;
-
+    border-radius: 2px;
 }
-
 .products p {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 13px;
     text-align: left;
 }
-
 .products h4 {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -392,10 +342,9 @@ nav {
     margin: 10px 0;
     text-align: left;
 }
-
 .button {
     text-transform: uppercase;
-    border-radius: 30px;
+    border-radius: 1px;
     text-align: center;
     padding: 5px;
     width: 100px;
@@ -404,7 +353,6 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-
 .button:hover {
     background-color: #999;
     color: white;
@@ -417,11 +365,9 @@ nav {
     width: 100%;
     margin: 5% 0;
 }
-  
 .advert {
     width: 33.3%;
 }
-
 .advert p {
     margin-top: 30px;
     text-transform: uppercase;
@@ -430,12 +376,10 @@ nav {
     color: #333;
     font-weight: 700;
 }
-
 .advert p:hover {
     transform: scale(1.2);
     transition: ease 0.3s;
 }
-
 .title-placeholder {
     text-align: center;
     line-height: 30px;
@@ -453,51 +397,32 @@ footer  {
     font-size: 10px;
     font-family: 'Poppins', sans-serif; 
     border-top: 1px solid #333;
-    padding: 20px 0px;
-    
+    padding: 20px 0px; 
 }
-
 footer ul li {
     list-style: none;
 }
-
 .footer-grid {
-    text-align: center;
+    text-align: left;
     letter-spacing: 2px;
     line-height: 30px;
 }
-
 .footer-grid > p {
     padding:0  20px 20px 0;
     font-family:  'Poppins', sans-serif; 
     font-size: 20px;
     color: #333;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
+    margin-left: 70px;
     text-transform: uppercase;
 }
-
+.footer-grid, .pop-info1 {
+    margin-left: 70px;
+}
 .footer-grid > p i {
     font-size: 1rem;
 }
-
-.pop-info li:hover {
-    transform: scale(1.1);
-    transition: ease-in-out 0.5s;
-}
-.social-icons {
-    background:transparent;
-    height: 70px;
-     display: flex;
-     margin-left: 200px;
-     justify-content: space-between;
-     width: 15%;
-     font-size: 1rem;
-}
-
-.social-icons span a {
-    color: black;
-    list-style: none;
-    text-decoration: none;
-
+.pop-info1 li:hover {
+    color: #333;
 }
