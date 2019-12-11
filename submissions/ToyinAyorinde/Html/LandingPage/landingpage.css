@@ -49,7 +49,6 @@ nav{
     border-bottom: 1px solid black
 }
 nav > ul{
-    /*border:1px solid black;*/
     border-width:1px 0;
     list-style:none;
     margin:0;
@@ -106,7 +105,6 @@ nav > ul > li > a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    /*grid-gap: 7px;*/
 }
 .gallery-header{
     text-align: center;
@@ -115,7 +113,6 @@ nav > ul > li > a{
 }
 .gallery-img{
     border: solid 0.5px grey;
-    /* border-radius: 8px; */
     box-shadow: 6px 4px 14px 1px rgba(0,0,0,0.58);
     position: relative;
 
@@ -124,18 +121,15 @@ nav > ul > li > a{
     height: 100%;
     width: 100%; 
      object-fit: cover;
-     /* border-radius: 8px; */
     position: absolute;
     }
 .G1{
     grid-row: 1/3;
     grid-column: 1/3;
-    /* margin-left:12px;     */
 }
 .G2{
      grid-row: 3/5;
     grid-column: 1/2;
-    /* margin-left:12px; */
 }
 .G3{
      grid-row: 3/5;
@@ -144,12 +138,10 @@ nav > ul > li > a{
 .G4{
      grid-row: 1/5;
     grid-column: 3/4;
-    /* margin-left:12px;  */
 }
 /*shop */
 .shop{
     height: 100vh;
-   /*margin: 0 1rem 0 1rem ;*/
    
 }
 .shop > h3{
@@ -162,7 +154,6 @@ nav > ul > li > a{
 .main-container{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    /*border: black 1px solid;*/
      border-bottom: 1px solid black;
 }
 .left-side{
@@ -178,7 +169,7 @@ nav > ul > li > a{
     margin-top: 15px;
     color: #333;
 }
-/*right-side 14r3mh 15remw*/
+/*right-side*/
 .right-side{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -189,7 +180,6 @@ nav > ul > li > a{
 .product-img{
     position: relative;
     display: inline-block;
-    /* background-color: #333; */
     border-radius: 15px;
     height: 75%;
     width: 70%;
@@ -244,23 +234,3 @@ button{
     height: 20px;
     font-size: 16px;
 }
-/*Media Queries
-@media only screen and (min-width: 992px) {
-    .product-img{
-    height: 100%;
-    width: 100%;
-}
-}
-@media only screen and (max-height: 768px) {
-.product-img{
-    display: flex;
-    flex-direction: row;
-
-}
-}
-@media only screen and (max-width: 600px) {
-    .product-img{
-    height: 100%;
-    width: 100%;
-}
-}*/
