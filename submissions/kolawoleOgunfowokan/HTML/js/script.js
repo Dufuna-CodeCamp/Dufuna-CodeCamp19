@@ -83,7 +83,7 @@
   }
   
     else {
-       products = document.getElementById("btn").disabled;
+       products = button.disabled;
     }
    
   }
