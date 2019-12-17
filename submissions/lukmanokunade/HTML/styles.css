@@ -1,84 +1,84 @@
 *{
     box-sizing: border-box
-}
+    }
 *{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #F1F3F4;
-    font-family: sans-serif;
-    width: 100%;
-    height: 100%;
-}
-.top-nav-bar{
-    width: 100%;
-    margin-top: 5px;
-    position: relative;
-    margin-bottom: 20px;
-    border-bottom: 3px solid blue;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-}
-.logo{
-height: 40px;
-margin: 5px 25px;
-width: 5%;
-margin-bottom: 9px;
-}
-.form-control{
-margin-top: 9px;
-margin-left: 30px;
-border: 1px solid blue;
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
-border-top-right-radius: 0;
-border-bottom-right-radius: 0;
-float: left;
-width: 80%;
-font-size: 17px;
-padding: 10px;
-margin-bottom: 9px;
-box-shadow: 1;
-}
-.input-group-text{
-    background: blue;
-    border: 1px solid blue;
-    margin-top: 9px;
-    margin-bottom: 9px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    cursor: pointer;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 15px;
-}
-.search-box{
-    display: inline-flex;
-    width: 60%;
-}
-.fa-search{
-    color: white;
-    align-self: center ;
-}
-.category{
-    text-align: center;
-    background-color: orangered;
-    font-weight: bold;
-    font-size: 24px;
-    border-radius: 3px;
-}
-  .menu-bar{
+     margin: 0;
+     padding: 0;
+    }
+  body{
+     background-color: #F1F3F4;
+     font-family: sans-serif;
+     width: 100%;
+     height: 100%;
+    }
+  .top-nav-bar{
+     width: 100%;
+     margin-top: 5px;
+     position: relative;
+     margin-bottom: 20px;
+     border-bottom: 3px solid blue;
+     background-color: white;
+     display: flex;
+     flex-direction: row;
+   }
+  .logo{
+     height: 40px;
+     margin: 5px 25px;
+     width: 5%;
+     margin-bottom: 9px;
+   }
+  .form-control{
+     margin-top: 9px;
+     margin-left: 30px;
+     border: 1px solid blue;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+     float: left;
+     width: 80%;
+     font-size: 17px;
+     padding: 10px;
+     margin-bottom: 9px;
+     box-shadow: 1;
+   }
+   .input-group-text{
+      background: blue;
+      border: 1px solid blue;
+      margin-top: 9px;
+      margin-bottom: 9px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      cursor: pointer;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: 15px;
+    }
+    .search-box{
+      display: inline-flex;
+      width: 60%;
+    }
+    .fa-search{
+      color: white;
+      align-self: center ;
+    }
+    .category{
+      text-align: center;
+      background-color: orangered;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 3px;
+    }
+    .menu-bar{
       width: 45%;
       right: 0px;
       position: absolute;
-  }
-  .menu-bar ul{
+    }
+    .menu-bar ul{
       display: flex;
       float: right;
-  }
-  .menu-bar ul li{
+    }
+    .menu-bar ul li{
       border-left: 1px solid #fff;
       list-style-type: none;
       text-align: center;
@@ -86,8 +86,8 @@ box-shadow: 1;
       cursor: pointer;
       padding: 15px 45px;
       margin-top: 5px;
-  }
-  .menu-bar ul li a{
+    }
+    .menu-bar ul li a{
       font-size: 16px;
       font-weight:bold;
       color: white;
@@ -154,7 +154,7 @@ box-shadow: 1;
      }
      .recommend{
          margin: 50px 0;
-     }
+    }
      .title-box{
          background-color: blue;
          color: #fff;
@@ -167,11 +167,11 @@ box-shadow: 1;
          position: absolute;
          border: 1px solid white;
          text-align: center;
-     }
+    }
      .title-box h4{
          font-size: 14px;
          text-align: center;
-     }
+    }
      .product-top img{
           border: none;
           padding: 5px;
@@ -183,7 +183,7 @@ box-shadow: 1;
          font-size: 10px;
          font-weight: bold;
          color: black;
-     }
+    }
     .product-bottom h5{
         font-size: 5px;
         color: black;
@@ -217,4 +217,4 @@ box-shadow: 1;
           text-align: center;
           font-size: 15px;
           padding-bottom: 20px;
-}
+        }
