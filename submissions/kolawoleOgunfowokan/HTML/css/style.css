@@ -132,7 +132,9 @@ body {
     color: #181717;
     font-weight: bold;
     font-family: cursive;
-    font-size: 20px;;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: #6ee4d0;
 }
 
 .product-box {

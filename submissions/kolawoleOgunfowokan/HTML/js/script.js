@@ -20,9 +20,9 @@
        },
   
        {
-         image: "../images/java-prog.png",
-         title: "Java Book",
-         price: "N12000"
+         image: "../images/projector.jpg",
+         title: "EGate i9 LED projector",
+         price: "N120000"
        },
   
        {
@@ -32,14 +32,14 @@
        },
   
        {
-         image: "../images/introprog.jpg",
+         image: "../images/prog-book.jpg",
          title: "Introduction to Programming",
          price: "N10000"
        },
   
        {
-         image: "../images/Macbook.jpg",
-         title: "Macbook pro",
+         image: "../images/apple-macbook-pro.jpg",
+         title: "Apple Macbook pro 2018",
          price: "N490000"
        },
   
