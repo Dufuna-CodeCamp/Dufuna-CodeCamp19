@@ -58,32 +58,36 @@
     displayProducts();
   });
   
-  function displayProducts() {
-    displayContent = !displayContent;
-    if(displayContent == true){
-        productArray.forEach(element => {
-        let productArray = `
-           <div class="product-box" id="product-box">
-              <div class="product-content">
-                <div class="product-image">
-                  <img src="${element.image}"  class="images">
-                </div>
-                <div>
-                  <h3 class="product-title">
-                     ${element.title}
-                  </h3>
-                </div> 
-                <div class="product-price">
-                     ${element.price}
-                </div>
-            </div>
-          </div>`;
-        products.innerHTML += productArray;
-    });
-  }
+  function displayProducts() 
+  {
+      displayContent = !displayContent;
+      if(displayContent == true)
+      {
+          productArray.forEach(element =>
+            {
+                let productArray = `
+                    <div class="product-box" id="product-box">
+                        <div class="product-content">
+                            <div class="product-image">
+                              <img src="${element.image}"  class="images">
+                            </div>
+                            <div>
+                                <h3 class="product-title">
+                                    ${element.title}
+                                </h3>
+                            </div> 
+                            <div class="product-price">
+                                  ${element.price}
+                            </div>
+                      </div>
+                    </div>`;
+              products.innerHTML += productArray;
+          });
+    }
   
-    else {
-       products = button.disabled;
+    else 
+    {
+        products = document.getElementById("btn").disabled;
     }
    
   }
