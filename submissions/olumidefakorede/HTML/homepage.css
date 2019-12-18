@@ -13,7 +13,6 @@ html {
 body {
     background-color: rgb(241, 241, 241);
     padding: 25px 50px;
-    
 }
 a {
     text-decoration: none;
@@ -72,6 +71,9 @@ a {
 .link:hover {
     color: rgba(50, 205, 50,1);
 }
+.link:enabled {
+    border-bottom: 2px solid rgba(50, 205, 50,0.7);
+}
 /* Declared Style applicable everywhere */
 input {
     margin: 0;
@@ -79,6 +81,7 @@ input {
     border:solid 2px rgba(50, 205, 50,1);
     background-color: rgb(255, 255, 255);
     height: 2.5em;
+    caret-color: rgba(50, 205, 50,0.7);
 }
 button {
     margin: 0;
@@ -96,9 +99,9 @@ button:hover {
     background-color: rgba(50, 205, 50,1);
     color: white;
 }
-/* p {
-    text-align: center;
-} */
+li {
+    list-style: none;
+}
 
 /* End of Declared Styles */
 .shop-cart {
@@ -109,21 +112,6 @@ button:hover {
 .shopping-cart{
     box-sizing: border-box;
     width: 2em;
-}
-@media (max-width: 768px) {
-    .shop-cart {
-        float: left;
-        margin:0;
-    }
-    .product-cat-cont {
-        margin:0;
-    }
-    .newsletter-left, .newsletter-right {
-        float: none;
-    }
-    .footer-wrap {
-        display: inherit;
-    }
 }
 .clearfix {
     clear: both;
@@ -153,9 +141,6 @@ button:hover {
 .products-wrap {
     align-content: center;
 }
-li {
-    list-style: none;
-}
 .product-cat-name {
     display: block;
     background-color: rgba(50, 205, 50,0.7);
@@ -165,6 +150,8 @@ li {
 }
 .product-cat-pic img {
     display: block;
+    width: 277px;
+    height: 285px;
 }    
 .product-cat-cont {
     float: left;
@@ -186,7 +173,6 @@ li {
     background-color: rgba(50, 205, 50,0.3);
     box-sizing: border-box;
     width: 100%;
-
 }
 .newsletter-wrap {
     padding: 20px 150px; 
@@ -215,6 +201,8 @@ li {
     align-content: center;
     float: left;
     margin: auto 50px;
+    width: 277px;
+    height: 205px;
 }
 .blog-cont-header {
     text-align: center;
@@ -282,4 +270,128 @@ li {
 .footer-copyright {
     text-align: center;
     margin:20px;
+}
+
+/* Product Page Style */
+.product-page-header {
+    margin: 20px auto;
+    text-align: center;
+}
+.product-page-header  ul li h3 {
+    border-right: 2px solid rgba(50, 205, 50,0.7);
+    padding: 0px 10px;
+    display: inline;
+}
+.product-page-header li {
+    display: inline;
+}
+.product-box {
+    width: 300px;
+    border: 2px solid rgba(50, 205, 50,0.3);
+    text-align: center; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding:10px;
+    margin: 20px;
+}
+.product-image img {
+    width: 275px;
+    height: 250px;
+}
+.product-name {
+    color: rgba(50, 205, 50,1);
+}
+.product-price-cart-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.product-price {
+    font-size: 1.3em;
+}
+.product-add-to-cart button {
+    border-color: rgba(50, 205, 50,0.3);
+}
+.product-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+/* Shopping cart styling starts here */
+.shopping-cart-header {
+    display: block;
+}
+.header-bar {
+    background-color: rgba(50, 205, 50,0.3);
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+}
+.cart-header-text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.shopping-cart-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.shopping-cart-product {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.shopping-cart-product-image img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.shopping-cart-product-title-container {
+    display: inline;
+    margin: 0px 40px;
+}
+.shopping-cart-product-desc {
+    box-sizing: border-box;
+    margin: 10px auto;
+    font-size: 0.7em;
+}
+.shopping-cart-product-counter input {
+    width: 50px;
+}
+.shopping-cart-checkout-cancel {
+    margin: 10px auto;
+}
+.shopping-cart-left-side-cost-calc  h4{
+    display: inline-block;
+}
+
+/* MediaQueries */
+@media (max-width: 768px) {
+    .shop-cart {
+        float: left;
+        margin:0;
+    }
+    .product-cat-cont {
+        margin:0;
+    }
+    .newsletter-left, .newsletter-right {
+        float: none;
+    }
+    .footer-wrap {
+        display: block;
+        position: sticky;
+    }
+    .footer-address {
+        position: relative;
+    }
+    .product-grid-wrapper {
+        display: block;
+    }
 }
