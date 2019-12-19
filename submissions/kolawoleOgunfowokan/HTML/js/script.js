@@ -51,7 +51,6 @@
   ];
   
   let button = document.getElementById("btn");
-  button.disabled = false;
   let products = document.getElementById("product-box");
     
   button.addEventListener("click", function() {
