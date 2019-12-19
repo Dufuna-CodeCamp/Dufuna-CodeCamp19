@@ -20,9 +20,9 @@
        },
   
        {
-         image: "../images/projector.jpg",
-         title: "EGate i9 LED projector",
-         price: "N120000"
+         image: "../images/java-prog.png",
+         title: "Java Book",
+         price: "N12000"
        },
   
        {
@@ -32,14 +32,14 @@
        },
   
        {
-         image: "../images/prog-book.jpg",
+         image: "../images/introprog.jpg",
          title: "Introduction to Programming",
          price: "N10000"
        },
   
        {
-         image: "../images/apple-macbook-pro.jpg",
-         title: "Apple Macbook pro 2018",
+         image: "../images/Macbook.jpg",
+         title: "Macbook pro",
          price: "N490000"
        },
   
@@ -51,7 +51,7 @@
   ];
   
   let button = document.getElementById("btn");
-  let displayContent = false;
+  button.disabled = false;
   let products = document.getElementById("product-box");
     
   button.addEventListener("click", function() {
@@ -60,10 +60,7 @@
   
   function displayProducts() 
   {
-      displayContent = !displayContent;
-      if(displayContent == true)
-      {
-          productArray.forEach(element =>
+        productArray.forEach(element =>
             {
                 let productArray = `
                     <div class="product-box" id="product-box">
@@ -83,13 +80,8 @@
                     </div>`;
               products.innerHTML += productArray;
           });
-    }
-  
-    else 
-    {
-        products = document.getElementById("btn").disabled;
-    }
-   
+              
+             button.disabled = true;
   }
   
   
