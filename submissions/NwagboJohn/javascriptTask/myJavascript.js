@@ -18,7 +18,7 @@ var productList = [
 
 var nextButton = document.querySelector('#button');
 nextButton.addEventListener('click', e => {
-
+    nextButton.disabled = true;
     var displayItem = document.querySelector(".displayItem");
 
     productList.forEach(product => {
