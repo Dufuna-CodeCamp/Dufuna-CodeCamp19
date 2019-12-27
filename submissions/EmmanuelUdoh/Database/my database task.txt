@@ -1,0 +1,98 @@
+﻿CREATE TABLE IF NOT EXISTS `brands` (
+  `id` int(20) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `description` text NOT NULL
+)
+
+
+CREATE TABLE IF NOT EXISTS `products` (
+  `id` int(20) NOT NULL,
+  `brand_id` int(50) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `description` text NOT NULL,
+  `price` int(6) NOT NULL,
+  `manufacturer` varchar(20) NOT NULL,
+  `picture_url` varchar(20) NOT NULL
+)
+
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL,
+  `firstname` varchar(15) NOT NULL,
+  `lastname` varchar(15) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `home_address` varchar(100) NOT NULL
+)
+
+
+  
+
+
+
+
+
+Question 3
+
+
+INSERT INTO `brands` (`id`, `name`, `description`) VALUES
+(1, 'iTec 32', '32’ FLAT SCREEN TELEVISION\r\n1366 x 768 display resolution\r\n3.9kg weight\r\nPower 100V-240V\r\nAC: 100V-200V, 50Hz/ 60Hz Power Supply\r\nUSB, HDMI, Earphone & PC Audio slots inclusive\r\nBlack Colour\r\nRefresh rate: 60Hz'),
+(2, 'LG', 'Place yourself in immersive sound, Dolby AudioPlug in a USB drive for contentEnjoy top-quality audio and video over a single HDMI cable  Display Type:    LEDScreen Size: 32 Antenna Input + DTV Free channels:   Yes AV + Component: YesHDMI:  2USB: 1\r\n\r\nDisplay Type:    LED\r\nScreen Size: 32\r\n Antenna Input + DTV Free channels:   Yes\r\n AV + Component: Yes\r\nHDMI:  2\r\nUSB: 1'),
+(3, 'Tecno camon air', 'Operating System: Android™9 Pie•Processor: 2.0GHz Quad-Core•Network: GSM/WCDMA/LTE•Dimension: 164.2*76.1*8.15mm•Display: 6.55" Dot-in Display•Resolution: 720*1600•Camera: 8MP Front Camera 16MP+2MP+5MP Triple Rear Camera with Quad Flash{Ultra Clear Shot/Super wide Angle/2cm Macro Photography/Bokeh Effect}•Sensor: G-Sensor/Ambient Light Sensor,Proximity Sensor,Fingerprint Sensor•Battery Capacity: 4000mAh{typ}'),
+(4, 'Samsung S10', 'BODY Dimensions 142.2 x 69.9 x 7.9 mm (5.60 x 2.75 x 0.31 in)\r\nWeight 150 g (5.29 oz)\r\nBuild Front/back glass (Gorilla Glass 5), aluminum frame\r\n\r\nSIM Single SIM (Nano-SIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)\r\nSamsung Pay (Visa, MasterCard certified)\r\nIP68 dust/water proof (up to 1.5m for 30 mins)\r\n\r\nDISPLAY Type Dynamic AMOLED capacitive touchscreen, 16M colors\r\nSize 5.8 inches, 82.8 cm2 (~83.3% screen-to-body ratio)\r\nResolution 1080 x 2280 pixels, 19:9 ratio (~438 ppi density)\r\nProtection Corning Gorilla Glass 5\r\nHDR10+\r\nAlways-on display\r\n\r\nPLATFORM OS Android 9.0 (Pie); One UI\r\nChipset Exynos 9820 (8 nm) - EMEA\r\nQualcomm SDM855 Snapdragon 855 (7 nm) - USA/LATAM, China\r\nCPU Octa-core (2x2.73 GHz Mongoose M4 & 2x2.31 GHz Cortex-A75 & 4x1.95 GHz Cortex-A55) - EMEA\r\nOcta-core (1x2.84 GHz Kryo 485 & 3x2.41 GHz Kryo 485 & 4x1.78 GHz Kryo 485) - USA/LATAM, China\r\nGPU Mali-G76 MP12 - EMEA\r\nAdreno 640 - USA/LATAM, China\r\n\r\nMEMORY Card slot microSD, up to 512 GB (uses SIM 2 slot) - dual SIM model only\r\nInternal 256 GB, 8 GB RAM or 128 GB, 6 GB RAM\r\n\r\nMAIN CAMERA Dual 12 MP, f/1.5-2.4, 26mm (wide), 1/2.55", 1.4µm, Dual Pixel PDAF, OIS\r\n16 MP, f/2.2, 12mm (ultrawide), 1.0µm\r\nFeatures LED flash, auto-HDR, panorama\r\nVideo 2160p@60fps, 1080p@240fps, 720p@960fps, HDR, dual-video rec.\r\n\r\nSELFIE CAMERA Single 10 MP, f/1.9, 26mm (wide), 1.22µm, Dual Pixel PDAF\r\nFeatures Dual video call, Auto-HDR\r\nVideo 2160p@30fps, 1080p@30fps');
+
+
+
+
+
+
+INSERT INTO `products` (`id`, `brand_id`, `name`, `description`, `price`, `manufacturer`, `picture_url`) VALUES
+(0, 678, 'milk', 'just milk', 890, 'holland', 'milk.com'),
+(1, 1, 'iTec 32', '32’ FLAT SCREEN TELEVISION\r\n1366 x 768 display resolution\r\n3.9kg weight\r\nPower 100V-240V\r\nAC: 100V-200V, 50Hz/ 60Hz Power Supply\r\nUSB, HDMI, Earphone & PC Audio slots inclusive\r\nBlack Colour\r\nRefresh rate: 60Hz', 30000, 'Hisense', 'hisense.com'),
+(2, 2, 'LG', 'Place yourself in immersive sound, Dolby AudioPlug in a USB drive for contentEnjoy top-quality audio and video over a single HDMI cable  Display Type:    LEDScreen Size: 32 Antenna Input + DTV Free channels:   Yes AV + Component: YesHDMI:  2USB: 1\r\n\r\nDisplay Type:    LED\r\nScreen Size: 32\r\n Antenna Input + DTV Free channels:   Yes\r\n AV + Component: Yes\r\nHDMI:  2\r\nUSB: 1', 63000, 'LG', 'lg.com'),
+(3, 432, 'Tecno camon air', 'Operating System: Android™9 Pie•Processor: 2.0GHz Quad-Core•Network: GSM/WCDMA/LTE•Dimension: 164.2*76.1*8.15mm•Display: 6.55" Dot-in Display•Resolution: 720*1600•Camera: 8MP Front Camera 16MP+2MP+5MP Triple Rear Camera with Quad Flash{Ultra Clear Shot/Super wide Angle/2cm Macro Photography/Bokeh Effect}•Sensor: G-Sensor/Ambient Light Sensor,Proximity Sensor,Fingerprint Sensor•Battery Capacity: 4000mAh{typ}', 39000, 'Transsion', 'tecno.com'),
+(4, 456, 'Samsung S10', 'Display Size: 4.7-inch (diagonal) LED-backlit widescreen\r\nDisplay Tech: Retina HD display with 3D Touch\r\nProcessor: A9 chip with 64-bit architecture\r\nMemory: RAM 2GB, ROM 32GB\r\nOperating System: iOS 11\r\nCamera: 12-megapixel iSight camera with 1.22µ pixels (Rear)\r\n5-megapixel (Front)\r\nSIM Type: Nano-SIM\r\nNetwork: 4G LT', 197000, 'Samsung', 'samsung.com'),
+(5, 345, 'Xprinter High Qualit', 'Latest Usb barcode Label printer.\r\nCan be used both as a barcode label printer and Thermal receipt printer at the same time.\r\nsupports 20mm to 80mm Thermal papers or self adhesive label paper\r\nAutomatic paper self-check\r\nMultiple interface - USB, Network\r\nPrint head speed adjustable.\r\n127mm/s Print speed\r\n203 Dpi print resolution\r\n\r\n\r\n     \r\n\r\nPrinting method\r\n    direct thermal\r\n      Resolution     203DPI\r\n      Paper width     16-82mm\r\n      Printing speed     \r\n\r\nMax: 127mm/s, Min: 50.8mm/s\r\n      Reservoir     DRAM: 4M FLASH: 4M\r\n      Test printer head temperatur     Touch the switch slightly\r\n      Explore paper     \r\n\r\nphotosensor\r\n\r\nInterface\r\nUSB\r\nBarcode character\r\n      Barcode     CODE128.EAN128.ITF.CODE39.CODE93.EAN13\r\nEAN13+2EAN13+5EAN8 EAN8+2 EAN8+5\r\nCODABAR POSTNET UPC-A UPCA+2 UPCA+5\r\nUPC-E UPCE+2 UPC-E+5 CPOST MSI MSIC\r\nPLESSEY ITF14 EAN14\r\n      Barcode setting     \r\n\r\nsingle character: FONT 0 to FONT 8\r\n      Extension and rotation character     \r\n\r\nthe character can be extended 1-10 double in crossing and portrait, printing rotation(0° 90° 180° 270°)\r\n      Graph     \r\n\r\nImage file as PCX and BMP can be downloaded to FLASH and DRAM\r\n      \r\n\r\nMedium\r\n      Paper type     Thermal paper and selfadensive paper\r\n      Paper width     16mm-82mm\r\n      Roll external diameter     \r\n\r\nmax 100mm\r\n      Roll inner diameter     \r\n\r\nmin 25mm\r\n      Paper delivery     \r\n\r\ntear and peel\r\n      \r\n\r\nPower supply\r\n      Power supply input     24DC 2.5A\r\nPhysical character\r\n       Weight     \r\n\r\n1.44kg\r\n      Dimension     220(L) x 148(W) x 150(H)mm\r\nEnvironmental requirements\r\n      Working environment     5-45 , 20-80%RH\r\n      Storage environment     -40-55 ,=93%RH(40)\r\n\r\n\r\n(USB+Serial+Ethernet port)', 29999, 'Xprinter', 'xprinter.com'),
+(7, 678, 'milk', 'just milk', 890, 'holland', 'milk.com');
+
+
+
+
+
+
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `address`, `home_address`) VALUES
+(1, 'Segun ', 'Okiro', 'segokiro@gmail.com', '82, command road, Agidingbi', '82, command road, Agidingbi'),
+(2, 'Love', 'Testimony', 'lovtes@hotmail.com', '82,oshodi road', '4, surulere, Dopemu'),
+(3, 'Titus', 'John', 'johntitus@yahoomail.', 'block 43, living bus stop.', '69, ikeja road, aiport'),
+(5, 'Kebbi', 'love', 'lovekeb@yahoomail.', 'block 43, vera bus stop.', '121, ikeja road, aiport'),
+(6, 'Cynthia', 'Tope', 'topecy@gmail.com', 'yaba, Lagos', '45, ikotun, idimu,');
+
+
+Question 4
+  
+
+
+
+  
+
+Question 5
+  
+
+  
+
+
+
+
+
+Question 6
+  
+
+
+
+  
+
+Question 7
+
+
+
+https://docs.google.com/document/d/1gsY608JzU1I6pCKo8MAW7dOpgS8i6ekWH-owS-qwD-A/edit
