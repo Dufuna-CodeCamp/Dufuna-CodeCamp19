@@ -28,18 +28,18 @@ var products = [
 function loadproducts() {
     for (var i=0; i<products.length; i++) {
         let product = `
-        <div class="Product-box">
+        <div class="product-box">
             <div class="product-image">
                 ${products[i].image}    
             <div class="product-name">
                 ${products[i].name}
             </div>
             <div class="product-price">
-                ${Products[i].price}
+                ${products[i].price}
             </div>
         <div>
         `
-        document.write (product);
+        document.write (products);
     }
 
 }
