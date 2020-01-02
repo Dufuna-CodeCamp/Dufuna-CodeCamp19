@@ -17,28 +17,38 @@ var products =  [
     },
 ];
 
-function loadProducts() {
-    for (var i=0; i<products.length; i++){
-        let product = `
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="${products[i].image}"/>
-                </div>
-                <br><br>
-                <div class="product-name">
-                    ${products[i].name}
-                </div>
-                <div class="product-price">
-                    ${products[i].price}
+let button = document.getElementById("btn");
+let productDisplay = document.getElementById("product-box");
+  
+button.addEventListener("click", function() {
+  loadProducts();
+});
 
-                </div>
-            </div>
 
-            `  
-            document.write(product);
-    }
+function loadProducts() 
+{
+      products.forEach(element =>
+          {
+              let products = `
+                  <div class="product-box" id="product-box">
+                      <div class="product-content">
+                          <div class="product-img">
+                            <img src="${element.image}"  class="img">
+                          </div>
+                          <div>
+                              <h3 class="product-title">
+                                  ${element.name}
+                              </h3>
+                          </div> 
+                          <div class="product-price">
+                                ${element.price}
+                          </div>
+                       </div>
+                  </div>`;
+            productDisplay.innerHTML += products;
+        });
+            
+           button.disabled = true;
 }
-
-loadProducts();
 
 
