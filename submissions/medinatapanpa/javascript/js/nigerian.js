@@ -1,4 +1,4 @@
-let nigerian = [
+let nigerian_herbs = [
     {
         name:'Basil/scentleaf',
         image:'images/arabian.jpg',
@@ -21,13 +21,13 @@ let nigerian = [
     } 
 ];
 function load(){
-    for (x=0; x<nigerian.length; x++){
+    for (x=0; x<nigerian_herbs.length; x++){
     let herbs = `
     <div class="procat">
     <div class="card">
-        <img src="${nigerian[x].image}">
-        <h3>${nigerian[x].name}</h3>
-        <p class="price"> ${nigerian[x].price}</p>
+        <img src="${nigerian_herbs[x].image}">
+        <h3>${nigerian_herbs[x].name}</h3>
+        <p class="price"> ${nigerian_herbs[x].price}</p>
         <p><button>Add to Cart</button></p>
     </div>
     </div>
