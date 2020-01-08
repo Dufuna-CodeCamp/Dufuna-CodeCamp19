@@ -24,8 +24,6 @@ h1{
 form{
     font: size 20px;
     border:2px;
-    width:50px
-    background-color:RGBA
 }
 blockquote{
     font-size: 25px;
@@ -65,7 +63,7 @@ input[type=password] {
     display:inline-block;
     width:400px;
 }
-button[type=submit1]{
+button[type=submit]{
     background:blue;
     color:white;
 }
