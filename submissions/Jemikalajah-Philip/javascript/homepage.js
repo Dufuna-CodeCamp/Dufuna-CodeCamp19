@@ -2,6 +2,10 @@ let imgDiv = document.getElementsByClassName("product--image");
 let prodTitle = document.getElementsByClassName("product--title");
 let prodPrice = document.getElementsByClassName("product--price");
 let jsProductList = document.getElementById("js-product-list");
+let htmlProductList = document.getElementsByClassName("box1");
+let productGrid = document.getElementsByClassName("product-grid");
+let displayClickMen = false;
+let displayClickWomen = false;
 document
   .getElementById("men-category")
   .addEventListener("click", displayMenPolo);
@@ -76,7 +80,9 @@ var productArrayWomen = [
     title: " flower dress",
     price: "$6200"
   },
-  { image: "../html/product-images/img29.jpg", title: "Dura ", price: "$4000" },
+  { image: "../html/product-images/img29.jpg", 
+  title: "Dura ", 
+  price: "$4000" },
   {
     image: "../html/product-images/img30.jpg",
     title: " blue flower dress",
@@ -99,8 +105,12 @@ var productArrayWomen = [
   }
 ];
 function displayMenPolo() {
-  for (let i = 0; i < productArrayMen.length; i++) {
-    let product = `
+  displayClickMen = !displayClickMen;
+  if (displayClickMen == true) {
+    productGrid.innerHTML = "";
+    let product = "";
+    for (let i = 0; i < productArrayMen.length; i++) {
+      let product = `
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
@@ -127,13 +137,48 @@ function displayMenPolo() {
                 </div>
             </div>
         </div>`;
-    jsProductList.innerHTML += product;
+      jsProductList.innerHTML += product;
+    }
+  } else {
+    jsProductList = document.getElementById("men-category").disabled;
   }
 }
 function displayWomenDress() {
-  for (i = 0; i < productArrayWomen.length; i++) {
-    imgDiv[i].setAttribute("src", productArrayWomen[i].image);
-    prodTitle[i].innerHTML = productArrayWomen[i].title;
-    prodPrice[i].innerHTML = productArrayWomen[i].price;
+  displayClickWomen = !displayClickWomen;
+  productGrid.innerHTML = "";
+  let product = "";
+  if (displayClickWomen == true) {
+    for (let i = 0; i < productArrayWomen.length; i++) {
+      let product = `
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#"><img class="product--image" src="${productArrayWomen[i].image}" width="400px" height="300px"></img></a>
+                    <span class="product-trend-label">NEW</span>
+                    <ul class="social">
+                        <li>
+                            <a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                        </li>
+                        <li>
+                            <a href="" data-tip="Wishlist"><i class="fa fa-heart"></i></a>
+                        </li>
+                        <li>
+                            <a href="" data-tip="compare"><i class="fa fa-random"></i></a>
+                        </li>
+                        <li>
+                            <a href="" data-tip="Quick View"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="product--title"><a href="">${productArrayWomen[i].title}</a></h3>
+                    <div class="product--price">${productArrayWomen[i].price}</div>
+                </div>
+            </div>
+        </div>`;
+      jsProductList.innerHTML += product;
+    }
+  } else {
+    jsProductList = document.getElementById("women-category").disabled;
   }
 }
