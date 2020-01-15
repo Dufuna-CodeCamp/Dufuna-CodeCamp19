@@ -82,7 +82,8 @@ var productArrayWomen = [
   },
   { image: "../html/product-images/img29.jpg", 
   title: "Dura ", 
-  price: "$4000" },
+  price: "$4000" 
+  },
   {
     image: "../html/product-images/img30.jpg",
     title: " blue flower dress",
@@ -114,7 +115,10 @@ function displayMenPolo() {
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
-                    <a href="#"><img class="product--image" src="${productArrayMen[i].image}" width="400px" height="300px"></img></a>
+                    <a href="#">
+                      <img class="product--image" src="${productArrayMen[i].image}" width="400px"
+                      height="300px"></img>
+                    </a>
                     <span class="product-trend-label">NEW</span>
                     <ul class="social">
                         <li>
@@ -153,7 +157,10 @@ function displayWomenDress() {
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
-                    <a href="#"><img class="product--image" src="${productArrayWomen[i].image}" width="400px" height="300px"></img></a>
+                    <a href="#">
+                      <img class="product--image" src="${productArrayWomen[i].image}" width="400px"
+                      height="300px"></img>
+                    </a>
                     <span class="product-trend-label">NEW</span>
                     <ul class="social">
                         <li>
