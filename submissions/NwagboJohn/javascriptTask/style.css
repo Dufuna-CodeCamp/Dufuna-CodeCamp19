@@ -1,58 +1,56 @@
- @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+    font-family: Montserrat, "Open Sans", sans-serif;
+}
 
-            body {
-                font-family: Montserrat, "Open Sans", sans-serif;
-            }
+.displayItem {
+    display: flex;
+}
 
-            .displayItem {
-                display: flex;
-            }
+.card {
+    border-radius: 20px;
+    border: 2px solid #777;
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 250px;
+    margin: 10px;
+}
 
-            .card {
-                border-radius: 20px;
-                border: 2px solid #777;
-                min-width: 300px;
-                max-width: 350px;
-                min-height: 250px;
-                margin: 10px;
-            }
+.card .img {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #777;
+    ;
+}
 
-            .card .img {
-                width: 100%;
-                text-align: center;
-                border-bottom: 2px solid #777;
-                ;
-            }
+.card img {
+    width: 250px;
+}
 
-            .card img {
-                width: 250px;
-            }
+.prodMeta {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bolder;
+}
 
-            .prodMeta {
-                width: 100%;
-                display: inline-flex;
-                align-items: center;
-                font-weight: bolder;
+.prodName,
+.prodPrice {
+    padding: 5px;
+    max-height: 40px;
+}
 
-            }
+.prodName {
+    padding-left: 1.5em;
+    width: 60%;
+    text-align: left;
+}
 
-            .prodName,
-            .prodPrice {
-                padding: 5px;
-                max-height: 40px;
-            }
+.prodPrice {
+    text-align: right;
+    padding-right: 1.5em;
+    width: 40%;
+    border-left: 2px solid #777;
+}
 
-            .prodName {
-                padding-left: 1.5em;
-                width: 60%;
-                text-align: left;
-            }
-
-            .prodPrice {
-                text-align: right;
-                padding-right: 1.5em;
-                width: 40%;
-                border-left: 2px solid #777;
-            }
-        
