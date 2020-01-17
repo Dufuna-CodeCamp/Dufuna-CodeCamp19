@@ -41,5 +41,4 @@ try {
 
 <a href="create.php">Back to create</a>
 
-
 <?php require "footer.php";  ?>
