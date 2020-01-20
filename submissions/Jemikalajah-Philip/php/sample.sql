@@ -21,6 +21,7 @@ CREATE TABLE products(
 
 INSERT INTO brands(brand_name)
  VALUES
+ ('Select your brand'),
 ('Samsung'),
 ('Tecno'),
 ('Gucci'),

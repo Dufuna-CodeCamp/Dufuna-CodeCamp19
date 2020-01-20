@@ -2,6 +2,9 @@
 if (isset($_POST['submit'])){
     require "config.php";
     require "helper.php";
+    
+    
+
     try {
         $connection = new PDO ($dsn, $username, $password, $options);
         $newProduct = array(
@@ -9,7 +12,7 @@ if (isset($_POST['submit'])){
             "quantity" => $_POST['quantity'],
             "manufacturer" => $_POST['manufacturer'],
             "about" => $_POST['about'],
-            "brand_id" => $_POST['brands'] + 1,
+            "brand_id" => $_POST['brands'],
         );
         $sql = sprintf(
             "INSERT INTO %s (%s) values (%s)",
@@ -25,7 +28,7 @@ if (isset($_POST['submit'])){
 }
 ?>
 
-<?php require "header.php"; ?>
+<?php require "header.php"; require "fetch.php";  ?>
 
 <?php
 if (isset($_POST['submit']) && $statement){ ?>
@@ -39,8 +42,8 @@ if (isset($_POST['submit']) && $statement){ ?>
         <input type="text" name="itemname" id="itemname">
         <?php session_start(); ?>
         <select name="brands">
-            <?php for($i=0; $i < count($_SESSION['brands']); $i++) { ?>
-                <option value= <?php echo $i;?>> <?php echo $_SESSION['brands'][$i] ?></options>
+            <?php for($i=0; $i < count($_SESSION['mapped']); $i++) { ?>
+                <option value= <?php echo $i;?>> <?php echo $_SESSION["mapped"][$i] ?></option>
             <?php } ?>
         </select>
         <label class="add_product" for="quantity">Quantity</label>
