@@ -3,8 +3,6 @@ if (isset($_POST['submit'])){
     require "config.php";
     require "helper.php";
     
-    
-
     try {
         $connection = new PDO ($dsn, $username, $password, $options);
         $newProduct = array(
