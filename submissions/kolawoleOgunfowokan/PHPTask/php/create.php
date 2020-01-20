@@ -2,6 +2,7 @@
 if (isset($_POST['submit'])) {
     require "config.php";
     require "helper.php";
+    require "fetch.php";
 
     try {
         $connection = new PDO($dsn, $username, $password, $options);
@@ -35,27 +36,25 @@ if (isset($_POST['submit'])) {
     > <?php echo $_POST['itemname']; ?> successfully added.
 <?php } ?>
 
-
 <h2>Add A Product </h2>
 
 <form method="post">
-    <div class="form-container">
-        <label for="itemname">Name of Product</label>
-        <input type="text" name="itemname" id="itemname">
-        <?php session_start(); ?>
+    <label for="itemname">Name of Product</label>
+    <input type="text" name="itemname" id="itemname">
+    <?php session_start(); ?>
 
-        <select name="brand">
-            <?php for ($i = 0; $i < count($_SESSION['brands']); $i++) { ?>
-                <option value= <?php echo $i; ?>> <?php echo $_SESSION['brands'][$i] ?></option>
-            <?php } ?>
+    <select name="brand">
+        <?php for ($i = 0; $i < count($_SESSION['brands']); $i++) { ?>
+            <option value= <?php echo $i; ?>> <?php echo $_SESSION['brands'][$i] ?></option>
+        <?php } ?>
 
-        </select>
+    </select>
 
-        <label for="quantity">Quantity</label>
-        <input type="text" name="quantity" id="quantity">
+    <label for="quantity">Quantity</label>
+    <input type="text" name="quantity" id="quantity">
 
-        <input type="submit" name="submit" value="Submit">
-    </div>
+    <input type="submit" name="submit" value="Submit">
 </form>
+
 <?php echo '<link  href="../HTML/css/style.css" rel="stylesheet"/>'; ?>
 <?php require "footer.php"; ?>
