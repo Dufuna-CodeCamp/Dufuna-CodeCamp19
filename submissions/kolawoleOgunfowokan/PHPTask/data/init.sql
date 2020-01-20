@@ -16,14 +16,15 @@ CREATE DATABASE myoja;
     (3, "Apple inc", "In a class of its own"),
     (4, "Binatone", "Reliably strong"),
     (5, "Microsoft", "Makes work easier");
-
-  CREATE TABLE products (
+    
+ CREATE TABLE products (
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-    brand_id INT(11) UNSIGNED NOT NULL,
     itemname VARCHAR(30) NOT NULL,
     quantity INT(3),
     date TIMESTAMP,
-    PRIMARY KEY (id),
-    FOREIGN KEY (brand_id) REFERENCES brands (id) ON DELETE CASCADE
-  );
- 
+    PRIMARY KEY (id)
+ );
+
+ ALTER TABLE products
+  ADD COLUMN brand_id INT(11) UNSIGNED NOT NULL,
+  ADD FOREIGN KEY fk_brand(brand_id) REFERENCES brands(id) ON DELETE CASCADE;
