@@ -1,16 +1,15 @@
 <?php
-if (isset($_POST['submit'])) {
-    require "config.php";
-    require "helper.php";
-    require "fetch.php";
+require "helper.php";
+require "fetch.php";
 
+if (isset($_POST['submit'])) {
     try {
         $connection = new PDO($dsn, $username, $password, $options);
 
         $newProduct = array(
             "itemname" => $_POST['itemname'],
             "quantity" => $_POST['quantity'],
-            "brand_id" => $_POST['brand'] + 1
+            "brand_id" => $_POST['brand']
         );
 
         /**
@@ -44,8 +43,8 @@ if (isset($_POST['submit'])) {
     <?php session_start(); ?>
 
     <select name="brand">
-        <?php for ($i = 0; $i < count($_SESSION['brands']); $i++) { ?>
-            <option value= <?php echo $i; ?>> <?php echo $_SESSION['brands'][$i] ?></option>
+        <?php foreach ($_SESSION['brands'] as $key => $value) { ?>
+            <option value= <?php echo $key; ?>> <?php echo $value?></option>
         <?php } ?>
 
     </select>
