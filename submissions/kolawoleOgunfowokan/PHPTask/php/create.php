@@ -11,7 +11,6 @@ if (isset($_POST['submit'])) {
             "quantity" => $_POST['quantity'],
             "brand_id" => $_POST['brand']
         );
-
         /**
          * This is equivalent to
          * INSERT INTO products (itemname, quantity) values (:itemname, :quantity)
@@ -30,30 +29,22 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-
 <?php if (isset($_POST['submit']) && $statement) { ?>
     > <?php echo $_POST['itemname']; ?> successfully added.
 <?php } ?>
-
 <h2>Add A Product </h2>
-
 <form method="post">
     <label for="itemname">Name of Product</label>
     <input type="text" name="itemname" id="itemname">
     <?php session_start(); ?>
-
     <select name="brand">
         <?php foreach ($_SESSION['brands'] as $key => $value) { ?>
             <option value= <?php echo $key; ?>> <?php echo $value?></option>
         <?php } ?>
-
     </select>
-
     <label for="quantity">Quantity</label>
     <input type="text" name="quantity" id="quantity">
-
     <input type="submit" name="submit" value="Submit">
 </form>
-
 <?php echo '<link  href="../HTML/css/style.css" rel="stylesheet"/>'; ?>
 <?php require "footer.php"; ?>
