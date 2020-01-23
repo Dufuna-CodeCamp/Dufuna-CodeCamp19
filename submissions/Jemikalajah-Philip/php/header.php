@@ -34,7 +34,7 @@
                 <div class="header">
                     <div class="container">
                         <div class="logo">  
-                            <img src="icon/logo.png" width="80px" height="80px">
+                            <img src="../html/icon/logo.png" width="80px" height="80px">
                         </div>
                         <div class="navbar">
                             <a href="../html/homepage.html">Home</a>

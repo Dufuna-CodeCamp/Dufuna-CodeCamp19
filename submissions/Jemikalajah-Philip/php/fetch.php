@@ -5,15 +5,15 @@ try {
     session_start();
     $connection = new PDO ($dsn, $username, $password, $options);
     $stmt_brands = $connection->query("SELECT * FROM addProducts.brands");
-    $stmt_products = $connection ->query("SELECT * FROM addProducts.products");
     $brands = array();
     $brand_id = array();
-    while ($item = $stmt_brands->fetch() or $item = $stmt_products -> fetch()) {
+    while ($item = $stmt_brands->fetch()) {
         array_push($brands, $item['brand_name']);
-        array_push($brand_id, $item['brand_id']);
+        array_push($brand_id, $item['id']);
     }
-    $mapped = array_combine($brands, $brand_id);
-    $_SESSION['mapped'] = $brands;
+   $mappedBrands = array_combine( $brand_id, $brands);
+    $_SESSION['mappedBrands'] = $mappedBrands;
+   
 }catch(PDOException $error){
     echo $error-> getMessage();
 }

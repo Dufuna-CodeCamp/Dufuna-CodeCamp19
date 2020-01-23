@@ -11,7 +11,6 @@ try {
         array_push($products, $item);
     }
     $_SESSION['products'] = $products;
-    var_dump(products);
 }catch(PDOException $error){
     echo $error-> getMessage();
 }
