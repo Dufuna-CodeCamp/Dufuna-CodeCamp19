@@ -40,8 +40,8 @@ if (isset($_POST['submit']) && $statement){ ?>
         <input type="text" name="itemname" id="itemname">
         <?php session_start(); ?>
         <select name="brands">
-           <?php foreach ($mappedBrands as $key => $i) { ?>
-            <option value= <?php echo $key;?>> <?php echo $i ?></option>
+           <?php foreach ($mappedBrands as $key => $value) { ?>
+            <option value= <?php echo $key;?>> <?php echo $value ?></option>
             <?php } ?>
         </select>
         <label class="add_product" for="quantity">Quantity</label>
