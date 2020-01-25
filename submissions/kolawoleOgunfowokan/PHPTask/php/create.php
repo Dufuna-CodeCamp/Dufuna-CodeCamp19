@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "helper.php";
 require "fetch.php";
 
@@ -36,7 +37,6 @@ if (isset($_POST['submit'])) {
 <form method="post">
     <label for="itemname">Name of Product</label>
     <input type="text" name="itemname" id="itemname">
-    <?php session_start(); ?>
     <select name="brand">
         <?php foreach ($_SESSION['brands'] as $key => $value) { ?>
             <option value= <?php echo $key; ?>> <?php echo $value?></option>
