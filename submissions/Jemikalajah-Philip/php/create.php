@@ -1,4 +1,22 @@
 <?php
+require "config.php";
+try {
+    $connection = new PDO ($dsn, $username, $password, $options);
+    $stmt_brands = $connection->query("SELECT * FROM addProducts.brands");
+    $brands = array();
+    $brand_id = array();
+    while ($item = $stmt_brands->fetch()) {
+        array_push($brands, $item['brand_name']);
+        array_push($brand_id, $item['id']);
+    }
+   $mappedBrands = array_combine( $brand_id, $brands);
+   
+}catch(PDOException $error){
+    echo $error-> getMessage();
+}
+?>
+
+<?php
 if (isset($_POST['submit'])){
     require "config.php";
     require "helper.php";
@@ -20,13 +38,22 @@ if (isset($_POST['submit'])){
         );
         $statement = $connection->prepare($sql);
         $statement->execute($newProduct);
+        $stmt_brands = $connection->query("SELECT * FROM addProducts.brands");
+        $brands = array();
+        $brand_id = array();
+        while ($item = $stmt_brands->fetch()) {
+            array_push($brands, $item['brand_name']);
+            array_push($brand_id, $item['id']);
+        }
+        $mappedBrands = array_combine( $brand_id, $brands);
     }catch(PDOException $error){
-        echo $sql. "<br>" . $error->getMessage();
+        echo "Products not added to database". "<br>" . $error->getMessage();
     }
 }
 ?>
 
-<?php require "header.php"; require "fetch.php";  ?>
+<?php require "header.php"; ?>
+
 
 <?php
 if (isset($_POST['submit']) && $statement){ ?>
@@ -38,7 +65,6 @@ if (isset($_POST['submit']) && $statement){ ?>
     <form  method="post">
         <label class="add_product" for="itemname">Name of Product</label>
         <input type="text" name="itemname" id="itemname">
-        <?php session_start(); ?>
         <select name="brands">
            <?php foreach ($mappedBrands as $key => $value) { ?>
             <option value= <?php echo $key;?>> <?php echo $value ?></option>
@@ -50,7 +76,6 @@ if (isset($_POST['submit']) && $statement){ ?>
         <input type="text" name="manufacturer" id="manufacture">
         <label class="add_product" for="about">About the Product</label>
         <input type="text" name="about" id="about"><br><br>
-
         <input class="log" type="submit" name="submit" value="submit">
     </form>
     </div>
