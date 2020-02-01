@@ -1,8 +1,10 @@
 <?php
-if (isset($_POST['submit'])) {
-    require "config.php";
-    require "helper.php";
+session_start();
 
+require "helper.php";
+require "fetch.php";
+
+if (isset($_POST['submit'])) {
     try {
         $connection = new PDO($dsn, $username, $password, $options);
 
@@ -41,11 +43,9 @@ if (isset($_POST['submit'])) {
 <form method="post">
     <label for="itemname">Name of Product</label>
     <input type="text" name="itemname" id="itemname">
-    <?php session_start(); ?>
-
     <select name="brand">
-        <?php for ($i = 0; $i < count($_SESSION['brands']); $i++) { ?>
-            <option value= <?php echo $i; ?>> <?php echo $_SESSION['brands'][$i] ?></option>
+        <?php foreach($brands as $key => $value) { ?>
+            <option value= <?php echo $key; ?>> <?php echo $value ?></option>
         <?php } ?>
 
     </select>

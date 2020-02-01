@@ -7,11 +7,11 @@ require "config.php";
 
 try {
     session_start();
-    $connection = new PDO("mysql:host=$host", $username, $password, $options);
+    $connection = new PDO("mysql:host=$host;dbname=$dbname", $username, $password, $options);
     $stmt = $connection->query("SELECT * FROM glitz_store.brands");
     $brands = array();
     while ($item = $stmt->fetch()) {
-        array_push($brands, $item['brand_name']);
+        $brands[$item['id']] = $item['brand_name'];
     }
     $_SESSION['brands'] = $brands;
 } catch(PDOException $error) {

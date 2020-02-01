@@ -3,7 +3,7 @@ require "helper.php";
 require "config.php";
 
 try {
-    $connection = new PDO("mysql:host=$host", $username, $password, $options);
+    $connection = new PDO("mysql:host=$host;dbname=$dbname", $username, $password, $options);
     $sql = file_get_contents("../data/fetch.sql");
     $stmt = $connection->query("SELECT * FROM glitz_store.products");
     $products = array();
