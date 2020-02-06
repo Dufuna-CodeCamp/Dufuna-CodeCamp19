@@ -1,19 +1,7 @@
 <?php
+if (isset($_POST['submit'])) {
 require "config.php";
 require "helper.php";
-
-$brands = [];
-try{
-    $connection = new PDO("mysql:host=$host", $username, $password, $options);
-    $stmt = $connection->query("SELECT * FROM kimaj.brands");
-    while ($item = $stmt->fetch()){
-        $brands[$item[`id`]] = $item['brand_name'];
-    }
-}catch (PDOException $error) {
-    echo $error->getMessage();
-}
-if (isset($_POST['submit'])) {
- 
 
     try {
         $connection = new PDO($dsn, $username, $password, $options);
@@ -21,7 +9,7 @@ if (isset($_POST['submit'])) {
         $newProduct = array(
             "itemname" => $_POST['itemname'],
             "quantity" => $_POST['quantity'],
-            "brand_id" => $_POST['brand'],
+            "brand_id" => $_POST['brand'] + 1,
         );
 
         /**
@@ -51,8 +39,11 @@ if (isset($_POST['submit'])) {
 <h2>Add A Product </h2>
 
 <form method="post">
+<div class="form-container">
     <label for="itemname">Name of Product</label>
     <input type="text" name="itemname" id="itemname">
+    <?php session_start(); ?>
+
     <select name="brand">
         <?php foreach ($brands as $brandkey => $brandValue) { ?>
             <option value=<?php echo $brandkey; ?>> <?php echo $brandValue ?></option>
@@ -64,7 +55,8 @@ if (isset($_POST['submit'])) {
     <input type="text" name="quantity" id="quantity">
 
     <input type="submit" name="submit" value="Submit">
+</div>    
 </form>
 
 <?php echo '<link  href=".../css/style.css" rel="stylesheet"/>'; ?>
-<?php require "templates/footer.php"; ?>
+<?php require "footer.php"; ?>

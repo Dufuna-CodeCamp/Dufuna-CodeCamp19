@@ -8,7 +8,7 @@ require "config.php";
 try {
     session_start();
     $connection = new PDO("mysql:host=$host", $username, $password, $options);
-    $stmt = $connection->query("SELECT * FROM frozen_fresh.brands");
+    $stmt = $connection->query("SELECT * FROM kimaj.brands");
     $brands = array();
     while ($item = $stmt->fetch()) {
         array_push($brands, $item['brand_name']);
