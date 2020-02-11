@@ -1,10 +1,9 @@
 <?php
-require "helper.php";
 require "config.php";
 
 try {
     $connection = new PDO("mysql:host=$host", $username, $password, $options);
-    $stmt = $connection->query("SELECT * FROM curry.products");
+    $stmt = $connection->query("SELECT * FROM spices.products");
     $products = array();
     while ($item = $stmt->fetch())
     {
@@ -33,7 +32,7 @@ try {
       <td><?php echo escape($row["id"]); ?></td>
       <td><?php echo escape($row["itemname"]); ?></td>
       <td><?php echo escape($row["brand_id"]); ?></td>
-      <td><?php echo escape($row["date"]); ?> </td>
+      <td><?php echo escape($row["added_time"]); ?> </td>
   </tr>
   <?php endforeach; ?>
   </tbody>

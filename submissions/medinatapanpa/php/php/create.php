@@ -2,9 +2,7 @@
 
     session_start();
     require "config.php";
-    require "helper.php";
-
-    try {
+        try {
         $connection = new PDO($dsn, $username, $password, $options);
 
         $newProduct = array(
@@ -32,8 +30,8 @@
     > <?php echo $_POST['itemname']; ?> successfully added.
 <?php } ?>
 
+<?php require "hepler.php" ; ?>
 <h2>Add A Product </h2>
-
 <form method="post">
     <label for="itemname">Name of Product</label>
     <input type="text" name="itemname" id="itemname">

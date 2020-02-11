@@ -7,7 +7,7 @@ require "config.php";
 
 try {
     $connection = new PDO("mysql:host=$host", $username, $password, $options);
-    $stmt = $connection->query("SELECT * FROM curry.brands");
+    $stmt = $connection->query("SELECT * FROM spices.brands");
     $brands = array();
     while ($item = $stmt->fetch()) {
         $brands[$item['id']] =$item['brand_id'];
