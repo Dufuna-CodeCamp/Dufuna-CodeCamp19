@@ -1,0 +1,68 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	 background-color:#f1f2f3;
+	 font-family:sans-serif;
+}
+
+.title-box
+{
+	background: orange;
+	color:#fff;
+	width:180px;
+	padding:4px 10px;
+	height: 40px;
+	margin-bottom:30px;
+	margin-top: 10px;
+	 margin-left: 190px;
+	display: flex;
+	
+	
+}
+.title-box h2
+{
+	font-size: 24px;
+	
+}
+.search
+{
+	width: 98%;
+	margin-left: 10px;
+}
+
+
+/*------------------product-sale CSS-----------*/
+.product-image
+{
+	margin:50px  0;
+}
+.product-image img
+{
+width:350px;
+height: 200px;
+margin-left: 20px;
+cursor: pointer;
+}
+.product-name 
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 30px;
+}
+.product-price
+{
+	margin: 10px 30px;
+}
+.button 
+{
+	background-attachment: #fff;
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
