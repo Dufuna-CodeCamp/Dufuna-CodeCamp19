@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +6,44 @@
 body {
     background-color: #6ee4d0;
 }
+/*PHP CSS*/
+
+.form-container {
+    display: inline-block;
+    margin: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+tr:nth-child(even) {
+      background-color:#92c4bb;
+  }
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+  
+th {
+    background-color: #92c4bb;
+    color: #000000;
+}
+
+.back-to-create-link{
+    text-decoration: none;
+}
+
+
+/*LANDING PAGE CSS*/
 
 .index-logo {
     float: left;
@@ -141,7 +180,7 @@ body {
     width: 300px;
     height: 300px;
     float: left;
-    margin: 15px;
+    margin: 1px;
     background:#6ee4d0;
 }
 
@@ -152,7 +191,8 @@ body {
     font-family: cursive;
     width: 300px;
     height: 300px;
-    margin: 2px;  
+    margin: 10px;
+    
 }
 .product-image {
     width: 100%;
@@ -160,12 +200,13 @@ body {
 }
 
 .product-image .images {
-    display: inline-block;
     width: 300px;
     height: 220px;
     border: 1px solid #a1a198;
     border-radius: 5px;
-    margin: 2px;  
+    margin: 2px;
+    display: flex;
+    align-items: stretch;
 }
 
 .product-title {
@@ -178,36 +219,6 @@ body {
     color:#db1a1a;
     text-align: center;
     font-family: cursive;
-}
-
-.brands{
-    margin: auto;
-    background-color: #d4c8ca;
-    border-radius: 5px;
-}
-
-.brand-content {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-evenly;
-    background-color: #d4c8ca;
-    border-radius: 5px;
-    width: 100%;
-    height: 70%;
-}
-
-.brand-images {
-    width: 300px;
-    height: 220px;
-    border: 1px solid #a1a198;
-    border-radius: 5px;
-    margin: 15px;
-}
-
-.brand-images:hover, .images:hover {
-    width: 300px;
-    width: 320px;
-    background-color: #dd1414;
 }
 
 .info-text {
@@ -584,6 +595,8 @@ body {
     padding: 10px;
     font-weight: bold;
 }
+
+
 
 
 

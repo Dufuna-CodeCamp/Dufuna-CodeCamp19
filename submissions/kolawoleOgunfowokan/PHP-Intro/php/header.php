@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>myoja.com</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dufuna Products</title>
+
+    <link rel="stylesheet" href="../HTML/css/style.css" />
+  </head>
+
+  <body>
     <header class="page-header">
         <div class="nav-head">
-            <img src="./images/diamond-simple.png" alt="logo" class="index-logo">
+            <img src="../HTML/images/diamond-simple.png" alt="logo" class="index-logo">
             <p class="index-logo-text">myoja.com</p>
             <div class="nav-head">
                 <ul class="nav-unorderd">
@@ -19,10 +21,10 @@
                         <input type="search" name="search" class="search" placeholder="search for products, brand and categories">
                     </li>
                     <li class="nav-head-list">
-                        <a href="./login.html"><input type="Submit" name="login" value="Login" class="nav-form button"></a>
+                        <a href="../HTML/login.html"><input type="Submit" name="login" value="Login" class="nav-form button"></a>
                     </li>
                     <li class="nav-head-list">
-                        <a href="./signup.html"><input type="Submit" name="signup" value="Signup" class="nav-form button"></a>
+                        <a href="../HTML/signup.html"><input type="Submit" name="signup" value="Signup" class="nav-form button"></a>
                     </li>
                     <li class="nav-head-list">
                         <a href="#cart.html">
@@ -197,226 +199,6 @@
             </div>
         </nav>
     </header>
-    <section class="products">
-        <h2>Best Products</h2>
-        <div>
-            <button id="btn">Click here for more products</button>
-        </div>
-        <div id="product-box"></div>
-        <div class="product-box">
-            <div class="product-content">
-                <div class="product-image">
-                  <img src="images/ps4.jpg"  class="images">
-                </div>
-                <div>
-                    <h3 class="product-title">
-                        PS4 Hot
-                    </h3>
-                </div> 
-                <div class="product-price">
-                      N185000
-                </div>
-            </div>
-        </div>
-        <div class="product-box">
-            <div class="product-content">
-                <div class="product-image">
-                  <img src="images/dtg-printer.jpg"  class="images">
-                </div>
-                <div>
-                    <h3 class="product-title">
-                        Best DTG Printer
-                    </h3>
-                </div> 
-                <div class="product-price">
-                      N120000
-                </div>
-            </div>
-        </div>
-        <div class="product-box">
-            <div class="product-content">
-                <div class="product-image">
-                  <img src="images/samsung-camera.jpg"  class="images">
-                </div>
-                <div>
-                    <h3 class="product-title">
-                        Samsung eyes
-                    </h3>
-                </div> 
-                <div class="product-price">
-                      N165000
-                </div>
-            </div>
-        </div>
-        <div class="product-box">
-            <div class="product-content">
-                <div class="product-image">
-                  <img src="images/camera.jpg"  class="images">
-                </div>
-                <div>
-                    <h3 class="product-title">
-                        NIKON N67
-                    </h3>
-                </div> 
-                <div class="product-price">
-                      N195000
-                </div>
-            </div>
-        </div>
-        <div class="product-box">
-            <div class="product-content">
-                <div class="product-image">
-                  <img src="images/inverter.jpg"  class="images">
-                </div>
-                <div>
-                    <h3 class="product-title">
-                        5KVA 48V Inverter
-                    </h3>
-                </div> 
-                <div class="product-price">
-                      N280000
-                </div>
-            </div>
-        </div>
-        <div class="product-box">
-            <div class="product-content">
-                <div class="product-image">
-                  <img src="images/smart-led-tv.jpg"  class="images">
-                </div>
-                <div>
-                    <h3 class="product-title">
-                      Smart LED TV
-                    </h3>
-                </div> 
-                <div class="product-price">
-                      N685000
-                </div>
-            </div>
-        </div>
-        <div class="product-box">
-            <div class="product-content">
-                <div class="product-image">
-                  <img src="images/hard-drive.jpg"  class="images">
-                </div>
-                <div>
-                    <h3 class="product-title">
-                        Seagate Hard 500Gig
-                    </h3>
-                </div> 
-                <div class="product-price">
-                      N60000
-                </div>
-            </div>
-        </div>
-        <div class="product-box">
-            <div class="product-content">
-                <div class="product-image">
-                  <img src="images/revolving-chair.jpg"  class="images">
-                </div>
-                <div>
-                    <h3 class="product-title">
-                        Executive Revolving Chair
-                    </h3>
-                </div> 
-                <div class="product-price">
-                      N140000
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="brands">
-            <h2>Popular brands</h2>
-            <div class="brand-content"> 
-                <img src="images/new-hp-logo.png" class="brand-images" alt="HP logo">
-                <img src="images/samsung-logo.png" class="brand-images" alt="Samsung">
-                <img src="images/microsoft-logo.png" class="brand-images" alt="Microsoft">
-                <img src="images/Apple-image.jpg" class="brand-images" alt="Apple">
-            </div>
-
-            <div class="brand-content">
-                <img src="images/huwaei-logo.jpg" class="brand-images" alt="Huwaei">
-                <img src="images/haier.jpg" class="brand-images" alt="haier thermoccol">
-                <img src="images/nikon-logo.png" class="brand-images" alt="Nikon">
-                <img src="images/infinix-logo.png" class="brand-images" alt="infinix">
-            </div>
-    </section>
-    <section class="info-text">
-        <p class="info-text-para">
-            <h1 class="info-text-heading">Experience Shopping on Myoja.com – Nigeria’s most reputable Online Mall</h1>
-            Welcome to myoja.com where your market is in your hands. We deal in everything office gadgets,
-            household equipments, computerized educational materials, and books. You can also pitch your tent with us
-            and have access to our vast array of customers. Meaning myoja.com is a gateway to many possibilities   
-        </p>
-    </section>
-    <footer class="page-footer">
-        <section class="page-footer support">
-            <div class="footer-support">
-                <i class="fa fa-envelope footer-text">Email Support</i>
-                <h4 class="footer-text">help@myoja.com</h4>
-            </div>
-            <div class="footer-support">
-                <i class="fa fa-phone footer-text">Phone Support</i>
-                <h4 class="footer-text">08035829062, 09058812404 </h4>
-            </div>
-            <div class="footer-support">
-                <i class='fa fa-comment footer-text'>Get latest deals</i>
-                <h4 class="footer-text">Get our best deals sent to your inbox</h4>
-            </div>
-            <div class="footer-support" footer-text>
-                <input type="search" name="search"  placeholder="Email address" class="footer-support-search">
-                <button class="footer-support-button">Subscribe</button>
-            </div>
-        </section>
-        <section class="footer-contact">
-            <div class="contact">
-                <h3 class="footer-text">About MyOja</h3>
-                    <ul class="contact ul-link">
-                        <li>
-                            <a href="contact.html" class="form-link">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="about.html" class="form-link">About Us</a>
-                        </li>
-                        <li>
-                            <a href="careers.html" class="form-link">Careers</a>
-                        </li>
-                        <li>
-                            <a href="Terms.html" class="form-link">Terms and Conditions</a>
-                        </li>
-                    </ul>
-            </div>
-            <div class="payment">
-                <h3 class="footer-text">Payment</h3>
-                    <ul class="payment ul-link">
-                        <li>
-                            <a href="wallet.html" class="form-link">Wallet</a>
-                        </li>
-                        <li>
-                            <a href="mastercard.html" class="form-link">Master card</a>
-                        </li>
-                        <li>
-                            <a href="verve.html" class="form-link">Verve</a>
-                        </li>
-                        <li>
-                            <a href="visa.html" class="form-link">Visa</a>
-                        </li>
-                    </ul>
-            </div>
-        </section>
-        <section class="footer-contact footer-logo">
-            <div class="footer-brand-logo">
-                <h3 class="footer-text">CONNECT WITH US</h3>
-                <i class="fa fa-facebook-square footer-brand-logo"></i>
-                <i class="fa fa-twitter footer-brand-logo"></i>
-                <i class="fa fa-instagram footer-brand-logo"></i>
-                <i class="fa fa-youtube footer-brand-logo"></i>
-            </div>
-        </section>
-        <section class="copyright">
-            <h4 class="footer-copyright">Copyright &copy 2019 myoja.com. All rights reserved</h4>
-        </section>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
+    <h1>Dufuna Products</h1>
+  </body>
 </html>
