@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: blanchedalmond;
+    color:#3e64ff;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    
+}
+
+.divide{
+    margin: 1% 3% 0 3%;
+    padding: 0 3% 0;
+  /*  border: 1px solid; */
+}
+
+.inner-divide {
+    display:flex;
+    align-content: stretch;
+    padding-top: 5px;
+    margin-top: 2px;
+}
+
+.divide1{
+    padding: 22px;
+}
+
+
+
+/*---------HEADER  AND HEADINGS---------*/
+header {
+    background-image: linear-gradient(rgba(197, 242, 245, 0.1), rgba(197, 242, 245, 0.1)), url(Images/assorted-seafood-in-a-market-2031994.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.firstH1{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size:500%;
+    word-spacing: 3px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #b2fcff;
+}
+.text-box {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 350px 20px 200px 20px;
+    font-weight: 300;
+    text-align: center
+}
+
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 50px;
+    color: #5edfff;
+    
+
+}
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #5edfff;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+h3 {
+    font-size: 100%;
+    margin-bottom: 20%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5edfff;
+    
+}
+
+/* ------  NAV-------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 0 0 4%;
+}
+.search {
+    height: 40px;
+    width: auto;
+    margin-left: 7px;
+
+
+}
+.logo {
+    height: 110px;
+    width: auto;
+    padding-top: 10px;
+    margin-left: 140px;
+    
+}
+#user {
+    height: 45px;
+    width: auto;
+    margin-left: 254px;
+    color: yellow;
+    
+}
+.basket {
+    height: 40px;
+    width: auto;
+    margin-left: -110px;
+}
+.main-nav{
+    float: left;
+    list-style: none;
+    background-color: rgba(94, 223, 255, 0.8);
+    margin: 50px 5px 10px 0; 
+    margin-left: 177px; 
+
+}
+.main-nav li{
+    display: inline-block;
+    /*border: 5px solid blue;*/
+     
+}
+
+.main-nav li a img {
+    color: blue;
+}
+
+.section {
+    float: right;
+    list-style: none;
+    /*border: 5px solid white;*/
+    background-color: rgba(94, 223, 255, 0.8);
+    margin: 100px 5px 10px 0;
+    padding: 10px 10px ;
+    
+}
+
+.section li {
+    display: inline-block;
+    margin-left: 70px;
+   
+}
+.section li a:link,
+.section li a:visited {
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: serif, Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: blue;
+    transition: color 0.2s;
+}
+.section li a:hover,
+.section li a:active {
+    color: #b2fcff;
+}
+.dropdown-icon{
+    height: 15px;
+    width: auto;
+    color: yellow;
+}
+    
+
+/* ------PARAGRPHS-------*/
+.first-paragraph {
+    line-height: 145% ;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+.second-paragraph {
+    display: inline-block;
+    line-height: 145%;
+    text-align: justify;
+    padding: 2px 0 2px 0
+}
+
+/*------Products---------*/
+
+.product-showcase{
+    list-style: none;
+    width: 100%;
+    
+}
+
+.product-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.product {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.product img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+
+.product img:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+.caption{
+    opacity: 0.7;
+    display: block;
+    margin: 0 11px 2px 20px;
+    padding: 0 63px 0 0;
+    text-align: left;
+    line-height: 25px;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.caption:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.caption2{
+    opacity: 0.7;
+    display: block;
+    margin: 0 11px 2px 20px;
+    padding: 16px 0 10px 0;
+    text-align: left;
+    line-height: 25px;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+.caption2:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*------SIGN UP on registeration page---------*/
+
+
+.body{
+    background-image: url(images/combo.jpg);
+}
+
+.register{
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+    padding-top: 100%;
+    color:#3e64ff;
+    background-color: aliceblue;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 10% 0 5% 25%;
+    padding: 1% 0 1% 10%;
+    background-color: rgba(240, 248, 255, 0.9);
+    
+    
+}
+
+.contact-form input {
+    width: 70%;
+    padding: 1.5% 5% 1.5% 3%;
+    margin: 1% 1% 1% 1%;
+    border-radius: 3px;
+    font: large bolder;
+    border: 2px solid #3e64ff;
+
+}
+
+.contact-form input:hover:invalid {
+    border: 2px solid turquoise;
+    box-shadow: 2px 2px 5px rebeccapurple;
+}
+
+
+textarea {
+    width: 70%;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    margin: 1% 1% 1% 1%;
+    font: large bolder;
+    border: 2px solid #3e64ff;
+}
+
+textarea:focus:invalid{
+    border: 2px solid turquoise;
+    box-shadow: 2px 2px 5px rebeccapurple;
+}
+
+.radio {
+    width: 50%;
+    float: left;
+    margin-left: 1%;
+    padding-left: 1%;
+    padding-right: 3%;
+    border: 2px solid #3e64ff;
+    
+}
+
+.button {
+    padding: 2%;
+    margin-left: 25%;
+}
+
+.contact-form div button{
+    padding: 1.5% 0.5% 1.5% 0.5% ;
+    width: 30%;
+    background-color: #5edfff ;
+    color: blue ;
+    border-radius: 25%;
+    border: 2px solid white;
+    font: bolder large;
+    box-shadow: 2px 2px 5px turquoise;
+    
+}
+
+.contact-form div button:hover {
+    box-shadow: 2px 2px 5px rebeccapurple;
+    background-color: #3e64ff;
+}
+
+.button1 button {
+    padding: 1% 1%;
+    margin: 0 2% 0 86%;
+    background-color: #5edfff ;
+    color: blue ;
+    border-radius: 25%;
+    border: 2px solid white;
+    font: large;
+    box-shadow: 2px 2px 5px turquoise;
+
+}
+.button1 button:hover {
+    box-shadow: inset 2px 2px 5px rebeccapurple;
+    background-color: #3e64ff;
+    color: #5edfff ;
+    
+}
+
+.account{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 2%;
+    line-height: 35px;
+    background-color: rgba(240, 248, 255, 0.9);
+}
+
+/*------FOOTER-------------------------------------*/
+
+footer {
+background-color: #333;
+padding: 60px;
+font-size: 80%;
+}
+
+
+
+.footer-nav {
+    list-style: none; 
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li, 
+.social-links li {
+ display: inline-block;
+ margin-right: 40px;
+}
+
+.footer-nav li:last-child, 
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+        text-decoration: none;
+        border: 0;
+        color: #888;
+        transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #5edfff;
+} 
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 75px;
+}
+
+.social-links li a:hover,
+.social-links li a:active{
+            transform: transition 0.2s;
+            transform: transition 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+
+}
+
+.trans:hover{
+            transform: scale(1.5);
+            transform: scale(1.5);
+    }
