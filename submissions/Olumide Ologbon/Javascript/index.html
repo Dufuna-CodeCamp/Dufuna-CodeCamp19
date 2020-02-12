@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            shopal
+        </title>        
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <header class="head">
+        <div>
+            <div class="dropdown">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-ctn">
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>   
+            <div class="dropdown">
+                <h1 style="margin-left: 30px; color: black;"> 
+                    Shopal Online<img src="deals/shopal.png" alt="logo">
+                </h1>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" style="margin-left: 930px ;">Account</button>
+                <div class="dropdown-ctn" style="margin-left: 930px ;">
+                    <a href="signup.html">Sign up </a>
+                    <a href="#">Login</a>
+                    <a href="#">Track Orders</a>
+                    <a href="#">Wish List</a>
+                </div>
+            </div>    
+        </div>        
+    </header>
+    <body>
+        <div class="container">             
+            <img id="adPromo" src="deals/sales1.png" alt="promo!!!"> 
+            <button class="promo1" onclick="prevChange()">Prev
+            </button>
+            <button class="promo" onclick="nextChange()">Next
+            </button>
+        </div>
+        <h2>Product List</h2>
+        <div class="product-container">
+            <div class="product-box">
+                 <div class="product-img">
+                     <img id="prod" src="deals/dealSportwear.jpg"/>
+                </div>
+                <div class="product-name">
+                    Sport Wear
+                </div>
+                <div class="product-price">
+                    $120
+                </div>
+            </div>
+        </div>
+        <button onclick="loadProducts()">More</button>
+        <script src="js/script.js"></script>
+    </body>
+    <footer class="foot">
+        <p>&#169; Copyright 2019 Shopal</p>
+    </footer>    
+</html>
+

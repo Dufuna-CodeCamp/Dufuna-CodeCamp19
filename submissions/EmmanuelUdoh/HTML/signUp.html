@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kimaj: for Electronics, Phones, Computers, Fashion </title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <h1>Kimaj</h1>
+    
+       <b><p> 
+             Kimaj is a market place that is into the sales of electronic gadgets phones, computers, clothings for both men and women. kids are not left out here.
+             We offer the best to our customers round the clock.<br>
+          </p>
+
+          <p>
+               Kimaj! "we do business right". 
+         </p>
+
+          <p> 
+              Do well to sign up.
+         </p>
+
+        <h2>Create An Account</h2>
+        <hr>
+        <form method="POST" action="login.php">
+            <fieldset>
+                <div class="container">
+                    <div>
+                        <label for="firstname">
+                            <b>First Name</b></label><br>
+                         <input type="text" size="65" placeholder="  Enter First Name" name="" />
+                         <br><br>
+                    </div>
+                   
+
+                    <div>
+                        <label for="lastname">
+                            <b>Last Name</b></label><br>
+                         <input type="text" size="65" placeholder="  Enter Last Name" name="" />
+                         <br><br>
+                    </div>
+                    
+                   
+                    <div>
+                        <label for="email">
+                            <b> Email</b></label><br>
+                         <input type="text" size="65" placeholder="  Enter Email" name="" />
+                         <br><br>
+                    </div>
+                    
+                   
+                    <div>
+                        <label for="phone number">
+                           <b>Phone</b></label><br>
+                          <input type="text" size="65" placeholder="  Enter phone number" name="" />
+                          <br><br>
+                    </div>
+
+                    <!--for password-->
+                    <div>
+                        <label for="password">
+                            <b>Password</b></label>  &emsp;  &emsp; &emsp; &emsp; &emsp; <input type="checkbox" onclick="Toggle()">Show Password
+                          <input type="password" size="65" value=" kimaj" id="myInput">
+
+                          <script>
+                              function Toggle() {
+                                   var x = document.getElementById("myInput");
+                                   if (x.type === "password") {
+                                       x.type = "text";
+                                   } 
+                                   else {
+                                       x.type = "password"
+                                   }
+                              }
+                          </script>
+                        
+
+                    </div>
+
+                    <div>
+                        <p>
+                            <input type="checkbox" name="Agree to terms and conditions" id="show" value="show">
+                            By accepting to create an account,<br> you agree to our <a href="#" style="color:dodgerblue">terms and conditions</a>
+                        </p>
+                    </div>
+
+                    <div>
+                             <input class="green-btn" type="Submit" size="65" value="Create an account" name=""> <br>
+                    </div>
+                    
+                    <h3> OR </h3>
+
+                    <!--sign up with social media-->
+                    <div>
+                             <button class="social facebook">Register with Facebook</button> <br>
+                             <br>
+                    </div> 
+                    
+                    <div>
+                        <button class="social google">Register with Google</button> <br>
+                    </div> 
+                    
+                        <p>
+                            Already have an account? &nbsp; <a href="#" style="color:forestgreen">sign in</a>
+                        </p>
+
+                </div>
+            
+            </fieldset>
+    
+        </form>
+    </body> 
+</html>

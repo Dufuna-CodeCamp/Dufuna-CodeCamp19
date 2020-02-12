@@ -1,0 +1,113 @@
+body {
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    padding: 0;
+    background: url(img/green-leaf-plant-3268386.jpg) center center no-repeat;
+}
+
+#button {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    height: 1.5rem;
+    padding-top: 1rem;
+    width: 15rem;
+    text-align: center;
+    color: #fff;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+}
+
+#header {
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+    margin: 0;
+}
+
+#content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+#form {
+    width: 50%;
+    height: 100%;
+    float: right;
+    left: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#form label {
+    width: 50%;
+    text-align: justify;
+}
+
+#main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#main {
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: 20%;
+    top: 40%;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333333;
+    clear: both;
+    width: 25rem;
+    bottom: 0px;
+    position: fixed;
+    text-align: center;
+    padding-top: 0.5rem;
+    text-align: justify;
+    border: #fff solid 0.1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+#navigation li a:hover {
+    background-color: #111111;
+}

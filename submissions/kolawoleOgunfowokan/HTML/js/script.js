@@ -14,6 +14,7 @@
        },
   
        {
+
          image: "./images/huaweiMateBookXPro.jpg",
          title: "Huwaei Laptop",
          price: "N200000"
@@ -21,6 +22,7 @@
   
        {
          image: "./images/java-prog.png",
+
          title: "Java Book",
          price: "N12000"
        },

@@ -152,8 +152,7 @@ body {
     font-family: cursive;
     width: 300px;
     height: 300px;
-    margin: 2px;
-    
+    margin: 2px;  
 }
 .product-image {
     width: 100%;
@@ -166,7 +165,7 @@ body {
     height: 220px;
     border: 1px solid #a1a198;
     border-radius: 5px;
-    margin: 2px;
+    margin: 2px;  
 }
 
 .product-title {
