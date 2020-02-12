@@ -1,0 +1,94 @@
+header{
+    background: height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    display: inline-block;
+    margin: 10px;
+    text-align: top;
+    font-family: arial;
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .card1 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .card1 button:hover {
+    opacity: 0.7;
+  }
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    display: inline-block;
+    margin: 10px;
+    text-align: top;
+    font-family: arial;
+  }
+
+  .price2 {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .card2 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .card2 button:hover {
+    opacity: 0.7;
+  }
+  .card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    display: inline-block;
+    margin: 10px;
+    text-align: top;
+    font-family: arial;
+  }
+
+  .price3 {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .card3 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: top;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .card3 button:hover {
+    opacity: 0.7;
+  }
