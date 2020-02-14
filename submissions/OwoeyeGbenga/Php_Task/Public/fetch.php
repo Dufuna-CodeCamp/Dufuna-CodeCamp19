@@ -8,7 +8,7 @@ require "config.php";
 try {
     session_start();
     $connection = new PDO("mysql:host=$host;dbname=$dbname", $username, $password, $options);
-    $stmt = $connection->query("SELECT * FROM glitz_store.brands");
+    $stmt = $connection->query("SELECT * FROM glitz.brands");
     $brands = array();
     while ($item = $stmt->fetch()) {
         $brands[$item['id']] = $item['brand_name'];

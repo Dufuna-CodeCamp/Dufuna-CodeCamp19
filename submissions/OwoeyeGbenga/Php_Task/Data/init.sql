@@ -1,6 +1,6 @@
-  CREATE DATABASE glitz_store;
+  CREATE DATABASE glitz;
 
-  USE glitz_store;
+  USE glitz;
 
   CREATE TABLE brands (
     id INT(12) UNSIGNED NOT NULL AUTO_INCREMENT,
