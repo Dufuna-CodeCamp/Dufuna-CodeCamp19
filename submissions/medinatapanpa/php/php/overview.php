@@ -2,8 +2,8 @@
 require "config.php";
 
 try {
-    $connection = new PDO("mysql:host=$host", $username, $password, $options);
-    $stmt = $connection->query("SELECT * FROM spices.products");
+    $connection = new PDO("mysql:host= $host", "$username", "$password", "$options");
+    $stmt = $connection->query("SELECT * FROM spices.products INNER JOIN brand_name ON product.brand_id = brand.id");
     $products = array();
     while ($item = $stmt->fetch())
     {
@@ -21,6 +21,7 @@ try {
   <thead>
     <tr>
       <th>#</th>
+      <th>Product Brand</th>
       <th>Item Name</th>
       <th>Brand Id</th>
       <th>Date</th>
@@ -30,6 +31,7 @@ try {
   <?php foreach ($products as $row) : ?>
     <tr>
       <td><?php echo escape($row["id"]); ?></td>
+      <td><?php echo escape($row["brand_name"]); ?></td>
       <td><?php echo escape($row["itemname"]); ?></td>
       <td><?php echo escape($row["brand_id"]); ?></td>
       <td><?php echo escape($row["added_time"]); ?> </td>
