@@ -39,4 +39,5 @@ try {
   <?php endforeach; ?>
   </tbody>
 </table>
+<?php require "footer.php"; ?>
 <a href="create.php">Back to Create</a>

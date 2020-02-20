@@ -2,6 +2,7 @@
 
     session_start();
     require "config.php";
+    require "header.php";
         try {
         $connection = new PDO($dsn, $username, $password, $options);
 
