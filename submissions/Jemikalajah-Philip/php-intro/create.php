@@ -56,9 +56,9 @@ if (isset($_POST['submit'])){
 
 
 <?php
-if (isset($_POST['submit']) && $statement){ ?>
-> <?php echo $_POST['itemname']; ?> successfully added.
-<?php } ?>
+if (isset($_POST['submit']) && $statement){ 
+    echo $_POST['itemname']." ". "successfully added.";
+    } ?>
 
     <h2>Add a Product</h2>
     <div class="signin">
@@ -71,7 +71,7 @@ if (isset($_POST['submit']) && $statement){ ?>
             <?php } ?>
         </select>
         <label class="add_product" for="quantity">Quantity</label>
-        <input type="text" name="quantity" id="quantity">
+        <input type="number" name="quantity" id="quantity">
         <label class="add_product" for="manufacturer">About the Manufacturer</label>
         <input type="text" name="manufacturer" id="manufacture">
         <label class="add_product" for="about">About the Product</label>
