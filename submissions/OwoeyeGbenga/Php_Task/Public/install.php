@@ -10,6 +10,7 @@ try {
     $sql = file_get_contents("../data/init.sql");
     $connection->exec($sql);
     echo "Database and table Products created successfully.";
-} catch(PDOException $error) {
+} 
+  catch(PDOException $error) {
     echo $sql . "<br>" . $error->getMessage();
 }
