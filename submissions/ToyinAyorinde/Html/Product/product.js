@@ -3,21 +3,17 @@ let products = [
         name:"Two Diamond and Turquoise Circle Pendant" ,
         imageUrl: "../images/Product1.jpg",
         price:"$2,000"
-
     },
     {
         name:"Two Diamond and Mother-of-pearl Circle Pendant" ,
         imageUrl: "../images/Product2.jpg",
         price:"$2350"
-
     },
     {
         name:"Two Diamond and Turquoise Circle Pendant" ,
         imageUrl: "../images/Product3.jpg",
         price:"$2,550"
-
     }
-
 ]
 
 let imageDiv = document.getElementsByClassName('prdt-img');
