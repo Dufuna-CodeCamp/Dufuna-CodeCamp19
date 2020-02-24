@@ -3,7 +3,7 @@
 
 <head>
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="../css/home-page.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,10 +16,10 @@
         <div class="social_icon">
             <div class="container">
                 <div class="icon">
-                    <a href="https://facebook.com"><img src="icon/facebook.png" width="30px" height="30px"></a>
-                    <a href="https://twitter.com"><img src="icon/twitter.png" width="30px" height="30px"></a>
-                    <a href="https://gmail.com"><img src="icon/gmail.jpg" width="30px" height="30px"></a>
-                    <a href="https://instagram.com"><img src="icon/instagram.jpg" width="30px" height="30px"></a>
+                    <a href="https://facebook.com"><img src="icon/facebook.png" class="icons" ></a>
+                    <a href="https://twitter.com"><img src="icon/twitter.png" class="icons"  ></a>
+                    <a href="https://gmail.com"><img src="icon/gmail.jpg"class="icons"  ></a>
+                    <a href="https://instagram.com"><img src="icon/instagram.jpg" class="icons" ></a>
                 </div>
                 <div class="header_right">
                     <div class="login_register_btn">
@@ -27,19 +27,19 @@
                         <a href="registration-form.html">Register</a>
                     </div>
                     <div class="cart_btn">
-                        <a href="cart.html"><img src="icon/cart.png" width="40px" height="40px"></a>
+                        <a href="cart.html"><img src="icon/cart.png" id="cart" ></a>
                         <span>cart (0)</span>
                     </div>
                 </div>
                 <div class="header">
                     <div class="container">
                         <div class="logo">
-                            <img src="icon/logo.png" width="80px" height="80px">
+                            <img src="icon/logo.png" id="brand_logo">
                         </div>
                         <div class="navbar">
                             <a href="homepage.html">Home</a>
                             <a href="#">Help</a>
-                            <a href="#">Contact</a>
+                            <a href="../php-intro/create.php">Seller</a>
                             <a href="#" id="men-category">Men</a>
                             <a href="#" id="women-category">Women</a>
                             <a href="#">Baby & Kids</a>
@@ -61,12 +61,9 @@
                         </label>
                         <div class="row">
                             <div class="col-md-3 col-sm-6">
-                                <div id="js-product-list">
-                                </div>
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img7.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img7.jpeg"></a>
                                         <span class="product-trend-label">TRENDING</span>
                                         <ul class="social">
                                             <li>
@@ -94,8 +91,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img6.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img6.jpeg"></a>
                                         <span class="product-trend-label">TRENDING</span>
                                         <ul class="social">
                                             <li>
@@ -123,8 +119,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img9.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img9.jpeg"></a>
                                         <span class="product-trend-label">TRENDING</span>
                                         <ul class="social">
                                             <li>
@@ -162,8 +157,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img15.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img15.jpeg"></a>
                                         <span class="product-trend-label">TRENDING</span>
                                         <ul class="social">
                                             <li>
@@ -191,8 +185,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img4.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img4.jpeg"></a>
                                         <span class="product-trend-label">TRENDING</span>
                                         <ul class="social">
                                             <li>
@@ -220,8 +213,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img5.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img5.jpeg"></a>
                                         <span class="product-trend-label">TRENDING</span>
                                         <ul class="social">
                                             <li>
@@ -259,8 +251,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img11.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img11.jpeg"></a>
                                         <span class="product-trend-label">NEW</span>
                                         <ul class="social">
                                             <li>
@@ -287,8 +278,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img13.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img13.jpeg"></a>
                                         <span class="product-trend-label">NEW</span>
                                         <ul class="social">
                                             <li>
@@ -315,8 +305,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
-                                        <a href="#"><img class="product--image" src="product-images/img10.jpeg"
-                                                width="400px" height="300px"></a>
+                                        <a href="#"><img class="product--image" src="product-images/img10.jpeg"></a>
                                         <span class="product-trend-label">NEW</span>
                                         <ul class="social">
                                             <li>
