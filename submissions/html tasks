@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brave Fashion</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form>
+            <input type="text" placeholder="Firstname">
+            <input type="text" placeholder="Lastname">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+
+            <div>
+                <input type="radio" id="male" name="gender"><label for="male">Male</label>
+                <input type="radio" id="female" name="gender"><label for="female">Female</label>
+            </div>
+
+            <input type="submit" name="Submit">
+        </form>
+    </body>
+</html>
+
+
+
+
+
