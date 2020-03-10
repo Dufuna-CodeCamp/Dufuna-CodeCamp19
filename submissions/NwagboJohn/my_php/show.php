@@ -1,14 +1,14 @@
-
 <!DOCTYPE html>
-  <html>
+<html>
     <head>
-      <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
-  ` <body>
-  
-      <h1>AVAILABLE STOCK</h1>
+    
+    <body>
 
-      <?php
+        <h1>AVAILABLE STOCK</h1>
+
+        <?php
          $servername = "localhost";
           $username = "root";
           $password = "";
@@ -25,10 +25,27 @@
           $result = $conn->query($sql);
 
           if ($result->num_rows > 0) {
-              echo  "<table><tr><th>SERIAL NO</th><th>BRAND</th><th>MODEL</th><th>PRICE</th><th>QUANTITY</th><th>DATE</th></tr>";
+              echo  "<table>
+                        <tr>
+                          <th>SERIAL NO</th>
+                          <th>BRAND</th>
+                          <th>MODEL</th>
+                          <th>PRICE</th>
+                          <th>QUANTITY</th>
+                          <th>DATE</th>
+                        </tr>"
+                      ;
             // output data of each row
           while($row = $result->fetch_assoc()) {
-              echo "<tr><td>" . $row["id"]. "</td><td>" . $row["brand"]."</td><td>". $row["model"]. "</td><td>". $row["price"]. "</td><td>". $row["quantity"]. "</td><td>". $row["dates"]. "</td></tr>";
+              echo "
+              <tr>
+                 <td>" . $row["id"]. "</td>
+                 <td>" . $row["brand"]."</td>
+                 <td>". $row["model"]. "</td>
+                 <td>". $row["price"]. "</td>
+                 <td>". $row["quantity"]. "</td>
+                 <td>". $row["dates"]. "</td>
+              </tr>";
           }
             echo "</table>";
           } 
@@ -38,7 +55,8 @@
 
           $conn->close();
      ?>
-        <button><a href="ecommerceDb.php">upload stock</a></button>
+        <button><a href="index.php">upload stock</a></button>
 
-  </body>
+    </body>
+
 </html>
