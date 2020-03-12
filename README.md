@@ -24,8 +24,7 @@ If you want to make a submission for a week where the topic was 'sample'
 - Add necessary files/content for the task to the folder.
 - Add the new files/content to git and commit your changes.
 - Push to your forked repository and subsequently make a Pull request to the main repository.
-- Keep checking to ensure your pull request has been merged or if you have comments so you can address as only merging of your pull request signifies task completion.
-
+- Keep checking to ensure your pull request has been merged or if it has any comments so you can address them. Only merged pull requests signify task completion.
 # Pull Request
 
 when creating a pull request, you need to inform us of what you have done or changed.for example, if Adewale wants to create a pull request to submit a solution for version control topic.it would go thus:
