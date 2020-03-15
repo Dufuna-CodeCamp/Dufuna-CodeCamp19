@@ -1,0 +1,13 @@
+</php>
+$count=0;
+$number=0;
+$current_number=1;
+$next_sequence= $count+$number;
+
+if ($current_number==$number) {
+    $count+=1;
+}
+elseif ($number==0) {
+    $count
+}
+?>
