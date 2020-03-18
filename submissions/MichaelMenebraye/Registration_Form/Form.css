@@ -1,0 +1,19 @@
+body{
+    background-color: cornflowerblue;
+}
+#submit{
+    margin-left: 35%;
+    padding: 3px;
+    border-radius: 5px;
+    color: cyan;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+h3{
+    text-align: center;
+}
+p{
+    margin-top: -2%;
+    font-style: italic;
+    font-weight: 700;
+}
