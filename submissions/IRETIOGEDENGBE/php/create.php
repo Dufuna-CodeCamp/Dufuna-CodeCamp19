@@ -79,7 +79,7 @@ if ( isset( $_POST['submit'] ) && $statement ) {
     <label class = 'add_product' for = 'about'>Product Description</label>
     <input type = 'text' name = 'about' id = 'about'><br><br>
     <input class = 'log' type = 'submit' name = 'submit' value = 'submit'>
-    <button><a href = 'overview.php'>view products in database</a>
+    <button><a href = 'overview.php'>View products</a>
 
     </form>
     </div>

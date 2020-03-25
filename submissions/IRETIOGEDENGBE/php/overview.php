@@ -44,5 +44,5 @@ try {
 </tbody>
 </table>
 
-<a href = 'create.php'>Back to database</a>
+<a href = 'create.php'>Add new product</a>
 
