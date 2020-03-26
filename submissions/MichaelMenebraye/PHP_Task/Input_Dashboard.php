@@ -31,6 +31,7 @@ while($row = $stmt->fetch(PDO::FETCH_OBJ)){
                 <th> '.$row->quantity.'</th>
                 <th> '.$row->price.'</th>
                 <th> '.$row->date.'</th>
+            </tr>
     ';
 }
 ?>
