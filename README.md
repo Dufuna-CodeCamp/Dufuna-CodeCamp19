@@ -1,11 +1,11 @@
 # Welcome to Dufuna-CodeCamp19 🚩
- 
+
 This README explains how to get started with this repository.
- 
+
 # How To Get Started
 
 - Fork this repository.
- 
+
 - In your fork, in the `submissions` directory, create a new folder whose name is `YOUR FULL NAME`.
 
 - In the folder named after you, create another folder named the topic for which you want to make a submission Example: `uxDesign`
