@@ -34,5 +34,5 @@ when creating a pull request, you need to inform us of what you have done or cha
 
 
 # Keeping your Fork in Sync
- 
- As more content is added to this repository and more people contribute, your fork will fall out of date. This can sometimes lead to tricky situations with your pull requests. It's recommended to occasionally sync your fork with this [repository](https://help.github.com/articles/syncing-a-fork/).
+
+As more content is added to this repository and more people contribute, your fork will fall out of date. This can sometimes lead to tricky situations with your pull requests. It's recommended to occasionally sync your fork with this [repository](https://help.github.com/articles/syncing-a-fork/).
