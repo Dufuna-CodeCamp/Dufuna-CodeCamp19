@@ -1,6 +1,6 @@
- # Welcome to Dufuna-CodeCamp19 🚩
+# Welcome to Dufuna-CodeCamp19 🚩
  
- This README explains how to get started with this repository.
+This README explains how to get started with this repository.
  
 # How To Get Started
 
