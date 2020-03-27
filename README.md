@@ -33,6 +33,6 @@ If you want to make a submission for a week where the topic was 'sample'
 -  I corrected the solution to the last task in lasttask.txt.
 
 
- # Keeping your Fork in Sync
+# Keeping your Fork in Sync
  
  As more content is added to this repository and more people contribute, your fork will fall out of date. This can sometimes lead to tricky situations with your pull requests. It's recommended to occasionally sync your fork with this [repository](https://help.github.com/articles/syncing-a-fork/).
