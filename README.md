@@ -29,8 +29,8 @@ If you want to make a submission for a week where the topic was 'sample'
 # Pull Request
 
 when creating a pull request, you need to inform us of what you have done or changed.for example, if Adewale wants to create a pull request to submit a solution for version control topic.it would go thus:
--  I Added a versioncontrol.txt file that contains solution to the version control task.
--  I corrected the solution to the last task in lasttask.txt.
+ -  I Added a versioncontrol.txt file that contains solution to the version control task.
+ -  I corrected the solution to the last task in lasttask.txt.
 
 
 # Keeping your Fork in Sync
