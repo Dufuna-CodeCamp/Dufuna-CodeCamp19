@@ -1,6 +1,4 @@
 # Dufuna-CodeCamp19
-Submissions for Dufuna CodeCamp 2019
-The readMe file Is also in the same directory as the gitignore file. This is what the file contain
  # Welcome to Dufuna-CodeCamp19 🚩
  
  This README explains how to get started with this repository.
