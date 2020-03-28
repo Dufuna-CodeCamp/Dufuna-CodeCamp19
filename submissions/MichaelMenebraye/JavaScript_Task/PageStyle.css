@@ -1,0 +1,32 @@
+body{
+    padding: 20px 0 28px 0;
+    margin: 0%;
+    color: #333;
+}
+img {
+    max-width: 100%;
+    height: 200;
+    width: 200;
+}
+app-title {
+    text-align: center;
+    float: right;
+}
+petName{
+    margin-right: 50%;
+}
+.prod{
+    float: right;
+    padding: 9%;
+}
+h2{
+    color: darkmagenta;
+    margin-top: 0px;
+    text-align: center;
+}
+h2:hover{
+    background: skyblue;
+}
+p{
+    margin-top: -25px;
+}
