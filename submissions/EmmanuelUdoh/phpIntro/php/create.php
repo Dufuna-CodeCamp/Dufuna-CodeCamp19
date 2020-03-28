@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require "fetch.php";
 require "helper.php";
 if (isset($_POST['submit'])) {
