@@ -1,0 +1,29 @@
+body {
+    color: #3F3F3F;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 16px;
+    background: rgb(186, 218, 219);
+}
+
+h1.header {
+    font-size: 52px;
+    text-shadow: 2px 2px 1px rgba(105, 105, 120, 0.2);
+    font-family: 'Alice', Arial, serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(82, 82, 82);
+}
+
+/* button,
+input {
+    padding: 7px;
+    min-width: 100px;
+    border: 1px solid #111;
+    border-radius: 7px;
+}
+
+input[type=submit] {
+    background-color: #8a2be2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; }*/
