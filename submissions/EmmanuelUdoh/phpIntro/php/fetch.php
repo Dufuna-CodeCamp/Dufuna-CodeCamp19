@@ -6,7 +6,7 @@ require "config.php";
  */
 
 try {
-    $connection = new PDO("mysql:host=$host", $username, $password, $options);
+    $connection = new PDO("$dsn, $username, $password, $options);
     $stmt = $connection->query("SELECT * FROM kimaj.brands");
     $brands = array();
     while ($item = $stmt->fetch()) {

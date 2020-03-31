@@ -8,6 +8,14 @@ CREATE DATABASE kimaj;
   brand_description VARCHAR(100) NOT NULL,
 );
 
+INSERT INTO brands(id, brand_name, brand_description)
+VALUES
+  ("Sharp", "An interesting world"),
+  ("Jump", "Life is Good"),
+  ("Philip", "The stars"),
+  ("Binatone", "Your best power manager"),
+  ("Bedmate",  "Sleep well");
+
 CREATE TABLE products (
   id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   brand_id INT(11) UNSIGNED NOT NULL,
@@ -17,13 +25,7 @@ CREATE TABLE products (
   FOREIGN KEY (brand_id) REFERENCES brands (id) ON DELETE CASCADE,
   date TIMESTAMP,
 
-INSERT INTO brands(id, brand_name, brand_description)
-VALUES
-  ("Sharp", "An interesting world"),
-  ("Jump", "Life is Good"),
-  ("Philip", "The stars"),
-  ("Binatone", "Your best power manager"),
-  ("Bedmate",  "Sleep well");
+
 
 
 );

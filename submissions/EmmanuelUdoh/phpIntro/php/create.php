@@ -32,14 +32,14 @@ if (isset($_POST['submit'])) {
 ?>
 
 <?php if (isset($_POST['submit']) && $statement) { ?>
-    > <?php echo $_POST['itemname']; ?> successfully added.
+     <?php echo $_POST['itemname']; ?> successfully added.
 <?php }
 ?>
 
 <h2>Add A Product </h2>
 
 <form method="post">
-<div class="form-container">
+ <div class="form-container">
     <label for="itemname">Name of Product</label>
     <input type="text" name="itemname" id="itemname">
     <select name="brand">
@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
     <label for="quantity">Quantity</label>
     <input type="text" name="quantity" id="quantity">
     <input type="submit" name="submit" value="Submit">
-</div>    
+ </div>    
 </form>
 
 <?php echo '<link  href=".../css/style.css" rel="stylesheet"/>'; ?>
