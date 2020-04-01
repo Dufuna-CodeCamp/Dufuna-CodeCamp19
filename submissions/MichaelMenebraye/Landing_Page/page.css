@@ -1,0 +1,141 @@
+body{
+    background-color: white;
+}
+#top-menu{
+    text-align: right;  
+    margin-top: -8px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -7px;
+    margin-right: -7px;
+    background-color:skyblue;
+}
+#top-menu img{
+    float: left;
+    padding-left: 4px;
+    border-radius: 5px;
+}
+#top-menu a{
+    background-color:skyblue);
+    border: 1px solid cyan;
+    border-radius: 3px;
+    margin-right: 8%;
+}
+#menu1{
+    justify-content: center;
+    display: flex;
+    margin-top: -45px;
+    margin-right: 20%;
+}
+#menu1 input{
+    width: 50%;
+    height: 35px;
+}
+#menu2{
+    margin-left: 61.1%;
+    margin-top: -35px;
+}
+#menu2 input{
+    height: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+#cart{
+    float: right;
+    margin-top: -40px;
+    padding-right: 2%;
+}
+#cart-items{
+    margin-top: -98%;
+    padding-right: 4%;
+    color: tomato;
+}
+.section-2 a{
+    justify-content: center;
+    display: inline-flex;
+    margin-right: 4%;
+    margin-top: 2%;
+    padding-left: 1%;
+}
+.section-2 {
+    background-color: darkturquoise;
+    margin-top: 0.7%;
+    margin-right: -7px;
+    margin-left: -7px;
+}
+.block{
+    float: left;
+    width: 33.3%;
+    background-color:whitesmoke;
+    box-sizing: border-box;
+    margin-top: 50%;
+}
+h3{
+    text-align: center;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 50%;
+    font-weight: bold;
+}
+.cards{
+    padding-left: 6%;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+#image{
+    margin-right: 100px;
+    margin-left: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.add-cart{
+    position: absolute;
+    width: 100%;
+    background-color: darkgray;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+#image:hover .add-cart {
+    bottom: 80px;
+    opacity: 1;
+    padding: 4px;
+    text-decoration: none;
+}
+#image p{
+    text-align: center;
+    font-weight: bold;
+}
+.fb:hover{
+    color: turquoise;
+    background: #2196f3;
+    box-shadow: 0 0 10px;
+}
+.twitter:hover{
+    color: red;
+    background: #2196f3;
+    box-shadow: 0 0 10px;
+}
+.youtube:hover{
+    color: turquoise;
+    background: #2196f3;
+    box-shadow: 0 0 10px;
+}
+.instagram:hover{
+    color: turquoise;
+    background: #2196f3;
+    box-shadow: 0 0 10px;
+}
+.location:hover{
+    color: turquoise;
+    background: #2196f3;
+    box-shadow: 0 0 10px;
+}
