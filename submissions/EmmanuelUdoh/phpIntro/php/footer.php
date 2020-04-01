@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>kimaj</title>
 </head>
-
 <body>
     <div id="footer">
         <div class="container">
@@ -33,7 +31,6 @@
                         <li><a href="#">Our Blog</a></li>
                         <li><a href="#">Forum</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
-
                     </ul>
                 </center>
             </div>
@@ -47,7 +44,6 @@
                         <li><a href="#">Twitter</a></li>
                         <li><a href="#">YouTube</a></li>
                         <li><a href="#">Google+</a></li>
-
                     </ul>
                 </center>
             </div>
@@ -61,12 +57,8 @@
             </div>
         </div>
     </div>
-
     </div>
-
 </body>
-
 </html>
 </body>
-
 </html>

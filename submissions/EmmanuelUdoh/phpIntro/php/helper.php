@@ -1,5 +1,4 @@
 <?php
-
 /** 
  * @param $html 
  * @return string 

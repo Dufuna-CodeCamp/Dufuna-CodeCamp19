@@ -9,7 +9,6 @@ h1{
     background-color: rgb(238, 238, 238);
     font-size: 250%;
 }
-
 fieldset{
     width: 25%;
     padding: 10px;
@@ -34,8 +33,7 @@ label{
     text-align: left;
     float: left;
     padding-bottom: .1em;
-}
-  
+} 
 input[type=text] {
     width: 100%;
     padding: 17px 10px;
@@ -44,7 +42,6 @@ input[type=text] {
     border-radius:3px;
     box-sizing: border-box;
 }
-
 input[type=password] {
     width: 100%;
     padding: 17px;
@@ -53,7 +50,6 @@ input[type=password] {
     border-radius: 3px;
     box-sizing: border-box;
 }
-
 h2{
     color: black;
     font-size: 200%;
@@ -71,14 +67,12 @@ input[type="submit"] {
     width: 100%;
     font-size: 5mm;
 }
-
 input[type="submit"]:hover,
 input[type="submit"] :focus
 {
     background: #4caf50;
     transition: 0.8s ease;
 }
-
 button.social{
     box-sizing: border-box;
     margin-bottom: 4px;
@@ -90,15 +84,12 @@ button.social{
     width: 100%;
     border-radius: 5px;
 }
-
 .facebook{
     background: rgb(80, 150, 207);
 }
 .google{
     background: rgb(240, 91, 81);
 }
-
-
 input[type="checkbox"]{
     width: 6%;
     margin-bottom: 8px;

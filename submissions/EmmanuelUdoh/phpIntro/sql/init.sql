@@ -1,7 +1,5 @@
 CREATE DATABASE kimaj;
- 
  USE kimaj;
-
  CREATE TABLE brands (
   id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT, PRIMARY KEY,
   brand_name VARCHAR(30) NOT NULL,
@@ -24,8 +22,4 @@ CREATE TABLE products (
   PRIMARY KEY (id),
   FOREIGN KEY (brand_id) REFERENCES brands (id) ON DELETE CASCADE,
   date TIMESTAMP,
-
-
-
-
 );

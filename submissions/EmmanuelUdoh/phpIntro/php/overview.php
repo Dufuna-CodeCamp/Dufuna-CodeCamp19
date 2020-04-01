@@ -1,7 +1,6 @@
 <?php
 require "helper.php";
 require "config.php";
-
 try {
     $connection = new PDO("mysql:host=$host", $username, $password, $options);
     $stmt = $connection->query("SELECT * FROM kimaj.products");
@@ -13,9 +12,7 @@ try {
     echo $sql . "<br>" . $error->getMessage();
 }
 ?>
-
 <?php require "header.php"; ?>
-
 <h2>All Products</h2>
 <table>
     <thead>

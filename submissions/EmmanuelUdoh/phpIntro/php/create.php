@@ -1,5 +1,4 @@
 <?php
-
 require "fetch.php";
 require "helper.php";
 if (isset($_POST['submit'])) {
@@ -11,7 +10,6 @@ if (isset($_POST['submit'])) {
             "quantity" => $_POST['quantity'],
             "brand_id" => $_POST['brand']
         );
-
         /**
          * This is equivalent to
          * INSERT INTO products (itemname, quantity) values (:itemname, :quantity)
@@ -22,7 +20,6 @@ if (isset($_POST['submit'])) {
             implode(", ", array_keys($newProduct)),
             ":" . implode(", :", array_keys($newProduct))
         );
-
         $statement = $connection->prepare($sql);
         $statement->execute($newProduct);
     } catch (PDOException $error) {
@@ -30,14 +27,11 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-
 <?php if (isset($_POST['submit']) && $statement) { ?>
      <?php echo $_POST['itemname']; ?> successfully added.
 <?php }
 ?>
-
 <h2>Add A Product </h2>
-
 <form method="post">
  <div class="form-container">
     <label for="itemname">Name of Product</label>
@@ -46,14 +40,11 @@ if (isset($_POST['submit'])) {
         <?php foreach ($brands as $brandkey => $brandValue) { ?>
             <option value=<?php echo $brandkey; ?>> <?php echo $brandValue ?></option>
         <?php } ?>
-
     </select>
-
     <label for="quantity">Quantity</label>
     <input type="text" name="quantity" id="quantity">
     <input type="submit" name="submit" value="Submit">
  </div>    
 </form>
-
 <?php echo '<link  href=".../css/style.css" rel="stylesheet"/>'; ?>
 <?php require "footer.php"; ?>
