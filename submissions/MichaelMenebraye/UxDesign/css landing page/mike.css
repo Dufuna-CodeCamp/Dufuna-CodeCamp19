@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+background: skyblue;
+color: ;
+}
+.box{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-bottom: 3px solid gainsboro;
+    border-top: 5px solid gainsboro;
+    
+}
+.nav-area{
+    float: right;
+    list-style: none;
+
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+    margin-top: 2px;
+}
+.cart-icon{
+    height: 6.6vh;
+    margin-left: 12%;
+}
+
+.toggle{
+    width: 2vw;
+    height: 5vh;
+    margin-left: 3%;
+}
+.navigation{
+    margin-top: 2vh;
+    width: 100%;
+    height: 7vh;
+    background-color: #19e5e5;
+    border-radius: 6px;
+    display: inline-block;
+    align-items: center;
+}
+.cgr{
+    margin-left: 1%;
+ 
+
+}
+.submenu{
+    background-color: none;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 4px;
+    
+    
+    
+}
+.submenu:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+}
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+.container3{
+    width: 100%;
+    margin-top: 1%;
+    margin-left: 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-bottom: 5px solid gainsboro;
+
+}
+.container3 h2{
+    background: #0062cc;
+    color: #fff;
+    width: 200px;
+    font-size: 24px;
+    padding: 5px;
+    height: 40px;
+    margin-bottom: 0%;
+}
+
+.container3 h5{
+    margin-left: 2.5%;
+    display: inline-block;
+    padding: 30px;
+    padding-top: 0.5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.container3 h2:hover{
+    background: #fff;
+    color: #0062cc;
+}
+.container3 img{
+    border-radius: 100%;
+    padding: 30px;
+    
+    display: inline-block;
+}
+.container3 img:hover{
+    background: #fff;
+    color: #0062cc;
+
+}
+.container4 img{
+    border-radius: 10%;
+    padding: 30px;
+}
+.mainfooter{
+    background: skyblue;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-display: bold;
+}
