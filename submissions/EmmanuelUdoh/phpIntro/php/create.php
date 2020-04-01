@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <?php if (isset($_POST['submit']) && $statement) { ?>
-    > <?php echo $_POST['itemname']; ?> successfully added.
+     <?php echo $_POST['itemname']; ?> successfully added.
 <?php } ?>
 ?>
 <h2>Add A Product </h2>
@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
     <label for="itemname">Name of Product</label>
     <input type="text" name="itemname" id="itemname">
     <select name="brand">
-        <?php foreach ($brands as $brandkey => $brandValue) { ?>
+        <?php foreach ($brands as $brandkey => $brandValue) ?>
             <option value=<?php echo $brandkey; ?>> <?php echo $brandValue ?></option>
         <?php } ?>
     </select>
