@@ -28,8 +28,8 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <?php if (isset($_POST['submit']) && $statement) { ?>
-     <?php echo $_POST['itemname']; ?> successfully added.
-<?php }
+    > <?php echo $_POST['itemname']; ?> successfully added.
+<?php } ?>
 ?>
 <h2>Add A Product </h2>
 <form method="post">
