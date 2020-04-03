@@ -78,7 +78,7 @@ body {
 
 .nav-bar {
     margin-top: 0;
-    background-color: /*#c73295;*/ #92c4bb;
+    background-color:  #92c4bb;
     box-shadow: 0 0 15px 0 (0,0,0,0,.10);
 }
 
@@ -124,32 +124,89 @@ body {
     display: block;
 }
 
-.products {
+#btn {
+    display: block;
     margin: auto;
-    background-color: #d4c8ca;
+    padding: auto;
+    background:#10f0d6;
+    color: #181717;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: #6ee4d0;
+}
+
+.product-box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 15px;
+    background:#6ee4d0;
+}
+
+.product-content #product-box{
+    display: inline-block;
+    background:#6ee4d0;
+    color: #000000; 
+    font-family: cursive;
+    width: 300px;
+    height: 300px;
+    margin: 2px;  
+}
+.product-image {
+    width: 100%;
+    height: 70%;
+}
+
+.product-image .images {
+    display: inline-block;
+    width: 300px;
+    height: 220px;
+    border: 1px solid #a1a198;
+    border-radius: 5px;
+    margin: 2px;  
+}
+
+.product-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.product-price{
+    color:#db1a1a;
+    text-align: center;
+    font-family: cursive;
+}
+
+.brands{
+    margin: auto;
     background-color: #d4c8ca;
     border-radius: 5px;
 }
 
-.contents {
+.brand-content {
     display: flex;
     align-items: stretch;
     justify-content: space-evenly;
     background-color: #d4c8ca;
     border-radius: 5px;
-    
+    width: 100%;
+    height: 70%;
 }
 
-.images {
+.brand-images {
     width: 300px;
+    height: 220px;
     border: 1px solid #a1a198;
     border-radius: 5px;
-    background-color: #636337;
-    margin: 20px;
+    margin: 15px;
 }
 
-.images:hover {
-    width: 350px;
+.brand-images:hover, .images:hover {
+    width: 300px;
+    width: 320px;
     background-color: #dd1414;
 }
 
@@ -218,7 +275,7 @@ body {
 }
 
 .footer-text {
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: #868683;
 }
 
@@ -232,7 +289,7 @@ body {
 }
 
 .footer-support-button {
-    background-color: #0000ff;
+    background-color: #6ee4d0;
     color: #fff;
 }
 

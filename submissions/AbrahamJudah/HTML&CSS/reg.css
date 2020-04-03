@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(255,255,255);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1300px;
+    height: 950px;
+    margin: 40px auto;
+}
+.registration-block {
+    margin: 20px 425px;
+    padding: 20px;
+    width: 450px;
+    height: 750px;
+    border: 5px solid rgba(255, 0, 0, 0.575);
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgba(169, 169, 169, 0.116);
+}
+.logo {
+    position: relative;
+    margin: 15px 570px;
+}
+.registration-label {
+    font-size: 20px;
+    font-family: Helvetica;
+    margin-left: 40px;
+    color: rgba(8, 191, 247, 0.973);
+}
+.registration-page-input {
+    width: 80%;
+    height: 300%;
+    font-size: 20px;
+    border-radius: 7px;
+    border-color: rgba(255, 0, 0, 0.575);
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.registration-title {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    color: rgba(8, 191, 247, 0.973);
+}
+.button {
+    font-size: 20px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+    background:  rgba(8, 191, 247, 0.973);
+}
+p {
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial;
+}
+.button:hover {
+    background-color: rgba(255, 0, 0, 0.575);
+}
+a:hover {
+    background-color: rgba(8, 191, 247, 0.973)
+}

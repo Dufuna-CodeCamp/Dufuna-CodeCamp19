@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+body {
+    background: rgba(10, 10, 10, 0.863);
+    background-image:linear-gradient(120deg,rgba(0, 0, 0, 0.938),rgba(27, 26, 26, 0.438)),url("../img/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgba(201, 230, 255, 0.548);
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif, Tahoma, Verdana;
+    padding: 1em;
+}
+.main-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    font-size:15px
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.brand {
+    text-align: center;
+}
+.brand span {
+    color: rgb(255, 0, 0);
+}
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+.wrapper > * {
+    padding: 1em;
+}
+.company-info {
+    background: rgba(0, 0, 0, 0.726);
+}
+.company-info h4,.company-info ul {
+    text-align: center;
+    margin: 1rem 0 0 0;
+    
+}
+.contact {
+    background: #0f0f0fb0;
+}
+
+/* STYLING FOR THE FORM */
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.contact form label {
+    display: block;
+}
+ input {
+    border-radius: 4px;
+}
+.contact form p {
+    margin: 0;
+}
+.contact form button, .contact form input {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid rgba(201, 230, 255, 0.548);
+}
+.contact form button {
+    background: rgba(201, 230, 255, 0.548);
+    border: 0;
+    text-transform: uppercase;
+}
+.contact form button:hover, .contact form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+} 
+.login-text a:link,.login-text {
+    color: white;
+    text-align: center;
+}
+.login-text span a:hover, .login-text span a:focus {
+    color: rgba(201, 230, 255, 0.548);
+}
+/* LARGE SCREENs*/
+ 
+@media(min-width:700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper >* {
+        padding: 2em;
+    }
+    .company-info ul {
+        text-align: left;
+        padding: 20px 0;
+    }
+    .company-info ul li {
+        padding: 10px 0;
+    }
+    .company-info h4,.company-info ul, .login-text {
+        text-align: center;
+        margin:8rem 1rem 0;
+        
+    }
+    .company-info ul {
+        margin-top: 0rem;
+    }
+}
