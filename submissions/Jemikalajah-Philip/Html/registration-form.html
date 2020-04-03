@@ -48,7 +48,7 @@
             </div>
             <div class="container">
               <div class="register">
-                <form>
+                <form action="register.php" method="POST">
                   <h2>
                     CREATE AN ACCOUNT
                   </h2>
@@ -60,22 +60,26 @@
                     <label>
                       Gender:
                     </label>
-                    <input type="radio" name="Gender" />Male
-                    <input type="radio" name="Gender" />Female<br /><br />
+                    <input type="radio" value="M" name="Gender" />Male
+                    <input type="radio" value="F" name="Gender" />Female<br /><br />
                   </div>
                   <div class="phn">
                     <label>
                       Phone No. :
                     </label>
-                    <select>
-                      <option>+234</option>
+                    <select name="phonecode">
+                      <option selected hidden value="">Select code</option>
+                      <option value="+224">+224</option>
+                      <option value="+977">+977</option>
+                      <option value="+234">+234</option>
+                      <option value="+233">+233</option>
                     </select>
-                    <input type="tel" placeholder="0803*******" name="" /><br /><br />
+                    <input type="tel" placeholder="0803*******" name="phone" /><br /><br />
                   </div>
                   <div>
-                    <input class="check1" type="checkbox" value="test" />I
+                    <input class="check1" type="checkbox" value="Y" name="checkbox" />I
                     want to receive up4naija newsletters<br />
-                    <input class="check1" type="checkbox" value="test" />I
+                    <input class="check1" type="checkbox" value="Y" name="checkbox" />I
                     agree to the terms and conditions<br /><br />
                   </div>
                   <div>
