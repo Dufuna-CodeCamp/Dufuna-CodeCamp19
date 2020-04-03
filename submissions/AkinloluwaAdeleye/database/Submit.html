@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Products Form</title>
+    <style>
+        .my-button:hover {
+            color: pink;
+        }
+        
+        .box {
+            width: 30%;
+            height: 100%;
+            margin: 40px auto;
+            border: 1px solid #efefef;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        
+        input [type=text],
+        textarea {
+            width: 100%;
+            height: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: none;
+        }
+        
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+        
+        legend {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .my-button {
+            background: green;
+            color: #efefef;
+            border: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h6 style="text-align: center">Please Upload Products Details</h6>
+        <form method="POST" action="Arrival.php">
+            <fieldset>
+                <legend>Products</legend>
+                <label for="Product_name">Product Name</label>
+                <input type="text" name="Product_name" id="Product_name"><br>
+                <label for="Quantity">Quantity</label>
+                <input type="number" name="Quantity">
+                <label for="Price">Price</label>
+                <input type="number" name="Price" id="Price"><br>
+                <label for="Product_id">Product id</label>
+                <input type="number" name="Product_id" id="Product_id"><br>
+                <label for="Brand_id">Brand id</label>
+                <input type="number" name="Brand_id" id="Brand_id">
+                <label for="Product_description">Product Description</label>
+                <input type="text" name="Product_description">
+                <label for="Product_picture">Product picture</label>
+                <input type="file" name="Product_picture">
+                <label for="Brand_name">Brand name</label>
+                <select name="Brand_name" id="Brand_name">
+                <option value="Non selected">Non selected......</option>
+                <option value="bargar">barger</option>
+                <Option value="samsung">Samsung</Option>
+                <option value="givenchy">Givenchy</option>
+                <option value="Finecoat">Finecoat</option>
+            </select>
+                <input class="my-button" type="submit" name="submit" value="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

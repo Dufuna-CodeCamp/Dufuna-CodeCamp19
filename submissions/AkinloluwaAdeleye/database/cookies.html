@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+        .my-button:hover {
+            color: pink;
+        }
+        
+        .box {
+            width: 40%;
+            margin: 40px auto;
+            border: 1px solid #efefef;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        .rin {
+            margin: 40px auto;
+            text-align: center;
+        }
+        
+        .my-button {
+            background: green;
+            color: #efefef;
+            border: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h6 style="text-align: center">Please Login with your Email and Firstname</h6>
+        <form method="POST" action="cookies.php" name="Login" name="Signup">
+            <legend>Login</legend>
+            <label for="email">Username</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="First_name">First name</label>
+            <input type="text" name="First_name"><br>
+            <input class="my-button" type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html
