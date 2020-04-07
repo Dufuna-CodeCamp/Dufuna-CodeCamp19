@@ -1,3 +1,14 @@
+This project contains the following components
+App.js
+index.js
+cartCount.js
+cartDisplay.js
+header.js
+productList.js
+these components are stateless functional component except for App.js
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
