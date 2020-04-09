@@ -1,0 +1,17 @@
+body {
+  background: lightblue;
+}
+.signin {
+  display: inline-block;
+  text-align: left;
+  margin-left: 40%;
+  width: 100px;
+  color: green;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: green;
+  font-size: 50px;
+}
