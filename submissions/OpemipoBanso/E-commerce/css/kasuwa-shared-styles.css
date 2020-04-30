@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Lato", sans-serif, "Open Sans", Arial, Helvetica, sans-serif;
+}
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: white;
+  display: block;
+  margin: 0.6rem 0;
+}
+/*  */
+/* --------------- Navbar ---------------- */
+.main-header {
+  position: sticky;
+  top: 0;
+  height: 72px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--mainBlack);
+  z-index: 1;
+  color: var(--mainWhite);
+}
+.main-header-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.main-header-center a {
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+.main-header-center .header_brand {
+  padding: 0.5rem 1.5rem;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1.5rem;
+  vertical-align: middle;
+  color: var(--primaryColor);
+}
+.main-header__cart-btn {
+  position: relative;
+  cursor: pointer;
+  color: var(--mainWhite);
+}
+.main-header__cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainBlack);
+}
+
+.main-header-search__input input[type="text"] {
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+  width: 400px;
+  vertical-align: middle;
+}
+/* Style the submit button */
+.main-header-search button {
+  background: grey;
+  color: white;
+  font-size: 17px;
+  font-weight: bolder;
+  border: 1px solid var(--mainGrey);
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  height: 39px;
+  width: 40px;
+  vertical-align: middle;
+}
+.main-header-search button:hover {
+  background: var(--primaryColor);
+}
+.main-header-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-content: flex-end;
+}
+.main-header-nav__item,
+.mobile-nav__item {
+  margin: 0 8px;
+  /* flex: 1; */
+}
+.main-header-nav__item a,
+.mobile-nav__item a {
+  text-decoration: none;
+  color: var(--mainWhite);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  letter-spacing: var(--mainSpacing);
+  font-size: 0.8rem;
+}
+.main-header-nav__item a:hover,
+.main-header-nav__item a:active {
+  color: var(--primaryColor);
+}
+.main-header-nav__item--cta a,
+.mobile-nav__item--cta a {
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  letter-spacing: var(--mainSpacing);
+  font-size: 0.8rem;
+  /* background: var(--primaryColor); */
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+
+.main-header-nav__item--cta a:hover,
+.main-header-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
+  color: var(--mainBlack);
+  background: white;
+  border: none;
+}
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
+/* Navbar container */
+.nav-bar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+/* Links inside the navbar */
+.nav-bar a {
+  float: left;
+  font-size: 16px;
+  color: var(--mainWhite);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* The dropdown container */
+.nav-bar__dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* Dropdown button */
+.nav-bar__dropdown .nav-bar__dropdown--dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--mainWhite);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Add a red background color to navbar links on hover */
+.nav-bar a:hover,
+.nav-bar__dropdown:hover .nav-bar__dropdown--dropbtn {
+  background-color: var(--primaryColor);
+  color: var(--mainBlack);
+  font-weight: bold;
+}
+/* Dropdown content (hidden by default) */
+.nav-bar__dropdown--content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.nav-bar__dropdown--content a {
+  float: none;
+  color: var(--mainBlack);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.nav-bar__dropdown--content a:hover {
+  background-color: var(--mainGrey);
+}
+/* Show the dropdown menu on hover */
+.nav-bar__dropdown:hover .nav-bar__dropdown--content {
+  display: block;
+}
+
+footer {
+  height: 400px;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  padding: 16px;
+  font-size: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 13.2px;
+}
+footer a:hover {
+  color: var(--primaryColor);
+}
+.farms-list {
+  width: 20%;
+  float: left;
+}
+.farms-list li {
+  display: block;
+  list-style: none;
+  padding: 4px;
+}
+.footer-wrapper1 {
+  border-bottom: solid 2px white;
+  overflow: auto;
+  padding-bottom: 20px;
+  margin: 0 auto 20px auto;
+}
+.newsletter {
+  float: right;
+  width: 40%;
+  font-size: 13px;
+}
+.newsletter form {
+  margin: auto;
+  width: 100%;
+}
+form.newsletter-box input[type="text"] {
+  padding: 10px;
+  font-size: 13px;
+  border: none;
+  background: #f1f1f1;
+  margin: 5px 0px 25px 0px;
+  width: 350px;
+}
+form.newsletter-box input[type="submit"] {
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid grey;
+  background: #fbad49;
+  margin: 0;
+  width: 80px;
+  cursor: pointer;
+}
+form.newsletter-box input[type="submit"]:hover {
+  background: #ededed;
+}
+.footer-wrapper2 {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  height: 30px;
+}
+.footer-wrapper2 a {
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid white;
+  padding: 1px 12px;
+  height: 10px;
+  text-align: center;
+}
+.footer-links {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.find-us {
+  margin: 20px auto;
+  height: 100%;
+  font-size: 120%;
+  vertical-align: middle;
+}
+.find-us i {
+  padding: 10px 20px 0 0;
+}
+.copyright {
+  float: right;
+  font-size: 15px;
+  height: 100%;
+  padding: 16px 0px;
+  position: relative;
+  bottom: 40px;
+  width: 30%;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+#no-border {
+  border: none !important;
+}
+.clear-float {
+  clear: both !important;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  letter-spacing: var(--mainSpacing);
+  font-size: 0.8rem;
+  /* background: var(--primaryColor); */
+  color: var(--mainBlack);
+  /* border: 1px solid var(--primaryColor); */
+  transition: var(--mainTransition);
+  cursor: pointer;
+  vertical-align: center;
+}
+.cart-btn {
+  background-color: var(--primaryColor);
+  padding: 0.2rem 0.8rem;
+}
+.btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+.cart-header {
+  background: var(--primaryColor);
+}
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(10px, auto);
+  /* grid-gap: 1rem; */
+}
+#cart-header {
+  grid-column: 1/4;
+  /* grid-row: 2; */
+  justify-self: stretch;
+  background-color: var(--primaryColor);
+  padding: 16px;
+}
+.cart-items-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(10px, auto);
+  grid-gap: 0.5rem;
+  width: 800px;
+  background-color: var(--mainGrey);
+  padding: 16px;
+}
+.cart-item-img-box {
+  grid-column: 1/2;
+}
+
+.cart-item-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: var(--mainTransition);
+}
+.cart-item-info {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cart-items-quant {
+  grid-column: 3/4;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+}
+.fa-minus,
+.fa-plus,
+.cart-items-quant input {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+.cart-item-info .product-name {
+  grid-column: 1/4;
+  justify-items: stretch;
+  align-content: center;
+}
+.cart-item-info .product-seller {
+  grid-column: 1/4;
+  grid-row: 2;
+  justify-items: stretch;
+}
+.cart-item-info .product-price {
+  grid-column: 1/4;
+  justify-items: stretch;
+}
+.cart-item-info .btn-cart-save {
+  grid-column: 1/2;
+  justify-items: stretch;
+  align-content: center;
+  margin-right: 8px;
+}
+.cart-item-info .btn-cart-rmmove {
+  grid-column: 3/4;
+  justify-items: stretch;
+  align-content: center;
+}
+.cart-item-img-box:hover .cart-item-img {
+  opacity: 0.5;
+}
+.price-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(10px, auto);
+}
+.price-details > h6 {
+  background: #eeeeee;
+}
+.price-details > h6:nth-child(odd) {
+  background: #dddddd;
+}
+#price1 {
+  grid-column: 1/3;
+}
+.price21 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+#price3 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
