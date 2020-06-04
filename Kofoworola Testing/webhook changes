@@ -1,4 +1,5 @@
 <?php
 echo 'Github webhook';
 echo 'New test';
+echo 'Another test'
 ?>
