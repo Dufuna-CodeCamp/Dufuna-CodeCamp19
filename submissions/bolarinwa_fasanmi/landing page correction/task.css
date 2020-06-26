@@ -1,0 +1,11 @@
+.product-box{
+    width: 150px;
+    height: 200px;
+    border: solid brown;
+    float: left;
+    margin: 4px;
+}
+/* .product-img{
+    width: 250px;
+    height: 300px;
+}

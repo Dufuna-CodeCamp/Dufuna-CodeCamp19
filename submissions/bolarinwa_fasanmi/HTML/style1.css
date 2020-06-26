@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 2px solid red;
+}
+.head {
+    border: 2px solid blue;
+    width: 100%;
+    height: 93px;
+}
+nav {
+    border: 2px solid green;
+    display: inline-block;
+    position: relative;
+    left: 60%;
+    bottom: 40px;
+}
+#logo {
+    border: 2px solid red;
+    width: 90px;
+    height: 90px;
+}
+.section {
+    border: 2px solid green;
+    
+}
+#search {
+    border: 2px solid blue;
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    left: 20%;
+    top: 30px;
+}
+nav ul li {
+    border: 2px solid red;
+    display: inline-block;
+    
+}
+#list{
+    border: 2px solid blue;
+    width: 160px;
+    height: 250px;
+    display: inline-block;
+}
+.picture {
+    border: 2px solid red;
+    width: 76%;
+    height: 250px;
+    position: absolute;
+    margin-left: 17px;
+
+}
+.product_box {
+    border: 2px solid yellow;
+    display: inline-block;
+    float: left;
+    /* width: 170px; 
+     height: 150px;  
+     position: absolute; 
+     margin-left: 17px; */
+}
+.product_image {
+    
+
+         width: 70px; 
+         height: 70px; 
+
+}
+.image {
+    
+
+    width: 130px;
+    height: 130px;
+
+}
+.product {
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    
+
+}
+.box {
+    border: 2px solid blue;
+    
+
+}
+h2 {
+    width: fit-content;
+}
+button {
+    background: indianred;
+}
+.hidden {
+ display: none !important;
+}
