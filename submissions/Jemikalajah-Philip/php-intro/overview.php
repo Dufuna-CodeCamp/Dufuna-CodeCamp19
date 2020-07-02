@@ -3,7 +3,7 @@ require "helper.php";
 require "config.php";
 
 try {
-    $connection = new PDO ("mysql:host=$host", $username, $password, $options);
+    $connection = new PDO ("mysql:host=$host", $dbusername, $dbpassword, $options);
     $stmt = $connection->query("SELECT * FROM addProducts.products");
     $products = array();
     while ($item = $stmt->fetch()) {

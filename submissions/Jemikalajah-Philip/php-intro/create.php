@@ -1,7 +1,7 @@
 <?php
 require "config.php";
 try {
-    $connection = new PDO ($dsn, $username, $password, $options);
+    $connection = new PDO ($dsn, $dbusername, $dbpassword, $options);
     $stmt_brands = $connection->query("SELECT * FROM addProducts.brands");
     $brands = array();
     $brand_id = array();
@@ -22,7 +22,7 @@ if (isset($_POST['submit'])){
     require "helper.php";
     
     try {
-        $connection = new PDO ($dsn, $username, $password, $options);
+        $connection = new PDO ($dsn, $dbusername, $dbpassword, $options);
         $newProduct = array(
             "itemname" => $_POST['itemname'],
             "quantity" => $_POST['quantity'],
@@ -38,14 +38,6 @@ if (isset($_POST['submit'])){
         );
         $statement = $connection->prepare($sql);
         $statement->execute($newProduct);
-        $stmt_brands = $connection->query("SELECT * FROM addProducts.brands");
-        $brands = array();
-        $brand_id = array();
-        while ($item = $stmt_brands->fetch()) {
-            array_push($brands, $item['brand_name']);
-            array_push($brand_id, $item['id']);
-        }
-        $mappedBrands = array_combine( $brand_id, $brands);
     }catch(PDOException $error){
         echo "Products not added to database". "<br>" . $error->getMessage();
     }
