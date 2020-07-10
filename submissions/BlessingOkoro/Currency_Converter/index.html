@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Currency Converter</title>
+</head>
+<body onload="convertCurrency();">
+    <div class="container">
+        <div class="header">
+            <h1>Elbies&apos; Currency Converter</h1>
+            <p>Makes Currency Conversion Accurate, Easier and Faster</p>
+        </div>
+    <div class="inputCurrency">
+        <table>
+            <tr class="box">
+                <td id="naira">
+                    <input id="intlCurrency" type="text" value="1" onkeyup="convertCurrency();"/></td>
+                    <td id="poundgbp">
+                         <select id="intl" onchange="convertCurrency();">
+                                <option value="USD" selected>US Dollar  &mdash; USD</option>
+                                <option value="EUR">EURO  &mdash; EUR </option>
+                                <option value="GBP">British Pound Sterling  &mdash; GBP </option>
+                                <option value="YEN">Japanese Yen  &mdash; YEN </option>
+                                <option value="FRANC">Swiss Franc  &mdash; FRANC </option>
+                                <option value="CAD">Canadian Dollar  &mdash; CAD </option>
+                                <option value="AUD">Austrialian Dollar  &mdash; AUD </option>
+                                <option value="CNY">Chinese Yuan Renminbi  &mdash; CNY </option>
+                                <option value="ZAR">South African Rand  &mdash; ZAR </option>
+                                <option value="RUB">Russian Ruble  &mdash; RUB </option>
+                                <option value="BRL">Brazilian Real  &mdash; BRL </option>
+                                <option value="HKD">Hong Kong Dollar  &mdash; HKD </option>
+                                <option value="MXN">Mexican Nuevo Peso  &mdash; MXN </option>
+                                <option value="NGN">Nigerian Naira  &mdash; NGN </option>
+                                <option value="DKK">Danish Krone  &mdash; DKK </option>
+                                <option value="PHP">Philipine Peso  &mdash; PHP </option>
+                                <option value="INR">Indian Rupee &mdash; INR </option>
+                                <option value="EGP">Egyptian Pound  &mdash; EGP </option>
+                                <option value="BGN">Bulgarian Lev  &mdash; BGN </option>
+                                <option value="SEK">Swedish Krona  &mdash; SEK </option>
+                                <option value="FJD">Fiji Dollar  &mdash; FJD </option>
+                                <option value="KES">Kenyan Shilling  &mdash; KES </option>
+                                <option value="KRW">South Korean Won &mdash; KRW </option>
+                                <option value="ZMW">Zambian Kwacha  &mdash; ZMW </option>
+                                <option value="TDN">Tuinisian Dollar  &mdash; TDN </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dollar">
+                    <input id="localCurrency" type="text" disabled/></td>
+                    <td id="japanyen">
+                         <select id="local" onchange="convertCurrency();">
+                                <option value="USD">US Dollar  &mdash; USD</option>
+                                <option value="EUR">EURO  &mdash; EUR </option>
+                                <option value="GBP" selected>British Pound Sterling  &mdash; GBP </option>
+                                <option value="YEN">Japanese Yen  &mdash; YEN </option>
+                                <option value="FRANC">Swiss Franc  &mdash; FRANC </option>
+                                <option value="CAD">Canadian Dollar  &mdash; CAD </option>
+                                <option value="AUD">Austrialian Dollar  &mdash; AUD </option>
+                                <option value="CNY">Chinese Yuan Renminbi  &mdash; CNY </option>
+                                <option value="ZAR">South African Rand  &mdash; ZAR </option>
+                                <option value="RUB">Russian Ruble  &mdash; RUB </option>
+                                <option value="BRL">Brazilian Real  &mdash; BRL </option>
+                                <option value="HKD">Hong Kong Dollar  &mdash; HKD </option>
+                                <option value="MXN">Mexican Nuevo Peso  &mdash; MXN </option>
+                                <option value="NGN">Nigerian Naira  &mdash; NGN </option>
+                                <option value="DKK">Danish Krone  &mdash; DKK </option>
+                                <option value="PHP">Philipine Peso  &mdash; PHP </option>
+                                <option value="INR">Indian Rupee &mdash; INR </option>
+                                <option value="EGP">Egyptian Pound  &mdash; EGP </option>
+                                <option value="BGN">Bulgarian Lev  &mdash; BGN </option>
+                                <option value="SEK">Swedish Krona  &mdash; SEK </option>
+                                <option value="FJD">Fiji Dollar  &mdash; FJD </option>
+                                <option value="KES">Kenyan Shilling  &mdash; KES </option>
+                                <option value="KRW">South Korean Won &mdash; KRW </option>
+                                <option value="ZMW">Zambian Kwacha  &mdash; ZMW </option>
+                                <option value="TDN">Tuinisian Dollar  &mdash; TDN </option>
+                        </select>
+                    </td>
+                </tr>
+        </table>
+    </div>
+</div>
+<script src="act.js"></script>
+</body>
+</html>
