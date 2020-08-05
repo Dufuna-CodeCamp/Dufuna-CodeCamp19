@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid rgb(3, 113, 156);
+    width: fit-content;
+    height: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 4px;
+}
+h2 {
+    text-decoration: underline;
+}
+label {
+    font-size: 20px;
+    margin-top: 8px;
+}
+input[type="text"]  {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 3px;
+}
+input[type="datetime-local"]  {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 3px;
+}
+input[type="submit"]  {
+    position: absolute;
+    background-color:rgb(3, 113, 156); 
+    font-size: 20px;
+    color: whitesmoke;
+    width: 80px;
+    height: 30px;
+    top: 258px;
+    left: 750px;
+    cursor: pointer;
+}
+.brand {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 8px;
+}
