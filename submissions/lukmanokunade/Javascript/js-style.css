@@ -1,0 +1,40 @@
+.items{
+    display: inline-flex;
+    margin-top: 10px;
+    width: 100%;
+    border: 25px;
+    background-color: blue;
+    float: left;
+    color: white;
+}
+
+.products {
+    margin: 5px;
+    display: inline-flex;
+    padding: 10px;
+    border: 5px;
+}
+
+.product-img img {
+    width: 100%;
+    height: 75%;
+}
+
+.products-name {
+    font-size: 30px;
+    text-align: center;
+}
+
+.products-price {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#show-js{
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+}
