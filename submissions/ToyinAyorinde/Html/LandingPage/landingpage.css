@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    font-family: 'Gentium Basic', serif;
+}
+h1,h2, h3, h4, h5, h6 {
+    font-family: 'Sofia', cursive;
+}
+ul{
+    list-style-type: none;
+}
+/*Top*/
+.top{
+    padding: 10px;
+}
+.top > h1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0; 
+}
+
+.icon-font{
+    font-family: 'Gentium Basic', serif;
+    padding-left: 10px;
+}
+/*First page*/
+.product-img >img {height: 100%;
+     width: 100%; 
+     object-fit: cover;
+     border-radius: 15px;
+    }
+.first-page{
+    background-image: url(../images/Product-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    filter: blur(0.2px);
+    -webkit-filter: blur(0.2px);
+    border-bottom: 1px solid black;
+    
+}
+/* Navigation */
+nav{
+    height: 3rem;
+    border-bottom: 1px solid black
+}
+nav > ul{
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav >ul >li{
+    display: inline;
+}
+nav > ul > li > a{
+    display:inline-block;
+    padding:20px 70px 20px 70px;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+
+/* Our Story*/
+.information{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    color: black;
+}
+
+.story{
+    margin-top: 6.5rem;
+}
+/*Gallery*/
+.G1{
+    grid-area: item1;
+
+}
+.Gallery{
+    margin-top: 10px;
+    height: 100vh;
+    border-bottom: 1px solid black;
+    
+}
+.Gallery > p{
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+}
+.gallery-grid{
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.gallery-header{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.gallery-img{
+    border: solid 0.5px grey;
+    box-shadow: 6px 4px 14px 1px rgba(0,0,0,0.58);
+    position: relative;
+
+}
+.gallery-img >img {
+    height: 100%;
+    width: 100%; 
+     object-fit: cover;
+    position: absolute;
+    }
+.G1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.G2{
+     grid-row: 3/5;
+    grid-column: 1/2;
+}
+.G3{
+     grid-row: 3/5;
+    grid-column: 2/3;
+}
+.G4{
+     grid-row: 1/5;
+    grid-column: 3/4;
+}
+/*shop */
+.shop{
+    height: 100vh;
+   
+}
+.shop > h3{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+     border-bottom: 1px solid black;
+}
+.left-side{
+    border-right: 1px solid black;
+}
+.left-side > ul{
+    text-align: center;
+    padding: 0;
+    line-height: 3rem;
+}
+.left-side > ul > li > i{
+    padding-left: 5px;
+    margin-top: 15px;
+    color: #333;
+}
+/*right-side*/
+.right-side{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.product{
+    text-align: center;
+}
+.product-img{
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    height: 75%;
+    width: 70%;
+    box-shadow: 6px 4px 14px 1px rgba(0,0,0,0.58);
+    margin-right: 10px;
+    margin-top: 20px;
+
+}
+
+/*Footer*/
+footer{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    background-color:black;
+    height: 12rem;
+    color: white;
+    padding: 20px 0 20px 0;
+    
+}
+.footer-grid{
+    text-align: left;
+    border-right: 1px solid white;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+.footer-grid > p{
+    padding-left: 40px;
+    font-family: 'Sofia', cursive;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+#footer-last{
+    border: none;
+}
+
+/*Utility*/
+button{
+    height: 1.6rem;
+    width: 5.5rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: white;
+    background-color: black;
+}
+.top >i{
+    float: right;
+    text-align: right;
+    padding-right: 30px;
+    padding-left: 20px;
+    height: 20px;
+    font-size: 16px;
+}
