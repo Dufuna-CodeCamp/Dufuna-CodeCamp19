@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Restration form</title>
+    </head>
+    <body>
+       <div>
+            <center>
+                <h1><strong>WELCOME TO AFRIDIRECT</strong></h1>
+                <br>  
+                <p><b> We buy and sell everything Africa</b></p>
+            </center>
+       </div>
+
+       <fieldset>
+           <legend><strong>Login</strong></legend>
+
+           <form method="POST" action="login.php">
+                <label for="email">E-mail Address* </label> <br>
+                <input type="email" name="email" id="email">
+                <br>
+                <br><label for="password">Password*</label> <br>
+                <input type="password" name="password" id="password">
+                <br>
+                <br><input type="submit" name="submit" value="LOGIN">
+                <a href="forgot password" target="_blank">Forgot Password?</a>
+           </form>
+       </fieldset>
+
+        <p> signup, <a href="AboutUs.html">Click Here</a> </p>
+
+        <fieldset>
+            
+            <legend><strong>SignUp</strong></legend>
+            <form action="results.html" method="post">
+
+                <label for="name">Name <br><input type="text" name="name
+                id="name" placeholder="Full name" required>
+                </label>
+                <br><br>
+                <label for="email">Email <br> <input type="email" name="name" id="email" placeholder="you@example.com" required>
+                </label>
+                <br><br>
+                <label>password <br> <input type="password" password="password"
+                placeholder="password">
+                </label>
+                </div>
+                <div>
+                <label>
+                confirm Password <br><input type="password" password="password" placeholder="password">
+                </label> <br><br>
+                <label for="age">Age</label>  <br>
+                <input type="number" name="age" id="age" min="1" max="100" step="1">
+                <br><br>
+                <label for="date">Birthdate</label> <br>
+                <input type="date" name="date" id="date" min="2019-11-5" max="1940-1-1">
+                <br><br>
+                <p>Gender</p> 
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="male" id="male"> 
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="female" id="female">
+                </div>
+                <br> 
+                <label for="bio">Bio</label> <br>
+                <textarea name="bio" id="bio" placeholder="tell us abot your self" cols="7" 
+                rows="3"></textarea>
+                <br>
+                Hobbies <br>
+                <label for="Dancing">Dancing</label>
+                <input type="checkbox" name="hobbies" id="dancing" aria-valuemax="dancing">
+                <br>
+                <label for="Dancing">Singing</label>
+                <input type="checkbox" name="hobbies" id="Singing" aria-valuemax="Singing" checked>
+                </div> <br>
+                <div>
+                <input type="file" name="passport" accept="image/*">        
+                </div> <br>  
+                <label for="Address">Address</label> <br>
+                <textarea rows="5" cols="25" name="Address"></textarea> 
+                </div><br>
+                <div>
+                <div>
+                <label for="Country">Country</label>
+                <select name="Country" id="Country">
+                <option value="Nigeria">Nigeria</option>
+                <option value="England">England</option>
+                <option value="USA">USA</option>
+                <option value="UAE">UAE</option>
+                <option value="Ghana">Ghana</option>
+                </select>
+                </div> <br>
+                <div>
+                <select name="Number" id="num">
+                 <option>+1</option>
+                 <option>+44</option>
+                 <option>+234</option>
+                </select> 
+                <input type="number" name="number" id="number" 
+                placeholder="080"><br><br>
+
+                <div>
+                <button type="reset">Reset</button>
+                <button type="button">submite</button>
+                </div>
+
+
+
+                    
+                    
+            </form>
+
+        </fieldset>
+
+
+
+    
+                
+                            
+                
+    
+    </body>
+</html>
